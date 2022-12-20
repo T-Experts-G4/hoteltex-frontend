@@ -10,10 +10,9 @@ html, * {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
+	font-family: sans-serif;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
