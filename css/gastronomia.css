@@ -13,9 +13,12 @@
     padding: 0 1rem 0 1rem; 
     justify-content: space-between;
     margin-top: 2rem;
+    
 }
 .gastronomia_sobre{
     max-width: 50vw;
+    border-right: 2px;
+    border-color: aqua;
 }
 .gastronomia_image{
     max-width: 28vw;
