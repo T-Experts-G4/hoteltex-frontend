@@ -22,8 +22,8 @@
     align-items: center;
     padding: 0 1rem 0 1rem;
     justify-content: space-between;
-    margin-top: 2rem;
-    font-size: 1.3rem;
+    margin-top: 4rem;
+    font-size: 1.1rem;
 }
 
 .gastronomia_sobre {
@@ -32,15 +32,24 @@
 
 .gastronomia__linha__vertical {
     height: 250px;
-    border-right: 2px solid #00c1ea;
+    border-right: 0.2rem solid #00c1ea;
 }
 
 .gastronomia__linha__horizontal {
     width: 500px;
-    border-bottom: 2px solid #ff9000;
+    border-bottom: 0.2rem solid #ff9000;
 }
 
 .gastronomia_image {
-    max-width: 28vw;
+    max-width: 23vw;
     border-radius: 50%;
+}
+.gastronomia__icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.gastronomia__icon__image{
+    width: 4rem;
+    margin-right: 2rem
 }
