@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root{
+    --color-areia: #fff5eb,
+    --color-azul: #00c1ea,
+    --color-laranja: #ff9000,
+    --color-vermelho: #ef5a2e,
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(
+        #fff5eb 25%,
+        #ff9000
+    );
+    display: grid;
+    place-content: center;
+}
+
+header{
+    background-color: #fff5eb;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1230px;
+ }
+.nav__bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px 0 25px;
+}
+.nav__logo{
+    max-height: 10vh;
+    margin: 0 0 1rem 1rem;
+}
+.nav__menu {
+    width: 30vw;
+    display: flex;
+    list-style-type: none;
+    align-items: center;  
+    flex-wrap: wrap;
+}
+.nav__menu li{
+    padding: 0 1rem 0 0;
+}
+.nav__user {
+    display: flex;
+    flex-direction: row;
+}
+.nav__user__menu{
+    width: 100vw;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding: 0 25px 0 25px;
+}
+.nav__user__menu li{
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem 0 0
+}

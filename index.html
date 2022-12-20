@@ -4,42 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/gastronomia.css">
     <title>Hotel T.Ex</title>
+
 </head>
 <body>
     <header>
-        <table width="90%">
-            <tr>
-                <td width="95%" style="text-align: end;">Olá usuário</td>
-                <td width="90%" style="text-align: end;">Sair</td>
-            </tr>
-        </table>
-        <table width="60%">
-            <tr>
-                <td width="40%" align="center">
-                    <img src="./imagens/logoHotel.png" alt="logo" width="200px">
-                    <td width="60%" align="center">
-                        <h1>Frase do Slogan</h1>
-                    </td>
-                </td>
-            </tr>
-        </table>
-        <table width="93%">
-            <tr>
-                <td style="text-align: end;"><p>Cadastre-se</p></td>
-            </tr>  
-        </table>
-        <table width="14%">
-        <tr>
-            <td align="end" width="90%">
-                <nav>
-                 <span>Barra de Navegação</span>
-                </nav>
-            </td>
-        </tr>
-        </table>
+            <nav class="nav__user">
+                <ul class="nav__user__menu">
+                    <li>Olá Usúario</li>
+                    <li>Entrar</li>
+                    <li>Cadastre-se</li>
+                    <li>Sair</li>
+                </ul>
+            </nav>
+      <nav class="nav__bar">
+        <img class="nav__logo" src="/imagens/logo-hotel.png" alt="">
+        <ul class="nav__menu">
+            <li>inicio</li>
+            <li>Nosso Hotel</li>
+            <li>Acomodações</li>
+            <li>Gastronomia</li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <main class="container">
         <section>
             <article>
             <table align="center" width="70%">
@@ -113,18 +103,26 @@
                 </tr>
             </table>
         </section> 
-        </br></br></br></br>
-        <section class="container_gastronomia">
-          <h2 class="gastronomia_titulo">Gastronomia</h2>
+        <section class="gastronomia__container">
+          <h2 class="gastronomia__titulo">Gastronomia</h2>
           <div class="gastronomia_conteudo">
-              <div class="gastronomia_sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.</div>
-              <div class="gastronomia_image">
-                  <img src="/imagens/gastronomia.jpg" alt="Gastronomia Hotel" width="250">
+              <div class="gastronomia_sobre">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
+                </p>
+                &nbsp;
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
+                </p>
+            
               </div>
+                  <img class="gastronomia_image" src="/imagens/gastronomia.jpg" alt="Gastronomia Hotel" >
           </div>
         </section>
     </main>
-  <footer>
+  <footer class="container">
     <table width="60%" height="150px" align="center">
         <tr>
             <td width="30%">Contatos</td>
