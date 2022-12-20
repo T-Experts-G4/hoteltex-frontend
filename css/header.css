@@ -1,0 +1,46 @@
+:root {
+    --laranja-claro: #FFE181;
+    --laranja: #FF5F00;
+    --yellow: #FFC10E;
+    --black: #000;
+}
+
+header {
+    background-color: var(--laranja-claro);
+    font-family: sans-serif;
+    width: auto;
+    height: 200px;
+}
+
+.header__titulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__usuario {
+    padding: 20px;
+    /* border: 1px solid #000; */
+}
+
+.header__titulos--usuario {
+    display: flex;
+    /* border: 1px solid #000; */
+}
+
+.header__titulos--usuario p {
+    margin-right: 20px;
+}
+
+nav {
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--laranja);
+}
