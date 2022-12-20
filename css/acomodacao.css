@@ -1,6 +1,74 @@
 .acomodacao {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+}
+
+.acomodacao__titulo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.acomodacao__traco {
+    width: 80%;
+    height: 0.5rem;
+    background: #EF5A2E;
+    margin: 0 0 2rem 0;
+}
+
+.acomodacao__carrossel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    margin: 2rem 0;
+}
+
+.acomodacao__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.acomodacao__banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+.acomodacao__banner__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.acomodacao__botao {
+    width: 70%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    background: #FFC10E;
+    border: none;
+    border-radius: 1rem;
+}
+
+.acomodacao__botao a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
 }
