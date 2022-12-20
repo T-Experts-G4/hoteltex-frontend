@@ -13,6 +13,12 @@ html, * {
 	font-family: sans-serif;
 }
 
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+}
+
 ol, ul {
 	list-style: none;
 }
