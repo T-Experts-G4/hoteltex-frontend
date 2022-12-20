@@ -1,26 +1,46 @@
-.gastronomia__container{
-    margin-top: 3rem;
-}
-.gastronomia__titulo{
+.gastronomia__container {
+    margin: 5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    font-size: 32px;
+    max-width: 1230px;
+
 }
-.gastronomia_conteudo{
+
+.gastronomia__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gastronomia__titulo h2 {
+    font-size: 2.5rem;
+}
+
+.gastronomia_conteudo {
     display: flex;
     align-items: center;
-    padding: 0 1rem 0 1rem; 
+    padding: 0 1rem 0 1rem;
     justify-content: space-between;
     margin-top: 2rem;
-    
+    font-size: 1.3rem;
 }
-.gastronomia_sobre{
+
+.gastronomia_sobre {
     max-width: 50vw;
-    border-right: 2px;
-    border-color: aqua;
 }
-.gastronomia_image{
+
+.gastronomia__linha__vertical {
+    height: 250px;
+    border-right: 2px solid #00c1ea;
+}
+
+.gastronomia__linha__horizontal {
+    width: 500px;
+    border-bottom: 2px solid #ff9000;
+}
+
+.gastronomia_image {
     max-width: 28vw;
     border-radius: 50%;
 }
