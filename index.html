@@ -5,41 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/acomodacao.css">
+    <link rel="stylesheet" href="./css/acomodacao.css">    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/gastronomia.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
+
 </head>
 <body>
     <header>
-        <table align="center"  width="80%">
-            <tr>
-                <td width="95%" style="text-align: end;">Olá usuário</td>
-                <td width="90%" style="text-align: end;">Sair</td>
-            </tr>
-        </table>
-        <table align="center"  width="80%">
-            <tr>
-                <td width="40%">
-                    <img src="./imagens/logoHotel.png" alt="logo" width="200px">
-                    <td width="60%" align="end">
-                        <h1>Frase do Slogan</h1>
-                    </td>
-                </td>
-            </tr>
-        </table>
-        <table align="center"  width="80%">
-            <tr>
-                <td style="text-align: end;"><p>Cadastre-se</p></td>
-            </tr>  
-        </table>
-        <table width="80%">
-        <tr>
-            <td align="end" width="90%">
-                <nav>
-                 <span>Barra de Navegação</span>
-                </nav>
-            </td>
-        </tr>
-        </table>
+        <section class="header__titulos">
+            <img src="./imagens/Logo.png" alt="logo" width="200px">
+            <h1>Hotel T.Ex</h1>
+            <div class="header__usuario">
+                <div class="header__titulos--usuario">
+                    <p>Olá usuário</p>
+                    <button>Sair</button>
+                </div>
+                <p>Cadastre-se</p>
+            </div>
+        </section>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#hotel">Nosso Hotel</a>
+            <a href="#acomodacoes">Acomodações</a>
+            <a href="#gastronomia">Gastronomia</a>
+        </nav>
     </header>
     <main>
         <section>
@@ -51,7 +45,7 @@
                 <tr>
                 <td width="40%">
                     <img
-                    src="../Hotel-T-Ex/imagens/Sobre_image.jpg"
+                    src="./imagens/Sobre_image.jpg"
                     alt="Hoteltex"
                     title="Hotel Tex"
                     width="300px"
@@ -112,41 +106,98 @@
             </div>
             <button class="acomodacao__botao"><a href="#">Saiba mais sobre nossas acomodações</a></button>
         </section> 
-        </br></br></br></br>
-        <section class="container_gastronomia">
-            <table align="center" width="80%">
-                <tr>
-                    
-                    <td align="center"  width="100%" ><h2>Gastronomia</h2></td>
-                </tr>
-                <tr>
-                    <!-- <td width="1%"></td> -->
-                    <td width="69%">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda quis beatae, et accusamus omnis soluta eveniet placeat quaerat vel ducimus enim laudantium consequuntur nostrum vero temporibus voluptatibus, dicta sunt.
-                    </td>
-                    <!-- <td width="15%"></td> -->
-                    <td align="end"  width="auto">
-                        <img src="./imagens/gastronomia.jpg" alt="Gastronomia Hotel" width="250">
-                    </td>
-                </tr>            
-            </table>
-        </section>
+        <section id="gastronomia" class="gastronomia__container">
+            <div class="gastronomia__titulo">
+                <h2 >Gastronomia </h2>
+                <hr class="gastronomia__linha__horizontal">
+                </div>
+                <div class="gastronomia_conteudo">
+                    <div class="gastronomia_sobre">
+                      <p>
+                        Hotéis de luxo e conceituais, oferecem muito mais que conforto, sofisticação e serviços exclusivos, apostam constantemente em variedades de experiências para encantar o hóspede . A alta gastronomia no Brasil é a mais marcante, aonde os sabores, aromas e visual dos pratos, são um charme à parte. O país possui espalhados por diversas regiões, hotéis comandados por chefs premiados que assinam cardápios exclusivos e fazem seus restaurantes serem uma experiência gourmet inesquecível.
+                      </p>
+                      &nbsp;
+                      <p>
+                        Com um conceito descontraído, mas elegante, a gastronomia prioriza a qualidade dos produtos e a simplicidade das técnicas, com a grelha e as brasas como protagonistas. Destacando a grelha de frutos do mar, saladas e pratos a serem compartilhados, o Marine Restô surpreende-se ao transformar todas as ocasiões.
+                      </p>
+                  
+                    </div>
+                        <div class="gastronomia__linha__vertical"></div>
+                        <img class="gastronomia_image" src="./imagens/gastronomia.jpg" alt="Gastronomia Hotel" >
+                </div>
+                <div class="gastronomia__icon">
+                    <img class="gastronomia__icon__image" src="./imagens/icon/garfo-e-faca.png" alt="">
+                    <img class="gastronomia__icon__image" src="./imagens/icon/livro.png" alt="">
+                    <img class="gastronomia__icon__image" src="./imagens/icon/coquetel-na-taca-de-vinho.png" alt="">
+                    <img class="gastronomia__icon__image" src="./imagens/icon/servico-de-comida.png" alt="">
+                </div>
+          </section>
     </main>
-  <footer>
-    <table width="80%" height="150px" align="center">
-        <tr>
-            <td width="30%">Contatos</td>
-            <td width="30%">Localização</td>
-        </tr>
-        <tr>   
-            <td width="30%">&copy;2022 - Todos os direitos reservados</td>
-            <td width="30%">Barra de Navegação</td>
-        </tr>
-    </table>
-  </footer>
+    <footer>       
+        
+        <section class="footer__contato">
+            <div>
+                <h2>Fale Conosco</h2>
+            </div>
+            <div>
+                <p>Telefone</p>
+            </div> 
+            <div>
+                <p>+55 48 99999-0000</p>
+            </div>                                        
+        </section>
+
+        <section class="footer__endereco">
+            <div>
+                <h2>Endereço</h2>
+            </div>
+            <div>
+                <p>
+                    Rua João de Tal, 000<br>
+                    Cidade, Estado, Brasil<br>
+                    CEP – 80000-000
+                </p>
+            </div>                                        
+        </section>
+
+        <section class="footer__redes">
+            <div>
+                <h2>Conte-nos sobre sua experiência.</h2>
+            </div>
+            <div>
+                <p>Siga-nos</p>
+            </div>                                 
+                    
+            <div>
+                <span class="footer__icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+            </div>
+                        
+        </section>
+        
+        <div class="footer__copyright">
+            <h2>&copy;2022 - Todos os direitos reservados</h2>
+        </div>
+
+    </footer>
 </body>
 </html>
