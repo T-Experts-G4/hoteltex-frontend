@@ -41,10 +41,7 @@
 .hotel_image {
     max-width: 28%;
     max-height: 78%;
-<<<<<<< HEAD
-=======
-   /* border-radius: 50%;*/
->>>>>>> main
+
 }
 .hotel__icon{
     display: flex;
