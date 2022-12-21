@@ -62,6 +62,7 @@
     align-items: center;
     justify-content: center;
     margin: 2rem 0;
+    padding: 3rem 0;
     background: #FFC10E;
     border: none;
     border-radius: 1rem;
@@ -72,4 +73,42 @@
     color: #000;
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+
+    .acomodacao {
+        width: 90%;
+    }
+
+    .acomodacao__titulo {
+        font-size: 3.5rem;
+    }
+
+    .acomodacao__carrossel {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .acomodacao__titulo {
+        font-size: 2.5rem;
+    }
+
+    .acomodacao__botao {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 566px) {
+
+    .acomodacao__titulo {
+        font-size: 2rem;
+    }
+
+    .acomodacao__botao {
+        width: 90%;
+    }
 }
