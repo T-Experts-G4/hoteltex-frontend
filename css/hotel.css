@@ -1,0 +1,133 @@
+.hotel__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hotel__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.hotel__titulo h2 {
+    font-size: 2.5rem;
+}
+
+.hotel_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+}
+
+.hotel_sobre {
+    max-width: 50vw;
+    text-align: justify;
+}
+
+.hotel__linha_vertical {
+    height: 250px;
+    border-right: 0.2rem solid #00c1ea;
+}
+
+.hotel__linha_horizontal {
+    width:500px;
+    border-bottom: 0.2rem solid #ff9000;
+}
+
+.hotel_image {
+    max-width: 28%;
+    max-height: 78%;
+   /* border-radius: 50%;*/
+}
+.hotel__icon{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+}
+.hotel__icon_image{
+    width: 4rem;
+    margin-right: 2rem
+}
+@media(min-width: 1440px){
+    .hotel__container  {
+        margin: 8%;
+    }
+}
+@media(max-width: 1024px){
+    .hotel__container  {
+        margin: 5%;
+    }
+    .hotel_conteudo{
+        font-size: 0.8rem;
+    }
+    .hotel__titulo h2 {
+        font-size: 1.5rem;
+    }
+    .hotel__icon{
+        margin-top: 2rem;
+    }
+    .hotel__icon_image{
+        width: 3rem;
+    }
+    .hotel__linha_vertical {
+        height: 200px;
+        border-right: 0.15rem solid #00c1ea;
+    }    
+    .hotel__linha_horizontal {
+        width: 400px;
+        border-bottom: 0.15rem solid #ff9000;
+    }
+}
+
+@media(max-width: 768){
+    .hotel__container  {
+        margin: 3%;
+    }
+    .hotel_conteudo {
+        font-size: 0.6rem;
+    }    
+    .hotel__icon{
+        margin-top: 1.5rem;
+    }
+    .hotel__icon_image{
+        width: 1.5rem;
+    }
+    .hotel__linha_vertical {
+        height: 200px;
+        border-right: 0.15rem solid #00c1ea;
+    }
+    
+    .hotel__linha_horizontal {
+        width: 400px;
+        border-bottom: 0.15rem solid #ff9000;
+    }
+}
+
+@media(max-width: 425px){
+    .hotel__container {
+        margin-top: 50px;
+    }
+    .hotel_conteudo{
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .hotel_sobre {
+        max-width: 90vw;
+    }
+    .hotel_image {
+        margin: 40px 0 40px 0;
+        max-width: 250px;
+        
+    }    
+    .hotel__linha_vertical {
+        display: none;
+    }    
+    .hotel__linha_horizontal {
+        width: 250px;
+    }
+}
