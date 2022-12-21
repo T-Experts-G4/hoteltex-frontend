@@ -68,6 +68,17 @@
     border-radius: 1rem;
 }
 
+.acomodacao__botao2 {
+    visibility: hidden;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: #FFC10E;
+    border-radius: 1rem;
+    width: 20vw;
+    height: 8vw;
+}
+
 .acomodacao__botao a {
     text-decoration: none;
     color: #000;
@@ -110,5 +121,12 @@
 
     .acomodacao__botao {
         width: 90%;
+        display: none;
+    }
+
+    .acomodacao__botao2 {
+        display: flex;
+        visibility: visible;
+        position: inherit;
     }
 }
