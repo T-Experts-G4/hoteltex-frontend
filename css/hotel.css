@@ -25,6 +25,7 @@
 
 .hotel_sobre {
     max-width: 50vw;
+    text-align: justify;
 }
 
 .hotel__linha_vertical {
