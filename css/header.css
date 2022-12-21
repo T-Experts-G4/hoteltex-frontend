@@ -41,6 +41,6 @@ nav a {
     color: var(--black);
 }
 
-header a:hover {
+a:hover {
     color: var(--laranja);
 }
