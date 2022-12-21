@@ -17,30 +17,60 @@ header {
     justify-content: space-between;
 }
 
+.header__titulo--hotel {
+    width: 50%;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--laranja);
+}
+
 .header__usuario {
     padding: 20px;
-    /* border: 1px solid #000; */
 }
 
 .header__titulos--usuario {
     display: flex;
-    /* border: 1px solid #000; */
 }
 
 .header__titulos--usuario p {
     margin-right: 20px;
 }
 
+.header__cadastro {
+    text-align: end;
+    width: 98%;
+    height: 15%;
+}
+
+button {
+    background-color: var(--laranja);
+}
+
 nav {
     background-color: var(--yellow);
     text-align: center;
 }
+ 
+nav.navbar {
+    padding: 16px 0 16px 0;
+}
 
-nav a {
+a {
     text-decoration: none;
     color: var(--black);
+    font-family: sans-serif;
 }
 
 a:hover {
+    color: var(--laranja);
+}
+
+.navbar a {
+    display: inline;
+    padding: 20px 40px 20px 40px;
+}
+
+.fa-sign-in {
     color: var(--laranja);
 }
