@@ -1,0 +1,52 @@
+footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #ff910e;
+    box-sizing: border-box;
+}
+footer a {
+    color: #000;
+}
+footer section{
+    margin: 5px;
+    width: 32%;
+    display: inline-block;
+}
+footer section div {
+    padding: 5px;
+    margin: 5px;
+}
+.footer__contato{
+    float: left;
+}
+
+.footer__endereco{
+    text-align: center;
+    float: left;
+
+}
+
+.footer__redes{
+    text-align: right;
+    float: left;
+}
+
+.footer__icon img {
+    width: 50px;
+}
+
+
+.footer__copyright {
+    text-align: center;
+}
+
+
+/* .footer__icon, 
+.footer__contato, 
+.footer__endereco, 
+.footer__redes, 
+.footer__copyright {
+    border: 1px solid #333;
+    
+} */
