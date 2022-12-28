@@ -1,0 +1,37 @@
+
+section.acomodacao h2{
+    font-size: 2.5rem;
+}
+
+/* Nossas Acomodações */
+section.acomodacao {
+    margin-top: 48px;
+    display: block;
+
+}
+article.acomodacao__geral {
+    text-align: center;
+    margin: 0;
+}
+
+article.acomodacao__geral div {
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0;
+}
+
+/* Acomodação em Destaque */
+
+article.acomodacao__destaque {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.acomodacao__destaque p {
+    font-size: 1.5rem;
+    padding: 8px 24px 24px 0;
+}
+article.acomodacao__destaque img, article.acomodacao__destaque h2 {
+    margin: 24px 0;
+
+}
