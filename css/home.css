@@ -1,0 +1,545 @@
+
+/* READER */
+:root {
+    --laranja-claro: #FFE181;
+    --laranja: #FF5F00;
+    --yellow: #FFC10E;
+    --black: #000;
+}
+
+header {
+    background-color: var(--laranja-claro);
+    font-family: sans-serif;
+    width: auto;
+    height: 200px;
+}
+
+.header__titulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__titulo--hotel {
+    width: 50%;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--laranja);
+}
+
+.header__usuario {
+    padding: 20px;
+}
+
+.header__titulos--usuario {
+    display: flex;
+}
+
+.header__titulos--usuario p {
+    margin-right: 20px;
+}
+
+.header__cadastro {
+    text-align: end;
+    width: 98%;
+    height: 15%;
+}
+
+button {
+    background-color: var(--laranja);
+}
+
+nav {
+    background-color: var(--yellow);
+    text-align: center;
+}
+ 
+nav.navbar {
+    padding: 16px 0 16px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: var(--laranja);
+}
+
+.navbar a {
+    display: inline;
+    padding: 20px 40px 20px 40px;
+}
+
+.fa-sign-in {
+    color: var(--laranja);
+}
+
+
+/* SOBRE O NOSSO HOTEL */
+.hotel__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hotel__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.hotel__titulo h2 {
+    font-size: 2.5rem;
+}
+
+.hotel_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+}
+
+.hotel_sobre {
+    max-width: 50vw;
+    text-align: justify;
+}
+
+.hotel__linha_vertical {
+    height: 250px;
+    border-right: 0.2rem solid #00c1ea;
+}
+
+.hotel__linha_horizontal {
+    width:500px;
+    border-bottom: 0.2rem solid #ff9000;
+}
+
+.hotel_image {
+    max-width: 28%;
+    max-height: 78%;
+
+}
+.hotel__icon{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+}
+.hotel__icon_image{
+    width: 4rem;
+    margin-right: 2rem
+}
+@media(min-width: 1440px){
+    .hotel__container  {
+        margin: 8%;
+    }
+}
+@media(max-width: 1024px){
+    .hotel__container  {
+        margin: 5%;
+    }
+    .hotel_conteudo{
+        font-size: 0.8rem;
+    }
+    .hotel__titulo h2 {
+        font-size: 1.5rem;
+    }
+    .hotel__icon{
+        margin-top: 2rem;
+    }
+    .hotel__icon_image{
+        width: 3rem;
+    }
+    .hotel__linha_vertical {
+        height: 200px;
+        border-right: 0.15rem solid #00c1ea;
+    }    
+    .hotel__linha_horizontal {
+        width: 400px;
+        border-bottom: 0.15rem solid #ff9000;
+    }
+}
+
+@media(max-width: 768){
+    .hotel__container  {
+        margin: 3%;
+    }
+    .hotel_conteudo {
+        font-size: 0.6rem;
+    }    
+    .hotel__icon{
+        margin-top: 1.5rem;
+    }
+    .hotel__icon_image{
+        width: 1.5rem;
+    }
+    .hotel__linha_vertical {
+        height: 200px;
+        border-right: 0.15rem solid #00c1ea;
+    }
+    
+    .hotel__linha_horizontal {
+        width: 400px;
+        border-bottom: 0.15rem solid #ff9000;
+    }
+}
+
+@media(max-width: 425px){
+    .hotel__container {
+        margin-top: 50px;
+    }
+    .hotel_conteudo{
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .hotel_sobre {
+        max-width: 90vw;
+    }
+    .hotel_image {
+        margin: 40px 0 40px 0;
+        max-width: 250px;
+        
+    }    
+    .hotel__linha_vertical {
+        display: none;
+    }    
+    .hotel__linha_horizontal {
+        width: 250px;
+    }
+}
+
+
+/* ACOMODACAO */
+.acomodacao {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.acomodacao__titulo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.acomodacao__traco {
+    width: 80%;
+    height: 0.5rem;
+    background: #EF5A2E;
+    margin: 0 0 2rem 0;
+}
+
+.acomodacao__carrossel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    margin: 2rem 0;
+}
+
+.acomodacao__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.acomodacao__banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+.acomodacao__banner__img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    /* filter: invert(1); */
+}
+
+.acomodacao__botao {
+    width: 70%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 3rem 0;
+    background: #FFC10E;
+    border: none;
+    border-radius: 1rem;
+}
+
+.acomodacao__botao2 {
+    visibility: hidden;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: #FFC10E;
+    border-radius: 1rem;
+    width: 20vw;
+    height: 8vw;
+}
+
+.acomodacao__botao a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+
+    .acomodacao {
+        width: 90%;
+    }
+
+    .acomodacao__titulo {
+        font-size: 3.5rem;
+    }
+
+    .acomodacao__carrossel {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .acomodacao__titulo {
+        font-size: 2.5rem;
+    }
+
+    .acomodacao__botao {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 566px) {
+
+    .acomodacao__titulo {
+        font-size: 2rem;
+    }
+
+    .acomodacao__botao {
+        width: 90%;
+        display: none;
+    }
+
+    .acomodacao__botao2 {
+        display: flex;
+        visibility: visible;
+        position: inherit;
+    }
+}
+
+/* GASTRONOMIA */
+
+.gastronomia__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gastronomia__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.gastronomia__titulo h2 {
+    font-size: 2.5rem;
+}
+
+.gastronomia_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    margin-top: 4rem;
+    font-size: 1.1rem;
+}
+
+.gastronomia_sobre {
+    max-width: 50vw;
+}
+
+.gastronomia__linha__vertical {
+    height: 250px;
+    border-right: 0.2rem solid #00c1ea;
+}
+
+.gastronomia__linha__horizontal {
+    width:500px;
+    border-bottom: 0.2rem solid #ff9000;
+}
+
+.gastronomia_image {
+    max-width: 28%;
+    border-radius: 50%;
+}
+.gastronomia__icon{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+}
+.gastronomia__icon__image{
+    width: 4rem;
+    margin-right: 2rem
+}
+@media(min-width: 1440px){
+    .gastronomia__container {
+        margin: 8%;
+    }
+}
+@media(max-width: 1024px){
+    .gastronomia__container {
+        margin: 5%;
+    }
+    .gastronomia_conteudo {
+        font-size: 0.8rem;
+    }
+    .gastronomia__titulo h2 {
+        font-size: 1.5rem;
+    }
+    .gastronomia__icon{
+        margin-top: 2rem;
+    }
+    .gastronomia__icon__image{
+        width: 3rem;
+    }
+    .gastronomia__linha__vertical {
+        height: 200px;
+        border-right: 0.15rem solid #00c1ea;
+    }    
+    .gastronomia__linha__horizontal {
+        width: 400px;
+        border-bottom: 0.15rem solid #ff9000;
+    }
+    .gastronomia__icon__image{
+        width: 3rem;
+    }
+}
+
+@media(max-width: 768){
+    .gastronomia__container {
+        margin: 3%;
+    }
+    .gastronomia_conteudo {
+        font-size: 0.6rem;
+    }    
+    .gastronomia__icon{
+        margin-top: 1.5rem;
+    }
+    .gastronomia__icon__image{
+        width: 1.5rem;
+    }
+    .gastronomia__linha__vertical {
+        height: 200px;
+        border-right: 0.15rem solid #00c1ea;
+    }
+    
+    .gastronomia__linha__horizontal {
+        width: 400px;
+        border-bottom: 0.15rem solid #ff9000;
+    }
+    .gastronomia__icon__image{
+        width: 4rem;
+    }
+}
+
+@media(max-width: 425px){
+    .gastronomia__container {
+        margin-top: 50px;
+    }
+    .gastronomia_conteudo {
+        flex-direction: column;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .gastronomia_sobre {
+        max-width: 90vw;
+    }
+    .gastronomia_image {
+        margin: 40px 0 40px 0;
+        max-width: 250px;
+        border-radius: 50%;
+    }    
+    .gastronomia__linha__vertical {
+        display: none;
+    }    
+    .gastronomia__linha__horizontal {
+        width: 250px;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #ff910e;
+    box-sizing: border-box;
+}
+footer a {
+    color: #000;
+}
+footer section{
+    margin: 5px;
+    width: 32%;
+    display: inline-block;
+}
+footer section div {
+    padding: 5px;
+    margin: 5px;
+}
+.footer__contato{
+    float: left;
+}
+
+.footer__endereco{
+    text-align: center;
+    float: left;
+
+}
+
+.footer__redes{
+    text-align: right;
+    float: left;
+}
+
+.footer__icon img {
+    width: 50px;
+}
+
+
+.footer__copyright {
+    text-align: center;
+}
+
+
+/* .footer__icon, 
+.footer__contato, 
+.footer__endereco, 
+.footer__redes, 
+.footer__copyright {
+    border: 1px solid #333;
+    
+} */
