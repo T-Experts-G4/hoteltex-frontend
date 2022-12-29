@@ -19,6 +19,11 @@ article.acomodacao__geral div {
     justify-content: space-between;
     margin: 48px 0;
 }
+article.acomodacao__geral div img{
+    max-width: 325px;
+
+}
+
 
 /* Acomodação em Destaque */
 
@@ -34,4 +39,7 @@ article.acomodacao__destaque p {
 article.acomodacao__destaque img, article.acomodacao__destaque h2 {
     margin: 24px 0;
 
+}
+article.acomodacao__destaque img{
+    max-width: 552px;
 }
