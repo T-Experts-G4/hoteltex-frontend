@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/reservas.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hotel T.Ex</title>
+
+</head>
+<body>
+    <header>
+        <section class="header__titulos">
+            <img src="../imagens/Logo.png" alt="logo" width="200px">
+            <div class="header__titulo--hotel">
+                <p>Hotel T.Ex Beach</p>
+            </div>
+            <div class="header__usuario">
+                <div class="header__titulos--usuario">
+                    <p>Olá usuário</p>
+                    <button>Sair</button>
+                    <!-- <i class="fa fa-sign-in fa-5x" aria-hidden="true"></i> -->
+                </div>
+            </div>
+        </section>
+        <div class="header__cadastro">
+            <p>Cadastre-se</p>
+        </div>
+    </header>
+    <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="#hotel">Nosso Hotel</a>
+            <a href="../pages/acomodacao.html">Acomodações</a>
+            <a href="#gastronomia">Gastronomia</a>
+    </nav>
+    <main>
+        <section>
+          <article>
+            <div class="hotel__minha-reserva">
+              <div class="hotel__minha-reserva2">
+                <h2>Minha Reserva</h2>
+                <!--primeira parte-->
+                <form action="" method="get" target="_blank">
+                  <fieldset>
+                    <ul class="hotel__minha-reserva_campos">
+                      <li>
+                        <label for="">Check-In:</label>
+                        <input type="date" name="check-in" id="" />
+                      </li>
+                      <li>
+                        <label for="">Check-Out:</label>
+                        <input type="date" name="check-out" id="" />
+                      </li>
+                      <li>
+                        <label for="">Adultos:</label>
+                        <select name="numero_adultos" id="">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label for="">Crianças:</label>
+                        <select name="numero_criancas" id="">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </li>
+                    </ul>
+  
+                    <!--Quartos do hotel-->
+                  <div class="hotel__container-quarto-resumo">  
+                    <div class="hotel__lado_quartos">
+                      <ul>
+                        <li>
+                          <label class="hotel__lado_quarto_titulo" for="quarto">Escolha o seu quarto abaixo</label>
+                          <hr class="hotel__linha_horizontal" />
+                          <div class="hotel__grid">
+                              <label class="hotel__card">
+                                  <div class="hotel__card_image">
+                                      <img src="../imagens/quarto_executive2.jpeg" alt="">
+                                  </div>
+                                  <div>                             
+                                  <span class="hotel__card_detalhes">
+                                      <span class="hotel__titulo_card">
+                                          Executive
+                                      </span>
+                                      <span class="texto_card">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae enim praesentium. Molestias illum perspiciatis neque reiciendis! Tempore quod ipsa autem placeat minima consectetur exercitationem praesentium, facilis repudiandae modi quam et quibusdam tempora quaerat voluptatum deserunt atque?
+                                      </span>
+                                      <span class="hotel__quarto_valor">
+                                          R$ 197,89
+                                      </span>
+                                      <input type="radio" name="quarto"/>Selecionar o Apartamento Executive
+                                  </div> 
+                                </span>
+                              </label>
+                              <label class="hotel__card">
+                                  <div class="hotel__card_image">
+                                      <img src="../imagens/quarto_classic2.jpeg" alt="">
+                                  </div>
+                                  <div>                             
+                                  <span class="hotel__card_detalhes">
+                                      <span class="hotel__titulo_card">
+                                          Classic
+                                      </span>
+                                      <span class="texto_card">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae enim praesentium. Molestias illum perspiciatis neque reiciendis! Tempore quod ipsa autem placeat minima consectetur exercitationem praesentium, facilis repudiandae modi quam et quibusdam tempora quaerat voluptatum deserunt atque?
+                                      </span>
+                                      <span class="hotel__quarto_valor">
+                                          R$ 298,93
+                                      </span>
+                                      <input type="radio" name="quarto"/>Selecionar o Apartamento Classic
+                                  </div> 
+                                </span>
+                              </label>
+                      </label>
+                              <label class="hotel__card">
+                                  <div class="hotel__card_image">
+                                      <img src="../imagens/quarto_premium2.jpeg" alt="">
+                                  </div>
+                                  <div>                             
+                                  <span class="hotel__card_detalhes">
+                                      <span class="hotel__titulo_card">
+                                          Premium
+                                      </span>
+                                      <span class="texto_card">
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae enim praesentium. Molestias illum perspiciatis neque reiciendis! Tempore quod ipsa autem placeat minima consectetur exercitationem praesentium, facilis repudiandae modi quam et quibusdam tempora quaerat voluptatum deserunt atque?
+                                      </span>
+                                      <span class="hotel__quarto_valor">
+                                          R$ 399,87
+                                      </span>
+                                      <input type="radio" name="quarto"/>Selecionar o Apartamento Premium
+                                  </div> 
+                                </span>
+                              </label>
+                              </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="hotel__lado_resumo">
+                      <h3>RESUMO DA RESERVA</h3>
+                      <div class="hotel__lado_resumo-info">
+                          <span>Apartamento: XXX</span>
+                          <span>CheckIn: XXX</span>
+                          <span>CheckOut: XXX</span>
+                          <span>Pessoas: XXX</span>
+                      </div>
+                      <a href="#">Adicionar mais SERVIÇOS</a>
+                      <button>CONTINUAR</button>
+                    </div>
+                  </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+  
+    <footer>       
+        
+        <section class="footer__contato">
+            <div>
+                <h2>Fale Conosco</h2>
+            </div>
+            <div>
+                <p>Telefone</p>
+            </div> 
+            <div>
+                <p>+55 48 99999-0000</p>
+            </div>                                        
+        </section>
+
+        <section class="footer__endereco">
+            <div>
+                <h2>Endereço</h2>
+            </div>
+            <div>
+                <p>
+                    Rua João de Tal, 000<br>
+                    Cidade, Estado, Brasil<br>
+                    CEP – 80000-000
+                </p>
+            </div>                                        
+        </section>
+
+        <section class="footer__redes">
+            <div>
+                <h2>Conte-nos sobre sua experiência.</h2>
+            </div>
+            <div>
+                <p>Siga-nos</p>
+            </div>                                 
+                    
+            <div>
+                <span class="footer__icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+            </div>
+                        
+        </section>
+        
+        <div class="footer__copyright">
+            <h2>&copy;2022 - Todos os direitos reservados</h2>
+        </div>
+
+    </footer>
+</body>
+</html>
