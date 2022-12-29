@@ -1,0 +1,54 @@
+/* section,
+form,
+div,
+label,
+input,
+select,
+textarea {
+    border: 1px solid #000000;
+} */
+
+form,
+div {
+    padding: 10px;
+}
+/* Elementos de tags <input>, <Select>, <textarea> e <button> */
+input,
+select,
+textarea,
+button {
+    padding: 20px 10px;
+    font-size: 1em;
+    border-radius: 12px;
+    border: 1px solid #CCBBFF;
+    box-sizing: border-box;
+}
+section {
+    width: auto;
+}
+input, select, textarea {
+    width: 100%;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+input:focus,
+select:focus,
+textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
