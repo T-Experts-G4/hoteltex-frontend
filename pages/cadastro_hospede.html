@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/Logo.png" />
+    <link rel="shortcut icon" href="./../imagens/Logo.png" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/acomodacao.css">
     <link rel="stylesheet" href="../css/hotel.css">
     <link rel="stylesheet" href="../css/gastronomia.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/contato.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/cadastro_hospede.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
@@ -51,35 +52,27 @@
 
     <!-- inicio main -->
     <main>
-        <section id="hotel" class="contato__container">
-            <h1>Contato</h1>
-            <p>Deseja saber algo sobre o Hotel T.EX? Preencha os campos abaixo e envie sua mensagem.</p>
-            <p>Em breve, alguém da nossa equipe entrará em contato. Muito obrigado.</p>
+        <section id="hotel" class="cadastro__hospede__container">
+            <h1>Cadastro Conta Hospede</h1>
+            <p>Preencha seus dados para criar uma nova conta</p>
             <!-- Início do formulário -->
-            <form class="form__contato">
-                <!-- Campo do nome-->
-                <input class="input__contato__hospede" type="text" name="nome" id="nome" placeholder="Nome Completo" required>
-
+            <form class="form__cadastro__hospede">
+                <!-- Campo de Nome -->
+                <input class="input__cadastro__hospede" type="text" name="nome" id="nome" placeholder="Nome Completo"
+                    required>
                 <!-- Campo de email -->
-                <input class="input__contato__hospede" type="email" name="email" id="email" placeholder="E-mail" required>
-
+                <input class="input__cadastro__hospede" type="email" name="email" id="email" placeholder="E-mail"
+                    required>
                 <!-- Campo de Telefone -->
-                <input  class="input__contato__hospede" type="tel" name="phone" id="phone" placeholder="(xx)9xxxx-xxxx"
+                <input class="input__cadastro__hospede" type="tel" name="phone" id="phone" placeholder="(xx)9xxxx-xxxx"
                     pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" required>
-
-                <!-- Campo de assunto -->
-                <select class="input__contato__hospede " name="assunto" id="assunto" required>
-                    <option selected disabled value="">Selecione</option>
-                    <option>Financeiro</option>
-                    <option>Comercial</option>
-                    <option>Sac</option>
-                </select>
-
-                <!-- Caixa de texto -->
-                <textarea class="input__contato__hospede" rows="6" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
-
+                <!-- Campo de Senha -->
+                <input class="input__cadastro__hospede" type="password" name="Senha" id="senha"
+                    placeholder="Escolha uma Senha segura" required>
+                <input class="input__cadastro__hospede" type="password" name="confirma-senha" id="confirma-senha"
+                    placeholder="Confirmar Senha" required>
                 <!-- Botão para enviar o formulário -->
-                <button class="botao__contato__hospede" type="submit" onsubmit="">Enviar Contato</button>
+                <button class="botao__cadastro__hospede" type="submit" onsubmit="">Criar Conta</button>
             </form>
         </section>
     </main>

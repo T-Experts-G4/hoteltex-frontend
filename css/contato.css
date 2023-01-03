@@ -1,16 +1,31 @@
-/* section,
-form,
-div,
-label,
-input,
-select,
-textarea {
-    border: 1px solid #000000;
-} */
 
-form,
-div {
-    padding: 10px;
+.contato__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+.contato__container p{
+    margin: 15px 0 20px 0;
+     
+ }
+.form__contato{
+    max-width: 500px;
+}
+.input__contato__hospede{
+    padding: 15px;
+    margin: 10px;
+ }
+
+ .botao__contato__hospede{
+    margin: 10px;
+    padding: 15px;
+    background-color: #FF5F00;
+    color: #fff;
+    cursor: pointer;
+}
+.botao__contato__hospede:hover{
+    background-color: #f9792e;
 }
 /* Elementos de tags <input>, <Select>, <textarea> e <button> */
 input,
@@ -23,9 +38,6 @@ button {
     border: 1px solid #CCBBFF;
     box-sizing: border-box;
 }
-section {
-    width: auto;
-}
 input, select, textarea {
     width: 100%;
 }
@@ -37,18 +49,3 @@ textarea:focus {
     background: #E0E0F8;
 }
 
-/* Elemento de classe "botao" */
-.botao {
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover {
-    background: #CCBBFF;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
-}
