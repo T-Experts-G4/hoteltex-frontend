@@ -9,46 +9,37 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/acomodacao.css">
-    <link rel="stylesheet" href="../css/hotel.css">
-    <link rel="stylesheet" href="../css/gastronomia.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/home.css">    
     <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/cadastro_hospede.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
 </head>
 
 <body>
     <header>
-        <section class="header__titulos">
-            <img src="../imagens/Logo.png" alt="logo" width="200px">
-            <div class="header__titulo--hotel">
-                <p>Hotel T.Ex Beach</p>
-            </div>
-            <div class="header__usuario">
-                <div class="header__titulos--usuario">
-                    <p>Olá usuário</p>
-                    <button>Sair</button>
-                    <!-- <i class="fa fa-sign-in fa-5x" aria-hidden="true"></i> -->
-                </div>
-            </div>
-        </section>
-        <div class="header__cadastro">
-            <a href="./cadastro_hospede.html">Cadastre-se</a>
+      <div class="header">
+        <div class="header__logo">
+          <img src="../imagens/Logo1.png" alt="logo" />
         </div>
+        <div class="header__titulo">
+          <h1>Hotel T.Ex Beach</h1>
+        </div>
+        <div class="header__usuario">
+          <button class="button header__usuario--login">
+            LOGIN<img src="../imagens/icon/Vector-entrar.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="header__nav">
+        <nav class="navbar">
+          <a href="../index.html">Inicio</a>
+          <a href="./pages/sobre.html">Nosso Hotel</a>
+          <a href="./pages/acomodacao.html">Acomodações</a>
+          <a href="../index.html#gastronomia">Gastronomia</a>
+        </nav>
+      </div>
     </header>
-    <!-- inicio navbar -->
-    <nav class="navbar">
-        <a href="../index.html">Inicio</a>
-        <a href="#hotel">Nosso Hotel</a>
-        <a href="../pages/acomodacao.html">Acomodações</a>
-        <a href="#gastronomia">Gastronomia</a>
-        <a href="./contato.html">Contato</a>
-    </nav>
 
     <!-- inicio main -->
     <main>
@@ -79,70 +70,53 @@
 
     <!-- inicio footer -->
     <footer>
+      <section class="footer">
+        <div class="footer__contato">
+          <h2>Fale Conosco</h2>
 
-        <section class="footer__contato">
-            <div>
-                <h2>Fale Conosco</h2>
-            </div>
-            <div>
-                <p>Telefone</p>
-            </div>
-            <div>
-                <p>+55 48 99999-0000</p>
-            </div>
-        </section>
+          <p>Telefone</p>
 
-        <section class="footer__endereco">
-            <div>
-                <h2>Endereço</h2>
-            </div>
-            <div>
-                <p>
-                    Rua João de Tal, 000<br>
-                    Cidade, Estado, Brasil<br>
-                    CEP – 80000-000
-                </p>
-            </div>
-        </section>
-
-        <section class="footer__redes">
-            <div>
-                <h2>Conte-nos sobre sua experiência.</h2>
-            </div>
-            <div>
-                <p>Siga-nos</p>
-            </div>
-
-            <div>
-                <span class="footer__icon">
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <span>
-                            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </span>
-                <span class="footer__icon">
-                    <a href="https://www.facebook.com/" target="_blank"></a>
-                    <span>
-                        <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-                    </span>
-                    </a>
-                </span>
-                <span class="footer__icon">
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <span>
-                            <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </span>
-            </div>
-
-        </section>
-
-        <div class="footer__copyright">
-            <h2>&copy;2022 - Todos os direitos reservados</h2>
+          <p>+55 48 99999-0000</p>
         </div>
 
+        <div class="footer__endereco">
+          <h2>Endereço</h2>
+
+          <p>
+            Rua João de Tal, 000<br />
+            Cidade, Estado, Brasil<br />
+            CEP – 80000-000
+          </p>
+        </div>
+
+        <div class="footer__redes">
+          <h2>Conte-nos sobre sua experiência.</h2>
+
+          <p>Siga-nos</p>
+
+          <div class="footer__redes--itens">
+            <span class="footer__icon">
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+              </a>
+            </span>
+            <span class="footer__icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+              </a>
+            </span>
+            <span class="footer__icon">
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer__copyright">
+        <h2>&copy;2022 - Todos os direitos reservados</h2>
+      </div>
     </footer>
 </body>
 
