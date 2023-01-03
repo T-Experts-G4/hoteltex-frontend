@@ -1,8 +1,18 @@
 :root {
+    --card-line-height: 1.2em;
+    --card-padding: 1em;
+    --card-radius: 0.5em;
+    --color-green: #558309;
+    --color-gray: #e2ebf6;
+    --color-dark-gray: #c4d1e1;
+    --radio-border-width: 2px;
+    --radio-size: 1.5em;
+    /*inicio*/
     --laranja-claro: #FFE181;
     --laranja: #FF5F00;
     --yellow: #FFC10E;
     --black: #000;
+    --azul: #00c1ea;
 }
 
 .container {

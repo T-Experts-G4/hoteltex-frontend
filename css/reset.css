@@ -10,11 +10,12 @@ html {
 	font-size: 62.5%;
 	vertical-align: baseline;
 	background: transparent;
-	font-family: sans-serif;
-	color: #444;
+	font-family:  'Noto Sans',sans-serif;
+	color: #263238;
 }
 
 body {
+	background-color: #f2f8ff;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1440px;
@@ -25,9 +26,11 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -43,6 +46,7 @@ q:before, q:after {
 ins {
 	text-decoration: none;
 }
+
 del {
 	text-decoration: line-through;
 }
