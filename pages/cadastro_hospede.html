@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imagens/Logo.png"/>
+    <link rel="shortcut icon" href="./../imagens/Logo.png" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/reservas.css">
-    <link rel="stylesheet" href="../css/reservas_confirmada.css">
-    
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/acomodacao.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="stylesheet" href="../css/gastronomia.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/cadastro_hospede.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
-
 </head>
+
 <body>
     <header>
         <section class="header__titulos">
@@ -34,44 +41,54 @@
             <a href="./cadastro_hospede.html">Cadastre-se</a>
         </div>
     </header>
+    <!-- inicio navbar -->
     <nav class="navbar">
-            <a href="../index.html">Inicio</a>
-            <a href="#hotel">Nosso Hotel</a>
-            <a href="../pages/acomodacao.html">Acomodações</a>
-            <a href="#gastronomia">Gastronomia</a>
+        <a href="../index.html">Inicio</a>
+        <a href="#hotel">Nosso Hotel</a>
+        <a href="../pages/acomodacao.html">Acomodações</a>
+        <a href="#gastronomia">Gastronomia</a>
     </nav>
+
+    <!-- inicio main -->
     <main>
-        <section>
-          <article>
-            <div class="confirma__texto">
-                <p><h2>Parabéns!</h2></p>
-                <p>A reserva de número xxxxxx foi confirmada!</p>
-                <p>Os detalhes foram encaminhados para o e-mail cadastrado.</p>
-                <div class="confirma__agradecimento">
-                    <span>
-                        Agradecemos a preferência.
-                    </span>
-                    <button>
-                        <a href="../index.html">Página inicial</a>
-                    </button>
-                </div>
-            </div>
-          </article>
+        <section id="hotel" class="cadastro__hospede__container">
+            <h1>Cadastro Conta Hospede</h1>
+            <p>Preencha seus dados para criar uma nova conta</p>
+            <!-- Início do formulário -->
+            <form class="form__cadastro__hospede">
+                <!-- Campo de Nome -->
+                <input class="input__cadastro__hospede" type="text" name="nome" id="nome" placeholder="Nome Completo"
+                    required>
+                <!-- Campo de email -->
+                <input class="input__cadastro__hospede" type="email" name="email" id="email" placeholder="E-mail"
+                    required>
+                <!-- Campo de Telefone -->
+                <input class="input__cadastro__hospede" type="tel" name="phone" id="phone" placeholder="(xx)9xxxx-xxxx"
+                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" required>
+                <!-- Campo de Senha -->
+                <input class="input__cadastro__hospede" type="password" name="Senha" id="senha"
+                    placeholder="Escolha uma Senha segura" required>
+                <input class="input__cadastro__hospede" type="password" name="confirma-senha" id="confirma-senha"
+                    placeholder="Confirmar Senha" required>
+                <!-- Botão para enviar o formulário -->
+                <button class="botao__cadastro__hospede" type="submit" onsubmit="">Criar Conta</button>
+            </form>
         </section>
-      </main>
-  
-    <footer>       
-        
+    </main>
+
+    <!-- inicio footer -->
+    <footer>
+
         <section class="footer__contato">
             <div>
                 <h2>Fale Conosco</h2>
             </div>
             <div>
                 <p>Telefone</p>
-            </div> 
+            </div>
             <div>
                 <p>+55 48 99999-0000</p>
-            </div>                                        
+            </div>
         </section>
 
         <section class="footer__endereco">
@@ -84,7 +101,7 @@
                     Cidade, Estado, Brasil<br>
                     CEP – 80000-000
                 </p>
-            </div>                                        
+            </div>
         </section>
 
         <section class="footer__redes">
@@ -93,8 +110,8 @@
             </div>
             <div>
                 <p>Siga-nos</p>
-            </div>                                 
-                    
+            </div>
+
             <div>
                 <span class="footer__icon">
                     <a href="https://www.instagram.com/" target="_blank">
@@ -104,10 +121,10 @@
                     </a>
                 </span>
                 <span class="footer__icon">
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <span>
-                            <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-                        </span>
+                    <a href="https://www.facebook.com/" target="_blank"></a>
+                    <span>
+                        <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+                    </span>
                     </a>
                 </span>
                 <span class="footer__icon">
@@ -118,13 +135,14 @@
                     </a>
                 </span>
             </div>
-                        
+
         </section>
-        
+
         <div class="footer__copyright">
             <h2>&copy;2022 - Todos os direitos reservados</h2>
         </div>
 
     </footer>
 </body>
+
 </html>

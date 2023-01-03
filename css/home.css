@@ -45,10 +45,6 @@ header {
     height: 15%;
 }
 
-button {
-    background-color: var(--laranja);
-}
-
 nav {
     background-color: var(--yellow);
     text-align: center;
