@@ -1,176 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../imagens/Logo.png"/>
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/acomodacao.css">
-        <link rel="stylesheet" href="./css/hotel.css">
-        <link rel="stylesheet" href="./css/gastronomia.css">
-        <link rel="stylesheet" href="./css/footer.css">
-        <link rel="stylesheet" href="./css/contato.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/Logo.png" />
 
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Hotel T.Ex</title>
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/acomodacao.css">
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="stylesheet" href="../css/gastronomia.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/home.css">
 
-    <body>
-        <header>
-            <section class="header__titulos">
-                <img src="./imagens/Logo.png" alt="logo" width="200px">
-                <div class="header__titulo--hotel">
-                    <p>Hotel T.Ex Beach</p>
-                </div>
-                <div class="header__usuario">
-                    <div class="header__titulos--usuario">
-                        <p>Olá usuário</p>
-                        <button>Sair</button>
-                        <!-- <i class="fa fa-sign-in fa-5x" aria-hidden="true"></i> -->
-                    </div>
-                </div>
-            </section>
-            <div class="header__cadastro">
-                <a href="./cadastro_hospede.html">Cadastre-se</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hotel T.Ex</title>
+</head>
+
+<body>
+    <header>
+        <section class="header__titulos">
+            <img src="../imagens/Logo.png" alt="logo" width="200px">
+            <div class="header__titulo--hotel">
+                <p>Hotel T.Ex Beach</p>
             </div>
-        </header>
-        <!-- inicio navbar -->
-        <nav class="navbar">
-            <a href="../index.html">Inicio</a>
-            <a href="#hotel">Nosso Hotel</a>
-            <a href="../pages/acomodacao.html">Acomodações</a>
-            <a href="#gastronomia">Gastronomia</a>
-        </nav> 
-
-        <!-- inicio main -->
-        <main>
-            <section id="hotel" class="hotel__container">
-                <div>
-                    <h1>Contato</h1>
-                    <p>Deseja saber algo sobre o Hotel T.EX? Preencha os campos abaixo e envie sua mensagem.</p>
-                    <p>Em breve, alguém da nossa equipe entrará em contato. Muito obrigado.</p>
-                </div>                   
-            </section>
-
-            <section>
-                    <!-- Início do formulário -->
-                <form>
-                    <fieldset>
-                        <!-- Campo do nome-->
-                        <div>
-                            <label for="name">Nome:</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
-                        </div>
-
-                        <!-- Campo de email -->
-                        <div>
-                            <label for="email">E-mail:</label>
-                            <input type="email" name="email" id="email" placeholder="E-mail" required>
-                        </div>
-                        
-                        <!-- Campo de Telefone -->
-                        <div>
-                            <label for="phone">Telefone:</label>
-                            <input type="tel" name="phone" id="phone" placeholder="(xx)9xxxx-xxxx" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" required>
-                        </div>
-                        
-                        <!-- Campo de assunto -->
-                        <div>
-                            <label for="assunto">Assunto:</label>
-                            <select name="assunto" id="assunto" required>
-                                <option selected disabled value="">Selecione</option>
-                                <option>opçao 1</option>
-                                <option>opçao 2</option>
-                                <option>opçao 3</option>
-                            </select>
-                        </div>                        
-                    
-                        <!-- Caixa de texto -->
-                        <div>
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea rows="6" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
-                        </div>
-                    </fieldset>
-
-                    <!-- Botão para enviar o formulário -->
-                    <button class="botao" type="submit" onsubmit="">Concluído</button>
-                </form>
-            </section>
-        </main>
-        
-        <!-- inicio footer -->
-        <footer>
-        
-            <section class="footer__contato">
-                <div>
-                    <h2>Fale Conosco</h2>
+            <div class="header__usuario">
+                <div class="header__titulos--usuario">
+                    <p>Olá usuário</p>
+                    <button>Sair</button>
+                    <!-- <i class="fa fa-sign-in fa-5x" aria-hidden="true"></i> -->
                 </div>
-                <div>
-                    <p>Telefone</p>
-                </div>
-                <div>
-                    <p>+55 48 99999-0000</p>
-                </div>
-            </section>
-        
-            <section class="footer__endereco">
-                <div>
-                    <h2>Endereço</h2>
-                </div>
-                <div>
-                    <p>
-                        Rua João de Tal, 000<br>
-                        Cidade, Estado, Brasil<br>
-                        CEP – 80000-000
-                    </p>
-                </div>
-            </section>
-        
-            <section class="footer__redes">
-                <div>
-                    <h2>Conte-nos sobre sua experiência.</h2>
-                </div>
-                <div>
-                    <p>Siga-nos</p>
-                </div>
-        
-                <div>
-                    <span class="footer__icon">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <span>
-                                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </span>
-                    <span class="footer__icon">
-                        <a href="https://www.facebook.com/" target="_blank"></a>
-                            <span>
-                                <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </span>
-                    <span class="footer__icon">
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <span>
-                                <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </span>
-                </div>
-        
-            </section>
-        
-            <div class="footer__copyright">
-                <h2>&copy;2022 - Todos os direitos reservados</h2>
             </div>
-            
-        </footer>
-    </body>
-            
+        </section>
+        <div class="header__cadastro">
+            <a href="./cadastro_hospede.html">Cadastre-se</a>
+        </div>
+    </header>
+    <!-- inicio navbar -->
+    <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="#hotel">Nosso Hotel</a>
+        <a href="../pages/acomodacao.html">Acomodações</a>
+        <a href="#gastronomia">Gastronomia</a>
+        <a href="./contato.html">Contato</a>
+    </nav>
+
+    <!-- inicio main -->
+    <main>
+        <section id="hotel" class="contato__container">
+            <h1>Contato</h1>
+            <p>Deseja saber algo sobre o Hotel T.EX? Preencha os campos abaixo e envie sua mensagem.</p>
+            <p>Em breve, alguém da nossa equipe entrará em contato. Muito obrigado.</p>
+            <!-- Início do formulário -->
+            <form class="form__contato">
+                <!-- Campo do nome-->
+                <input class="input__contato__hospede" type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+
+                <!-- Campo de email -->
+                <input class="input__contato__hospede" type="email" name="email" id="email" placeholder="E-mail" required>
+
+                <!-- Campo de Telefone -->
+                <input  class="input__contato__hospede" type="tel" name="phone" id="phone" placeholder="(xx)9xxxx-xxxx"
+                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" required>
+
+                <!-- Campo de assunto -->
+                <select class="input__contato__hospede " name="assunto" id="assunto" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Financeiro</option>
+                    <option>Comercial</option>
+                    <option>Sac</option>
+                </select>
+
+                <!-- Caixa de texto -->
+                <textarea class="input__contato__hospede" rows="6" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+
+                <!-- Botão para enviar o formulário -->
+                <button class="botao__contato__hospede" type="submit" onsubmit="">Enviar Contato</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- inicio footer -->
+    <footer>
+
+        <section class="footer__contato">
+            <div>
+                <h2>Fale Conosco</h2>
+            </div>
+            <div>
+                <p>Telefone</p>
+            </div>
+            <div>
+                <p>+55 48 99999-0000</p>
+            </div>
+        </section>
+
+        <section class="footer__endereco">
+            <div>
+                <h2>Endereço</h2>
+            </div>
+            <div>
+                <p>
+                    Rua João de Tal, 000<br>
+                    Cidade, Estado, Brasil<br>
+                    CEP – 80000-000
+                </p>
+            </div>
+        </section>
+
+        <section class="footer__redes">
+            <div>
+                <h2>Conte-nos sobre sua experiência.</h2>
+            </div>
+            <div>
+                <p>Siga-nos</p>
+            </div>
+
+            <div>
+                <span class="footer__icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://www.facebook.com/" target="_blank"></a>
+                    <span>
+                        <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+                    </span>
+                    </a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <span>
+                            <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </span>
+            </div>
+
+        </section>
+
+        <div class="footer__copyright">
+            <h2>&copy;2022 - Todos os direitos reservados</h2>
+        </div>
+
+    </footer>
+</body>
+
 </html>
