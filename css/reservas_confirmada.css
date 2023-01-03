@@ -1,14 +1,3 @@
- .header__titulos--usuario button {
-   padding: 1rem 3rem;
-   border: none;
-   background-color: var(--laranja);
-   color: #fff;
-   font-size: 1.8rem;
-   font-weight: 700;
-   cursor: pointer;
-   border-radius: 1rem;
- }
-
  .confirma__texto {
    width: 100%;
    margin: 5rem auto;
