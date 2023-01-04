@@ -16,7 +16,7 @@
  }
  .hotel__linha_horizontal{
   width: 80%;
-  height: 0.5rem;
+  height: 0.2rem;
   background: #EF5A2E;
   margin: 0 auto;
   border: none;
@@ -127,7 +127,7 @@
   width: 10%;
 }
 
-.hotel__linha_vertical-reservas span {
+.hotel__linha_vertical-reservas span:hover {
   width: 0.2rem;
   height: 100%;
   background-color: #00c1ea;
@@ -139,7 +139,11 @@
 .hotel__card{
     display: flex;
     margin-bottom: 2%;
-    /* border: 1px solid #000;  */
+     /* border: 1px solid #000;   */
+     background-color: #fff;
+     border-radius: 2%;
+     box-shadow:5px 5px rgb(221, 216, 216);
+     padding-bottom: 1rem;
 }
 
 .hotel__card_image{
