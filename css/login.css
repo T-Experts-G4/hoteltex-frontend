@@ -48,7 +48,7 @@ body {
 }
 
 .imagemPraia {
-    background-image: url(./imagens/praia.jpg);
+    background-image: url(../imagens/praia.jpg);
     background-size: 550px 400px;
     background-repeat: no-repeat;
 }
