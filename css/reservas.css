@@ -1,9 +1,9 @@
-  
+
   .hotel__minha-reserva{
     margin-top: 8vh;
   }
 
-  .hotel__minha-reserva h2{
+   .hotel__minha-reserva h2{
     font-size: 2.8rem;
     margin-bottom: 2vh;
   }
@@ -14,7 +14,13 @@
     padding: 0px 20px 20px 20px;
     
  }
-
+ .hotel__linha_horizontal{
+  width: 80%;
+  height: 0.5rem;
+  background: #EF5A2E;
+  margin: 0 auto;
+  border: none;
+ }
  .hotel__minha-reserva_campos li{
     margin: 0px 10px 0px 10px;
     display: inline-flex;
@@ -30,13 +36,13 @@
  .hotel__minha-reserva_campos li select{
     margin: 0px 10px 0px 10px;
     display: block;
-    border: 2px solid var(--black);
+    border: 2px solid var(--black); 
  }
  
  .hotel__minha-reserva_campos li input{
     margin: 0px 10px 0px 10px;
     display: block;
-    border: 2px solid var(--black);
+    border: 2px solid var(--black); 
  }
 
  .hotel__lado_quartos{
@@ -53,6 +59,7 @@
 
  .hotel__container-quarto-resumo{
     display: flex;
+    justify-content: space-between;
  }
 
  .hotel__lado_quartos{
@@ -63,24 +70,38 @@
 
  .hotel__lado_resumo{
     flex-direction: column;
-    margin-left:  2vh;
+    /* margin-left:  2vh;
     margin-right: 0;
-    margin-top: 6vh;
-    border: 2px solid #000;   
+    margin-top: 6vh; */
+    border: 1px solid #000;  
     max-width: 100%; 
+    max-height: 100%;
  }
 .hotel__lado_resumo a{
-    display: block;
+    display: flex;
     padding: 10%;
     text-decoration: underline;
     font-weight: 700;
+    text-justify: left;
 }
 
 .hotel__lado_resumo button{
-    display: block;
-    margin-left: 40%;
-    padding: 2%;
+    display: flex;
+    padding: 1rem 1rem;
+    border: none;
+    padding: 13%;
+    margin-left: 10%;
+    background-color: var(--laranja);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
     cursor: pointer;
+    border-radius: 1rem;
+}
+
+.hotel__lado_resumo button a{
+  margin: 0;
+  padding: 0;
 }
 
 .hotel__lado_resumo h3 {
@@ -89,14 +110,31 @@
 }
 .hotel__lado_resumo-info{
     margin: 20% 10% 20% 10%;
-    border: 2px solid #000;    
+    border: 2px solid #000;  
+
 }
 
 .hotel__lado_resumo-info span{
-    display: block;
+    display: flex;
     padding: 0.4rem;
     font-weight: bold;
 }
+
+.hotel__linha_vertical-reservas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+}
+
+.hotel__linha_vertical-reservas span {
+  width: 0.2rem;
+  height: 100%;
+  background-color: #00c1ea;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
 
 .hotel__card{
     display: flex;
@@ -107,6 +145,11 @@
 .hotel__card_image{
    display: block;
    padding: 1rem;
+}
+
+.hotel__card_image img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .hotel__card_detalhes span{
@@ -121,11 +164,13 @@
 
 .hotel__titulo_card{
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .hotel__quarto_valor{
     font-weight: 600;
 }
+
  ul {
     list-style: none;
  }
