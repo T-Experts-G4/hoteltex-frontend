@@ -1,95 +1,46 @@
 
 /*Gastronomia*/
 
-.gastro_titulo {   
+.gastronomia_titulo {   
     width: 100%;
-    text-align: center;
-    font-size: 4rem;
+    text-align: center;    font-size: 4rem;
 }
-
-div.img_gastro{
-    
+div.gastronomia_img{    
     display: flex;
     padding: 1%;
     column-gap: 2rem;
     justify-content: center;
-
-
 }
-div.img_gastro div{
+div.gastronomia_img div{
     width: 100%;
     max-width: 100%;
     margin: 2rem 0;
     border-radius: 5px;
-
-
 }
-div.img_gastro div img{
+div.gastronomia_img div img{
     max-width: 400px;
-    border-radius: 20px;
-    
-
+    border-radius: 20px; 
 }
-/*div.restaurante_bar{
-    display: grid;
-    grid-column: 50%;
- /* display: flex;
-  flex-direction: column row;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  margin-left: 20px;
-  column-gap: 20px;
- 
-
-}
-
-div.restaurante_bar  div img{
-    max-width: 600px;
-    border-radius: 20px;
-
-}*/
-.container01{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 20px;
-
-}
-.container01 div{
-   /* background-color: #e2ebf6;
-    padding: 3%;
-    width: 50%;
-    margin: 10vh auto;
-    border-radius: 12px;*/
-}
-.box01 {
-    margin-top: 10%;
-    height: 30%;
-    background-color: #e2ebf6;
-    padding: 3%;
-    width: 90%;
-    border-radius: 12px;
-    box-shadow: 10px 10px 2px rgb(184, 170, 170);
-
-}
-.box02{
-    margin-top: 10%;
-    height: 30%;
-    background-color: #e2ebf6;
-    padding: 3%;
-    width: 90%;
-    border-radius: 12px;
-    box-shadow: 10px 10px 2px rgb(184, 170, 170);
-
-}
-
-
-
-.container02{
+.gastronomia_container01{
     margin-left: 20px;
     margin-top: 5%;
     display: grid;
     grid-template-columns: 50% 50%;
-
+}
+.gastronomia_box01 {
+    margin-top: 10%;
+    height: 30%;
+    background-color: #e2ebf6;
+    padding: 3%;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 10px 10px 2px rgb(184, 170, 170);
+}
+.gastronomia_container01{
+    margin-left: 20px;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
  
 
