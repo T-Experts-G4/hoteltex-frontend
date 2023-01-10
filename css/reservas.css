@@ -18,13 +18,9 @@
     padding: 0px 20px 20px 20px;
     
  }
- .hotel__linha_horizontal{
-  width: 80%;
-  height: 0.2rem;
-  background: #EF5A2E;
-  margin: 0 auto;
-  border: none;
- }
+
+
+ 
  .hotel__minha-reserva_campos li{
     margin: 0px 10px 0px 10px;
     display: inline-flex;
@@ -47,7 +43,31 @@
     margin: 0px 10px 0px 10px;
     display: block;
     border: 2px solid var(--black); 
+ } 
+ 
+ .hotel__linha_horizontal{
+   width: 80%;
+   height: 0.2rem;
+   background: #EF5A2E;
+   margin: 0 auto;
+   border: none;
+  }
+  
+  .hotel__linha_vertical-reservas {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 10%;
  }
+ 
+ .hotel__linha_vertical-reservas span:hover {
+   width: 0.2rem;
+   height: 100%;
+   background-color: #00c1ea;
+   margin: 2rem;
+   border-radius: 1rem;
+ }
+ 
 
  .hotel__lado_quartos{
     position: relative;
@@ -125,20 +145,6 @@
     font-weight: bold;
 }
 
-.hotel__linha_vertical-reservas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 10%;
-}
-
-.hotel__linha_vertical-reservas span:hover {
-  width: 0.2rem;
-  height: 100%;
-  background-color: #00c1ea;
-  margin: 2rem;
-  border-radius: 1rem;
-}
 
 
 .hotel__card{

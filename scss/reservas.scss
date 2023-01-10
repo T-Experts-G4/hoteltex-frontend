@@ -1,0 +1,179 @@
+@use 'variaveis' ;
+/*  RESERVAS  */
+
+.hotel__minha-reserva {
+  margin-top: 8vh;
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2vh;
+  }
+  &_campos{
+    li {
+        display: inline-flex;
+        position: relative;
+        flex-direction: column;
+        margin: 0px 10px 0px 10px;
+
+        label {
+            margin: 0px 10px 0px 10px;
+            display: block;
+        }
+        select {
+            margin: 0px 10px 0px 10px;
+            display: block;
+            border: 2px solid variaveis.$preto;
+        }
+        input {
+            margin: 0px 10px 0px 10px;
+            display: block;
+            border: 2px solid variaveis.$preto;
+        }
+    }
+}
+}
+
+.hotel__minha-reserva2 {
+  h2 {
+    margin-left: 2rem;
+  }
+}
+
+.hotel__linha{ 
+    &_horizontal{
+    width: 80%;
+    height: 0.2rem;
+    background: variaveis.$laranja;
+    margin: 0 auto;
+    border: none;
+   }
+   &_vertical-reservas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+  }
+   &_vertical-reservas span:hover {
+    width: 0.2rem;
+    height: 100%;
+    background-color: variaveis.$azul;
+    margin: 2rem;
+    border-radius: 1rem;
+  }
+}
+
+
+.hotel__container-quarto-resumo{
+    display: flex;
+    justify-content: space-between;
+ }   
+
+.hotel__lado_quartos{
+    position: relative;
+    flex-direction: column;
+    margin-right: 3vh;
+    max-width: 70%;
+    hr{
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+     }
+     &_titulo{
+        padding: 3px;
+      }
+ }
+ 
+ .hotel__lado_resumo{
+    flex-direction: column;
+    border: 1px solid variaveis.$preto;  
+    max-width: 100%; 
+    max-height: 100%;
+    background-color: variaveis.$branco;
+
+    a{
+        display: flex;
+    padding: 10%;
+    text-decoration: underline;
+    font-weight: 700;
+    text-justify: left;
+    }
+
+    button{
+        display: flex;
+        padding: 1rem 1rem;
+        border: none;
+        padding: 13%;
+        margin-left: 10%;
+        background-color: variaveis.$laranja;
+        color: variaveis.$branco;
+        font-size: 1.6rem;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 1rem;
+
+        a{
+            margin: 0;
+            padding: 0;
+          }
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    padding: 7rem 3rem 0rem;
+    }
+
+    &-info{
+        margin: 20% 10% 20% 10%;
+        border: 2px solid variaveis.$preto;  
+
+        span {
+            display: flex;
+    padding: 0.4rem;
+    font-weight: bold;
+        }
+    }
+ }
+
+   
+.hotel__card{
+    display: flex;
+    margin-bottom: 2%;
+     background-color: variaveis.$branco;
+     border-radius: 2%;
+     box-shadow:5px 5px variaveis.$cinza;
+     padding-bottom: 1rem;
+
+     &_image{
+        display: block;
+        padding: 1rem;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+          }
+     }
+
+     &_detalhes{ 
+        span{
+        display: block;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    input {
+        margin-left: 1rem;
+    }
+}
+}
+.hotel__titulo_card{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.hotel__quarto_valor{
+    font-weight: 600;
+}
+
+ ul {
+    list-style: none;
+ }
+
+
