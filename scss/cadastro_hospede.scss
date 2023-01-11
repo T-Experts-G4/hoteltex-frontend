@@ -1,3 +1,5 @@
+@import 'components/variaveis';
+
 .cadastro__hospede__container{
     display: flex;
     flex-direction: column;
@@ -19,10 +21,10 @@
 .botao__cadastro__hospede{
     margin: 10px;
     padding: 15px;
-    background-color: #FF5F00;
-    color: #fff;
+    background-color: $laranja;
+    color: $branco;
     cursor: pointer;
 }
 .botao__cadastro__hospede:hover{
-    background-color: #f9792e;
+    background-color: $laranja-claro;
 }
