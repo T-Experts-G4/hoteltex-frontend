@@ -1,6 +1,8 @@
+@use './section/header.scss';
 @use 'home';
 @use 'acomodacao';
 @use 'reservas';
-@use 'login';
-@use 'loginFuncionarios';
+// @use 'login';
+// @use 'loginFuncionarios';
 @use 'gastronomia';
+@use './section/footer.scss';
