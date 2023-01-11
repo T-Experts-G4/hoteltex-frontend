@@ -1,13 +1,25 @@
-$laranja-claro: #FFE181;
-$laranja: #FF5F00;
-$amarelo: #FFC10E;
+$laranja-claro: #ffe181;
+$laranja: #ff5f00;
+$amarelo: #ffc10e;
 $preto: #000;
 $azul: #00c1ea;
 $branco: #fff;
 $cinza: rgb(221, 216, 216);
-$corBodyLogin: #FFF5EB;
+$corBodyLogin: #fff5eb;
 $sombreamento: #999;
 $hoverRed: #ff0000;
 
 $bgPraia: '../imagens/praia.jpg';
 $bgFuncionario: '../imagens/funcionario.jpg';
+
+// Fonte titulo
+$fonteTitulo: 4.8rem;
+$pesoTitulo: 500;
+$corTitulo: $preto;
+
+// Fonte texto
+$fonteTexto: 1.8rem;
+$pesoTexto: 100;
+$alturaLinha: 2.4rem;
+$alinhamentoTexto: justify;
+$corTexto: $preto;
