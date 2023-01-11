@@ -1,0 +1,107 @@
+@use 'variaveis';
+
+.container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div__image {
+    width: 15%;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.div__titulo {
+    color: variaveis.$laranja;
+    width: 90%;
+    padding-top: 60px;
+    text-align: start;
+}
+
+body {
+    background-color: variaveis.$corBodyLogin;
+    font-family: sans-serif;
+}
+
+.estiloLogin {
+    padding: 3%;
+    width: 30%;
+    margin: 10vh auto;
+    border-radius: 12px;
+    border: 2px solid var(--black);
+    box-shadow: 10px 10px 2px variaveis.$sombreamento;
+}
+
+.imagemPraia {
+    background-image: url(variaveis.$bgPraia);
+    background-size: 550px 400px;
+    background-repeat: no-repeat;
+}
+
+.imagemFuncionario {
+    background-image: url(variaveis.$bgFuncionario);
+    background-size: 520px 400px;
+    background-repeat: no-repeat;
+}
+
+.estiloFonte {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.estilo__fonte--input {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.estiloInput {
+    font-weight: bold;
+    margin: 0.7rem 0;
+    padding: 0.4rem;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background-color: var(--laranja-claro);
+}
+
+.centralizaBotao {
+    display: flex;
+    justify-content: center;
+}
+
+.estiloBotao {
+    padding: 4% 8%;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--black);
+    box-shadow: 2px 2px 3px;
+    font-size: 1.2rem;
+}
+
+.centralizaSenha {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 50px;
+}
+
+.estiloSenha:hover, a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.centralizaLogin {
+    width: 35%;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.ancoraBotao {
+    text-decoration: none;
+    color: variaveis.$preto;
+}
+
