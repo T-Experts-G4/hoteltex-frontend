@@ -1,7 +1,9 @@
+@use "../variaveis.scss" as *;
+
 .header__titulos--usuario button {
     padding: 1rem 3rem;
     border: none;
-    background-color: var(--laranja);
+    background-color: $laranja;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 700;
