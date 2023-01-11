@@ -1,3 +1,4 @@
+@import 'components/variaveis';
 
 .contato__container{
     display: flex;
@@ -15,17 +16,18 @@
 .input__contato__hospede{
     padding: 15px;
     margin: 10px;
+    
  }
-
+ 
  .botao__contato__hospede{
     margin: 10px;
     padding: 15px;
-    background-color: #FF5F00;
-    color: #fff;
+    background-color: $laranja;
+    color: $branco;
     cursor: pointer;
 }
 .botao__contato__hospede:hover{
-    background-color: #f9792e;
+    background-color: $laranja-claro;
 }
 /* Elementos de tags <input>, <Select>, <textarea> e <button> */
 input,
@@ -35,17 +37,16 @@ button {
     padding: 20px 10px;
     font-size: 1em;
     border-radius: 12px;
-    border: 1px solid #CCBBFF;
+    border: 1px solid $borderInput;
     box-sizing: border-box;
 }
 input, select, textarea {
     width: 100%;
 }
 
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
 input:focus,
 select:focus,
 textarea:focus {
-    background: #E0E0F8;
+    background: $focusInput;
 }
 

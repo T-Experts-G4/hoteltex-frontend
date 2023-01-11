@@ -1,0 +1,87 @@
+.contato__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.contato__container p {
+  margin: 15px 0 20px 0;
+}
+
+.form__contato {
+  max-width: 500px;
+}
+
+.input__contato__hospede {
+  padding: 15px;
+  margin: 10px;
+}
+
+.botao__contato__hospede {
+  margin: 10px;
+  padding: 15px;
+  background-color: #fc5d01;
+  color: #fff;
+  cursor: pointer;
+}
+
+.botao__contato__hospede:hover {
+  background-color: #f8782e;
+}
+
+/* Elementos de tags <input>, <Select>, <textarea> e <button> */
+input,
+select,
+textarea,
+button {
+  padding: 20px 10px;
+  font-size: 1em;
+  border-radius: 12px;
+  border: 1px solid #CCBBFF;
+  box-sizing: border-box;
+}
+
+input, select, textarea {
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: #ededfa;
+}
+
+.cadastro__hospede__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.cadastro__hospede__container p {
+  margin: 15px 0 0 0;
+}
+
+.form__cadastro__hospede {
+  max-width: 500px;
+}
+
+.input__cadastro__hospede {
+  padding: 15px;
+  margin: 10px;
+}
+
+.botao__cadastro__hospede {
+  margin: 10px;
+  padding: 15px;
+  background-color: #fc5d01;
+  color: #fff;
+  cursor: pointer;
+}
+
+.botao__cadastro__hospede:hover {
+  background-color: #f8782e;
+}
+
+/*# sourceMappingURL=index.css.map */
