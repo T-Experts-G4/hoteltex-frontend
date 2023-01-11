@@ -258,4 +258,54 @@ ul {
   list-style: none;
 }
 
+/*Gastronomia*/
+.gastronomia_titulo {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+div.gastronomia_img {
+  display: flex;
+  padding: 1%;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+div.gastronomia_img div {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  border-radius: 5px;
+}
+
+div.gastronomia_img div img {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.gastronomia_container01 {
+  margin-left: 20px;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.gastronomia_box01 {
+  margin-top: 10%;
+  height: 30%;
+  background-color: #e2ebf6;
+  padding: 3%;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 10px 10px 2px rgb(184, 170, 170);
+}
+
+.gastronomia_container01 {
+  margin-left: 20px;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 /*# sourceMappingURL=styles.css.map */
