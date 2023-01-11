@@ -31,23 +31,24 @@
     @include texto();
     margin-bottom: 2rem;
   }
-  &__carrossel {
+}
+  .sobre__carrossel {
     width: 100%;
     @include displayFlex100();
     flex-direction: column;
-  }
-  &__carrossel-titulo {
+  
+  &-titulo {
     @include titulo();
     margin-bottom: 2rem;
   }
-  &__carrossel-conteudo {
+  &-conteudo {
     width: 100%;
     margin: $margem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
-  &__carrossel-conteudo-imagem {
+  &-conteudo-imagem {
     width: 100%;
     @include displayFlex100();
     flex-direction: column;
