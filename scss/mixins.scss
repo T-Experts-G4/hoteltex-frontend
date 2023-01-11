@@ -1,14 +1,30 @@
 @use "./variaveis.scss" as *;
 
-@mixin displayFlex () {
+// display flex
+
+@mixin displayFlex100 () {
     display: flex;
-    align-items: $align_itens;
-    justify-content: $justify_content;  
+    align-items: center;
+    justify-content: center;
+    margin: $margem;  
 }
+
+@mixin displayFlex90 () {
+    width: 90%;
+    @include displayFlex100();
+}
+
+@mixin displayFlex80 () {
+    width: 80%;
+    @include displayFlex100(); 
+}
+
+// ========================================
 
 @mixin titulo () {
     font-size: $fonteTitulo;
     font-weight: $pesoTitulo;
+    text-align: center;
     color: $corTitulo;
 }
 
@@ -18,5 +34,9 @@
     line-height: $alturaLinha;
     text-align: $alinhamentoTexto;
     color: $corTitulo;
+}
+
+@mixin botao () {
+    
 }
 

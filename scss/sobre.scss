@@ -1,5 +1,5 @@
-@use "variaveis";
-@import "./mixins.scss";
+@use './variaveis.scss' as *;
+@import './mixins.scss';
 
 .sobre {
   width: 100%;
@@ -11,10 +11,7 @@
   }
   &__conteudo {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include displayFlex100();
   }
   &__conteudo-imagem {
     width: 30%;
@@ -34,51 +31,45 @@
   }
   &__carrossel {
     width: 100%;
-    display: flex;
+    @include displayFlex100();
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   &__carrossel-titulo {
-    font-size: 4rem;
-    font-weight: 700;
-    text-align: center;
+    @include titulo();
     margin-bottom: 2rem;
   }
   &__carrossel-conteudo {
     width: 100%;
-    margin: 0 auto;
+    margin: $margem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
   &__carrossel-conteudo-imagem {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
+    @include displayFlex100();
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 90%;
-      margin: 0 auto;
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    @include displayFlex90();
+  }
   .sobre__conteudo {
     flex-direction: column;
     margin: 0 auto;
+
+    &-imagem {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    &-texto {
+      width: 100%;
+    }
   }
-  .sobre__conteudo-imagem {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  .sobre__conteudo-texto {
-    width: 100%;
-  }
-  .sobre__carrossel-conteudo {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 3rem;
-  }
+    .sobre__carrossel-conteudo {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 3rem;
+    }
 }

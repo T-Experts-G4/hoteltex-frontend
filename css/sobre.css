@@ -5,16 +5,17 @@
 .sobre__titulo {
   font-size: 4.8rem;
   font-weight: 500;
+  text-align: center;
   color: #000;
   text-align: center;
   margin-bottom: 2rem;
 }
 .sobre__conteudo {
   width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 .sobre__conteudo-imagem {
   width: 30%;
@@ -39,14 +40,16 @@
 .sobre__carrossel {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
 .sobre__carrossel-titulo {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 4.8rem;
+  font-weight: 500;
   text-align: center;
+  color: #000;
   margin-bottom: 2rem;
 }
 .sobre__carrossel-conteudo {
@@ -58,16 +61,19 @@
 }
 .sobre__carrossel-conteudo-imagem {
   width: 100%;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
   }
   .sobre__conteudo {
