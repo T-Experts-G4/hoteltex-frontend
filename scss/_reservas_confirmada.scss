@@ -1,0 +1,50 @@
+ .confirma__texto {
+   width: 100%;
+   margin: 5rem auto;
+ }
+
+ .confirma__texto h2 {
+   text-align: center;
+   margin: 3rem;
+   font-size: 3rem;
+   font-weight: 700;
+   color: #333;
+   text-transform: uppercase;
+ }
+
+ .confirma__texto p {
+   text-align: center;
+   font-size: 1.8rem;
+   color: #333;
+   margin: 3rem;
+ }
+
+
+ .confirma__agradecimento {
+   width: 100%;
+   margin: 5rem auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .confirma__agradecimento button {
+   border: none;
+   margin: 3rem 0;
+   background: none;
+ }
+
+ .confirma__agradecimento button a {
+   padding: 2rem 6rem;
+   text-decoration: none;
+   background-color: var(--laranja);
+   color: #fff;
+   font-size: 1.8rem;
+   font-weight: 700;
+   cursor: pointer;
+ }
+
+ .confirma__agradecimento button a:hover {
+   background-color: var(--laranja-claro);
+   color: #000;
+ }
