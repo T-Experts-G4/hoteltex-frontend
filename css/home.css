@@ -2,7 +2,7 @@
 .header__titulos--usuario button {
   padding: 1rem 3rem;
   border: none;
-  background-color: var(--laranja);
+  background-color: #ff5f00;
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
@@ -658,7 +658,7 @@ header {
 .hotel__linha_horizontal {
   width: 80%;
   height: 0.2rem;
-  background: #FF5F00;
+  background: #ff5f00;
   margin: 0 auto;
   border: none;
 }
@@ -715,7 +715,7 @@ header {
   border: none;
   padding: 13%;
   margin-left: 10%;
-  background-color: #FF5F00;
+  background-color: #ff5f00;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
