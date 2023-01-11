@@ -1,13 +1,11 @@
 @use "variaveis";
+@import "./mixins.scss";
 
 .sobre {
   width: 100%;
   margin: 3rem auto;
   &__titulo {
-    font: {
-      size: 4.8rem;
-      weight: 700;
-    }
+    @include titulo();
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -31,15 +29,11 @@
     margin-right: 2rem;
   }
   &__conteudo-texto-descricao {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.4rem;
+    @include texto();
     margin-bottom: 2rem;
-    text-align: justify;
   }
   &__carrossel {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
