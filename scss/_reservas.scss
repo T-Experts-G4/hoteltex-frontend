@@ -1,4 +1,5 @@
 @use 'variaveis' ;
+@use 'mixins';
 /*  RESERVAS  */
 
 .hotel__minha-reserva {
@@ -16,17 +17,14 @@
         margin: 0px 10px 0px 10px;
 
         label {
-            margin: 0px 10px 0px 10px;
-            display: block;
+            @include mixins.reservacampos;
         }
         select {
-            margin: 0px 10px 0px 10px;
-            display: block;
+            @include mixins.reservacampos;
             border: 2px solid variaveis.$preto;
         }
         input {
-            margin: 0px 10px 0px 10px;
-            display: block;
+            @include mixins.reservacampos;
             border: 2px solid variaveis.$preto;
         }
     }
