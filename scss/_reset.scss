@@ -1,0 +1,65 @@
+$color_1: #263238;
+$font-family_1: 'Noto Sans',sans-serif;
+$background-color_1: #f2f8ff;
+
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap";
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 62.5%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+body {
+	background-color: $background-color_1;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+q {
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
