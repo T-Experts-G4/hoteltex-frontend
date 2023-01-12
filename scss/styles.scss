@@ -2,7 +2,8 @@
 @use 'home';
 @use 'acomodacao';
 @use 'reservas';
-// @use 'login';
-// @use 'loginFuncionarios';
 @use 'gastronomia';
 @use './section/footer.scss';
+@use 'telasDeLogin';
+@use 'gastronomia';
+@use 'reservas_confirmada';
