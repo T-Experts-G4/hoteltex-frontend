@@ -6,6 +6,9 @@
 @use '_reservas';
 @use '_gastronomia';
 @use '_telasDeLogin';
-// @use '_gastronomia';
+
 @use '_reservas_confirmada';
 @use './_footer.scss';
+
+@use 'components/home_admin';
+@use 'components/reservas_admin';

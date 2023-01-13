@@ -1229,5 +1229,120 @@ footer a {
     padding: 1rem;
   }
 }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  min-height: 30rem;
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  font-size: 1.8rem;
+  background: var(--yellow);
+}
+
+.card__titulo h2 {
+  color: #333;
+}
+
+.card__conteudo {
+  height: 70%;
+}
+
+.card__conteudo p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card__detalhes {
+  height: 20%;
+}
+
+.card__detalhes a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background: var(--laranja);
+  border-radius: 1rem;
+}
+
+.reservas-titulo {
+  margin: 10px;
+  padding: 10px;
+}
+
+.reservas {
+  border: 1px solid orange;
+  margin: 3px;
+}
+
+.container__reservas {
+  border: 1px solid orange;
+  align-items: center;
+}
+
+.container__reservas ul.listlist {
+  display: flex;
+  padding: 0;
+}
+
+.container__reservas ul.container__reservas-list li {
+  /* font-size: 1.125rem; */
+  display: block;
+  /* margin-right: 24px; */
+  /* line-height: 1rem; */
+  /* border-radius: 12px 12px 12px 12px;   */
+  padding: 5px 3px;
+  /* background-color: #00FFFF; */
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.container__reservas ul.container__reservas-list span {
+  /* font-size: 1.125rem; */
+  display: block;
+  /* margin-right: 24px; */
+  /* line-height: 1rem; */
+  /* border-radius: 12px 12px 12px 12px;   */
+  padding: 5px 3px;
+  /* background-color: #00FFFF; */
+  white-space: nowrap;
+}
+
+.container__reservas-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.container__reservas ul.container__reservas-list li button {
+  padding: 0.6rem;
+  border: none;
+  background-color: var(--laranja);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
