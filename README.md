@@ -49,8 +49,6 @@
 - <img height="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" /> CSS
 - <img height="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> HTML 5
 
-Outras tecnologias como, banco de dados H2, spring security, jwt e react router.
-
 ## <img height="35px" src="https://img.icons8.com/fluency/96/null/requirement.png"/> Pré-requisitos
 - [Nodejs 18.xx](https://nodejs.org)
 
