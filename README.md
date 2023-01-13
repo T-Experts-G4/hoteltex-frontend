@@ -56,7 +56,6 @@ Outras tecnologias como, banco de dados H2, spring security, jwt e react router.
 
 ## <img src="https://cdn-icons-png.flaticon.com/512/3068/3068553.png" style="widht:30px; height:30px;" /> Executar / Testar
 
-Ao baixa / clona o projeto, no diretorio raiz havera dois diretorios principais, o client que ira conter o front end e o server nele estara o back end.
 > ## Executar
 
 > No terminal, clone o projeto:
