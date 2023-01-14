@@ -10,14 +10,19 @@
 }
 
 .div__titulo {
-  color: #FF5F00;
+  color: #fc5d01;
   width: 90%;
   padding-top: 60px;
   text-align: start;
 }
 
+.header__usuario {
+  display: flex;
+  width: 95%;
+}
+
 body {
-  background-color: #FFF5EB;
+  background-color: #fff5eb;
   font-family: sans-serif;
 }
 
