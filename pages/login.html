@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/telasDeLogin.css">
+    <script src="../js/login.js" async ></script>
 </head>
 <body>
     <header>
@@ -21,13 +22,13 @@
     </header>
     <div class="estiloLogin imagemPraia">
         <p class="estiloFonte">Login</p>
-        <form action="" method="get">
+        <form action="" method="post">
             <label class="estilo__fonte--input" for="nome_usuario">Email</label>
-            <input class="estiloInput" type="text" name="emailUsuario">
+            <input class="estiloInput" type="text" name="emailUsuario" id="user">
             <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
-            <input class="estiloInput " type="password" name="senhaUsuario">
+            <input class="estiloInput " type="password" name="senhaUsuario" id="password">
             <div class="centralizaBotao">
-                <button class="estiloBotao">Confirmar</button>
+                <button type="button" class="estiloBotao" id="btnLogin">Confirmar</button>
             </div>
         </form>
         <div class="centralizaSenha">
@@ -36,7 +37,7 @@
             </div>
             <div class="centralizaLogin">
                 <div class="loginHosp">
-                    <a class="ancoraLogin" href="./loginFuncionarios.html" target="_blank">Você é funcionário?</a>
+                    <a class="ancoraLogin" href="./loginFuncionarios.html">Você é funcionário?</a>
                 </div>
             </div>
         </div>
