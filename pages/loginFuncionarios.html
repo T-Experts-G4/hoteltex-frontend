@@ -30,13 +30,13 @@
     </header>
     <div class="estiloLogin imagemFuncionario">
         <p class="estiloFonte">Login - Funcionário</p>
-        <form action="" method="get">
+        <form action="" method="post">
             <label class="estilo__fonte--input" for="nome_usuario">Matrícula</label>
-            <input class="estiloInput" type="text" name="emailUsuario">
+            <input class="estiloInput" type="text" name="emailUsuario" id="user">
             <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
-            <input class="estiloInput " type="password" name="senhaUsuario">
+            <input class="estiloInput " type="password" name="senhaUsuario" id="password">
             <div class="centralizaBotao">
-                <button class="estiloBotao"><a class="ancoraBotao" href="./admin/home_admin.html">Confirmar</a></button>
+                <button type="button" class="estiloBotao"><a class="ancoraBotao" id="btnLoginFun">Confirmar</a></button>
             </div>
         </form>
         <div class="centralizaSenha">
@@ -45,7 +45,7 @@
             </div>
             <div class="centralizaLogin">
                 <div class="loginHosp">
-                    <a class="ancoraLogin" href="./login.html" target="_blank">Você é hóspede?</a>
+                    <a class="ancoraLogin" href="./login.html">Você é hóspede?</a>
                 </div>
             </div>
         </div>
