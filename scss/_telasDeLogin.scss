@@ -18,6 +18,11 @@
     text-align: start;
 }
 
+.header__usuario{
+  display: flex;
+  width: 95%;
+}
+
 body {
     background-color: variaveis.$corBodyLogin;
     font-family: sans-serif;
