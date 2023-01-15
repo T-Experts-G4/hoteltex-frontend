@@ -7,7 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/telasDeLogin.css">
-    <script src="../js/login.js" async ></script>
+    <script src="../js/login.js" async defer ></script>
 </head>
 <body>
     <header>
@@ -42,7 +42,7 @@
             <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
             <input class="estiloInput " type="password" name="senhaUsuario" id="password">
             <div class="centralizaBotao">
-                <button type="button" class="estiloBotao" id="btnLogin">Confirmar</button>
+                <button type="button" class="estiloBotao" id="btnLogin" onclick="testeLocal()">Confirmar</button>
             </div>
         </form>
         <div class="centralizaSenha">
