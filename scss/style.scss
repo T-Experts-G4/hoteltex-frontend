@@ -1,3 +1,4 @@
+// Pages
 @use './pages/form'; 
 @use './core/reset';
 @use './pages/home';
@@ -10,9 +11,14 @@
 @use './pages/home_admin';
 @use './pages/reservas_admin';
 
+//Layout
 @use './layout/footer';
 @use './layout/header';
 
+// Abstracts
 @use './abstracts/breakpoints';
 @use './abstracts/variaveis';
+
+//components
+@use './components/button'
 

@@ -13,22 +13,10 @@
 .form__width{
     max-width: 500px;
 }
- 
- .botao__form{
-    margin: 10px;
-    padding: 15px;
-    background-color: $laranja;
-    color: $branco;
-    cursor: pointer;
-}
-.botao__form:hover{
-    background-color: $laranja-claro;
-}
-/* Elementos de tags <input>, <Select>, <textarea> e <button> */
+
 input,
 select,
-textarea,
-button {
+textarea {
     padding: 15px;
     margin: 10px;
     font-size: 1em;
