@@ -1,4 +1,4 @@
-@use 'variaveis';
+@use '../abstracts/variaveis' as *;
 
 .container__header {
     display: flex;
@@ -12,7 +12,7 @@
 }
 
 .div__titulo {
-    color: variaveis.$laranja;
+    color: $laranja;
     width: 90%;
     padding-top: 60px;
     text-align: start;
@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: variaveis.$corBodyLogin;
+    background-color: $corBodyLogin;
     font-family: sans-serif;
 }
 
@@ -34,17 +34,17 @@ body {
     margin: 10vh auto;
     border-radius: 12px;
     border: 2px solid var(--black);
-    box-shadow: 10px 10px 2px variaveis.$sombreamento;
+    box-shadow: 10px 10px 2px $sombreamento;
 }
 
 .imagemPraia {
-    background-image: url(variaveis.$bgPraia);
+    background-image: url($bgPraia);
     background-size: 550px 400px;
     background-repeat: no-repeat;
 }
 
 .imagemFuncionario {
-    background-image: url(variaveis.$bgFuncionario);
+    background-image: url($bgFuncionario);
     background-size: 520px 400px;
     background-repeat: no-repeat;
 }
@@ -107,6 +107,6 @@ body {
 
 .ancoraBotao {
     text-decoration: none;
-    color: variaveis.$preto;
+    color: $preto;
 }
 

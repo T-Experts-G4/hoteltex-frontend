@@ -1,4 +1,4 @@
-@import 'components/variaveis';
+@use '../abstracts/variaveis' as *;
 
 .contato__container{
     display: flex;

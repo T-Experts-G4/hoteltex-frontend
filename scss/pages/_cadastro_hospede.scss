@@ -1,4 +1,4 @@
-@import 'components/variaveis';
+@use '../abstracts/variaveis' as *;
 
 .cadastro__hospede__container{
     display: flex;
