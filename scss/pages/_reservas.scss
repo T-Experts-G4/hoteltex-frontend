@@ -17,14 +17,14 @@
         margin: 0px 10px 0px 10px;
 
         label {
-            @include m.reservacampos;
+            @include reservacampos;
         }
         select {
-            @include m.reservacampos;
+            @include reservacampos;
             border: 2px solid $preto;
         }
         input {
-            @include mixins.reservacampos;
+            @include reservacampos;
             border: 2px solid $preto;
         }
     }

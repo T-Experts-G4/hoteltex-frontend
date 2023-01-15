@@ -1,32 +1,27 @@
 @use '../abstracts/variaveis' as *;
 
-.contato__container{
+.form__container{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 0 50px 0;
 }
-.contato__container p{
+.form__container p{
     margin: 15px 0 20px 0;
      
  }
-.form__contato{
+.form__width{
     max-width: 500px;
 }
-.input__contato__hospede{
-    padding: 15px;
-    margin: 10px;
-    
- }
  
- .botao__contato__hospede{
+ .botao__form{
     margin: 10px;
     padding: 15px;
     background-color: $laranja;
     color: $branco;
     cursor: pointer;
 }
-.botao__contato__hospede:hover{
+.botao__form:hover{
     background-color: $laranja-claro;
 }
 /* Elementos de tags <input>, <Select>, <textarea> e <button> */
@@ -34,7 +29,8 @@ input,
 select,
 textarea,
 button {
-    padding: 20px 10px;
+    padding: 15px;
+    margin: 10px;
     font-size: 1em;
     border-radius: 12px;
     border: 1px solid $borderInput;

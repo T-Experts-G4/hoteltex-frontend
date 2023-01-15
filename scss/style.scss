@@ -1,5 +1,4 @@
-@use './pages/contato'; 
-@use './pages/cadastro_hospede';
+@use './pages/form'; 
 @use './core/reset';
 @use './pages/home';
 @use './pages/sobre';
@@ -12,6 +11,7 @@
 @use './pages/reservas_admin';
 
 @use './layout/footer';
+@use './layout/header';
 
 @use './abstracts/breakpoints';
 @use './abstracts/variaveis';
