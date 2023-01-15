@@ -11,9 +11,11 @@ btnLogin.addEventListener("click", (e) => {
 
     if (user.value === cliente.user && password.value === cliente.password) {
         window.location.href = "./admin/reservas_admin.html";
+        localStorage.setItem('user', cliente.user);
         console.log("Logado");
     }else if (user.value === funcionario.user && password.value === funcionario.password){
         window.location.href = "./admin/home_admin.html";
+        localStorage.setItem('user', funcionario.user);
         console.log("Logado");
     }else {
         console.log("Usuario e senha invalida");
