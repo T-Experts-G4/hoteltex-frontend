@@ -10,6 +10,7 @@
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/user.js" async defer></script>
     <title>Hotel T.Ex</title>
 
 </head>
@@ -24,7 +25,7 @@
         </div>
         <div class="header__usuario">
           <div class="header__titulos--usuario">
-            <p>Olá <strong>usuário</strong></p>
+            <p>Olá <strong id="nmUser">usuário</strong></p>
             <button>Sair</button>
             <!-- <i class="fa fa-sign-in fa-5x" aria-hidden="true"></i> -->
           </div>
@@ -53,15 +54,15 @@
                     <ul class="hotel__minha-reserva_campos">
                       <li>
                         <label for="">Check-In:</label>
-                        <input type="date" name="check-in" id="" />
+                        <input type="date" name="check-in" id="checkin" />
                       </li>
                       <li>
                         <label for="">Check-Out:</label>
-                        <input type="date" name="check-out" id="" />
+                        <input type="date" name="check-out" id="checkout" />
                       </li>
                       <li>
                         <label for="">Adultos:</label>
-                        <select name="numero_adultos" id="">
+                        <select name="numero_adultos" id="adultos">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -77,7 +78,7 @@
                       </li>
                       <li>
                         <label for="">Crianças:</label>
-                        <select name="numero_criancas" id="">
+                        <select name="numero_criancas" id="criancas">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -172,10 +173,14 @@
                     <div class="hotel__lado_resumo">
                       <h3>RESUMO DA RESERVA</h3>
                       <div class="hotel__lado_resumo-info">
-                          <span>Apartamento: XXX</span>
-                          <span>CheckIn: XXX</span>
-                          <span>CheckOut: XXX</span>
-                          <span>Pessoas: XXX</span>
+                          <span>Apartamento:</span>
+                          <span id="resumoApartamento"></span>
+                          <span>CheckIn:</span>
+                          <span id="resumoCheckin"></span>
+                          <span>CheckOut:</span>
+                          <span id="resumoCheckout"></span>
+                          <span>Pessoas:</span>
+                          <span id="resumoPessoas"></span>
                       </div>
                       <a href="#">Adicionar mais SERVIÇOS</a>
                       <button><a href="./reservas_confirmada.html">CONTINUAR</a></button>
