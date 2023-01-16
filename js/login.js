@@ -10,7 +10,7 @@ btnLogin.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (user.value === cliente.user && password.value === cliente.password) {
-        window.location.href = "./admin/reservas_admin.html";
+        window.location.href = "../../index.html";
         localStorage.setItem('user', cliente.user);
         console.log("Logado");
     }else if (user.value === funcionario.user && password.value === funcionario.password){
