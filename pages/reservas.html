@@ -50,8 +50,8 @@
                 <h2>Minha Reserva</h2>
                 <!--primeira parte-->
                 <form action="" method="get" target="_blank">
-                  <fieldset id="formulario">
-                    <ul class="hotel__minha-reserva_campos">
+                  <fieldset>
+                    <ul class="hotel__minha-reserva_campos" id="hotel-form">
                       <li>
                         <label for="">Check-In:</label>
                         <input type="date" name="check-in" id="checkin" />
@@ -62,7 +62,7 @@
                       </li>
                       <li>
                         <label for="">Adultos:</label>
-                        <select name="numero_adultos" id="adultos">
+                        <select class="numero_adultos" id="adultos">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -78,7 +78,7 @@
                       </li>
                       <li>
                         <label for="">Crianças:</label>
-                        <select name="numero_criancas" id="criancas">
+                        <select class="numero_criancas" id="criancas">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -101,13 +101,13 @@
                         <li>
                           <label class="hotel__lado_quarto_titulo" for="quarto">Escolha o seu quarto abaixo</label>
                           <hr class="hotel__linha_horizontal" />
-                          <div class="hotel__grid">
+                          <div class="hotel__grid" >
                               <label class="hotel__card">
                                   <div class="hotel__card_image">
                                       <img src="../imagens/acomodacoes/apart02.jpg" alt="">
                                   </div>
                                   <div>                             
-                                  <span class="hotel__card_detalhes">
+                                    <span class="hotel__card_detalhes">
                                       <span class="hotel__titulo_card">
                                           Executive
                                       </span>
@@ -117,9 +117,9 @@
                                       <span class="hotel__quarto_valor">
                                           R$ 197,89
                                       </span>
-                                      <input type="radio" name="quarto" value="197.89"/>Selecionar o Apartamento Executive
+                                      <input type="radio" name="Apartamento Executive" value="197.89"/>Selecionar o Apartamento Executive
+                                    </span>
                                   </div> 
-                                </span>
                                 <div class="hotel__linha_vertical-reservas">
                                   <span></span>
                                 </div>
@@ -140,12 +140,12 @@
                                       <span class="hotel__quarto_valor">
                                           R$ 298,93
                                       </span>
-                                      <input type="radio" name="quarto" value="298.93"/>Selecionar o Apartamento Classic
+                                      <input type="radio" name="Apartamento Classic" value="298.93"/>Selecionar o Apartamento Classic
                                   </div> 
                                 </span>
                               </label>
                               <hr class="hotel__linha_horizontal" />
-                      </label>
+                              </label>
                               <label class="hotel__card">
                                   <div class="hotel__card_image">
                                       <img src="../imagens/acomodacoes/apart01.jpg" alt="">
@@ -161,7 +161,7 @@
                                       <span class="hotel__quarto_valor">
                                           R$ 399,87
                                       </span>
-                                      <input type="radio" name="quarto" value="399.87"/>Selecionar o Apartamento Premium
+                                      <input type="radio" name="Apartamento Premium" value="399.87"/>Selecionar o Apartamento Premium
                                   </div> 
                                 </span>
                               </label>
