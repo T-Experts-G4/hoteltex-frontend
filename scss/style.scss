@@ -1,14 +1,24 @@
-@use './_reset.scss';
-@use './_header.scss';
-@use '_home';
-@use '_sobre';
-@use '_acomodacao';
-@use '_reservas';
-@use '_gastronomia';
-@use '_telasDeLogin';
+// Pages
+@use './pages/form'; 
+@use './core/reset';
+@use './pages/home';
+@use './pages/sobre';
+@use './pages/acomodacao';
+@use './pages/reservas';
+@use './pages/gastronomia';
+@use './pages/telasDeLogin';
+@use './pages/reservas_confirmada';
+@use './pages/home_admin';
+@use './pages/reservas_admin';
 
-@use '_reservas_confirmada';
-@use './_footer.scss';
+//Layout
+@use './layout/footer';
+@use './layout/header';
 
-@use 'components/home_admin';
-@use 'components/reservas_admin';
+// Abstracts
+@use './abstracts/breakpoints';
+@use './abstracts/variaveis';
+
+//components
+@use './components/button'
+

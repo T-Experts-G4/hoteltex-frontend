@@ -1,5 +1,5 @@
-@use 'variaveis' ;
-@use 'mixins';
+@use '../abstracts/variaveis' as *;
+@use '../abstracts/mixins' as *;
 /*  RESERVAS  */
 
 .hotel__minha-reserva {
@@ -17,15 +17,15 @@
         margin: 0px 10px 0px 10px;
 
         label {
-            @include mixins.reservacampos;
+            @include reservacampos;
         }
         select {
-            @include mixins.reservacampos;
-            border: 2px solid variaveis.$preto;
+            @include reservacampos;
+            border: 2px solid $preto;
         }
         input {
-            @include mixins.reservacampos;
-            border: 2px solid variaveis.$preto;
+            @include reservacampos;
+            border: 2px solid $preto;
         }
     }
 }
@@ -41,7 +41,7 @@
     &_horizontal{
     width: 80%;
     height: 0.2rem;
-    background: variaveis.$laranja;
+    background: $laranja;
     margin: 0 auto;
     border: none;
    }
@@ -54,7 +54,7 @@
    &_vertical-reservas span:hover {
     width: 0.2rem;
     height: 100%;
-    background-color: variaveis.$azul;
+    background-color: $azul;
     margin: 2rem;
     border-radius: 1rem;
   }
@@ -82,10 +82,10 @@
  
  .hotel__lado_resumo{
     flex-direction: column;
-    border: 1px solid variaveis.$preto;  
+    border: 1px solid $preto;  
     max-width: 100%; 
     max-height: 100%;
-    background-color: variaveis.$branco;
+    background-color: $branco;
 
     a{
         display: flex;
@@ -101,8 +101,8 @@
         border: none;
         padding: 13%;
         margin-left: 10%;
-        background-color: variaveis.$laranja;
-        color: variaveis.$branco;
+        background-color: $laranja;
+        color: $branco;
         font-size: 1.6rem;
         font-weight: 700;
         cursor: pointer;
@@ -121,7 +121,7 @@
 
     &-info{
         margin: 20% 10% 20% 10%;
-        border: 2px solid variaveis.$preto;  
+        border: 2px solid $preto;  
 
         span {
             display: flex;
@@ -135,9 +135,9 @@
 .hotel__card{
     display: flex;
     margin-bottom: 2%;
-     background-color: variaveis.$branco;
+     background-color: $branco;
      border-radius: 2%;
-     box-shadow:5px 5px variaveis.$cinza;
+     box-shadow:5px 5px $cinza;
      padding-bottom: 1rem;
 
      &_image{

@@ -1,7 +1,6 @@
 // sass --watch scss/sobre.scss:css/sobre.css
-
-@use './variaveis.scss' as *;
-@import './mixins.scss';
+@use '../abstracts/variaveis' as *;
+@use '../abstracts/mixins' as *;
 
 .sobre {
   width: 100%;
