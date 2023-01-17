@@ -1,0 +1,36 @@
+@use '../abstracts/variaveis' as *;
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+.form__container p{
+    margin: 15px 0 20px 0;
+     
+ }
+.form__width{
+    max-width: 500px;
+}
+
+input,
+select,
+textarea {
+    padding: 15px;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 12px;
+    border: 1px solid $borderInput;
+    box-sizing: border-box;
+}
+input, select, textarea {
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background: $focusInput;
+}
+
