@@ -1,6 +1,5 @@
 const nmUser = document.getElementById('nmUser');
 
-console.log(localStorage.getItem('user'));
 nmUser.innerText = localStorage.getItem('user');
 //reservas - resumo
 let checkin = '';
@@ -25,11 +24,15 @@ window.addEventListener('change', function (e) {
   localStorage.adultos = adultos;
   localStorage.criancas = criancas;
 
-  quartoValor = e.target.value;
-  quartoNome = e.target.name;
+  recebeValorNomeQuarto(e);
 
   insereDadosReserva();
 });
+
+function recebeValorNomeQuarto(e) {
+  quartoValor = e.target.value;
+  quartoNome = e.target.name;
+}
 
 
 // alimentando o resumo da reserva
@@ -40,7 +43,6 @@ let resumoPessoas = document.querySelector('#resumoPessoas');
 function insereDadosReserva() {
     let adultos = parseInt(localStorage.adultos);
     let criancas = parseInt(localStorage.criancas);
-    console.log(criancas);
     resumoApartamento.innerText = `${quartoNome}  \n R$ ${quartoValor}`;
     resumoCheckin.innerText = localStorage.checkin.split('-').reverse().join('/');
     resumoCheckout.innerText = localStorage.checkout
