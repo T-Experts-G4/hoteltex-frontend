@@ -91,7 +91,7 @@ window.addEventListener('load', function () {
 function modal() { 
   const modalElement = document.querySelector('.modalSection')
   if (modalElement.classList.contains('disable')) {
-    const imgQuartos = '../imagens/acomodacoes/' + localStorage.getItem('imagensQuarto')
+    const imgQuartos = '../../imagens/acomodacoes/' + localStorage.getItem('imagensQuarto')
     document.getElementById('imagensQuarto').setAttribute('src', imgQuartos)
     document.getElementById('quartosModal').innerHTML = 'R$ ' + localStorage.getItem('quartoValor')
     document.getElementById('checkinModal').innerHTML = localStorage.getItem('checkin')

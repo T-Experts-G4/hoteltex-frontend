@@ -36,7 +36,6 @@ function validaLogin() {
     return login;
 }
 
-
 document.querySelector("header").insertAdjacentHTML("afterbegin", header);
 let btnLogout = document.getElementById("btnLogout");
 
