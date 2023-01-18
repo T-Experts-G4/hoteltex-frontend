@@ -7,33 +7,12 @@
     <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/telasDeLogin.css">
-    <script src="../js/login.js" async defer ></script>
+    <script src="../js/login.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="container__header">
-            <div class="div__image">
-                <img src="../imagens/Logo.png" alt="Logo">
-            </div>
-            <div class="div__titulo">
-                <h1>Hotel T.Ex Beach</h1>
-            </div>
-        </div>
-        <div class="header__usuario">
-            <button class="button header__usuario--cadastro">
-                <a href="../pages/cadastro_hospede.html">Cadastre-se</a>
-            </button>
-        </div>
-        <div class="header__nav">
-            <nav class="navbar">
-            <a href="../index.html">Inicio</a>
-            <a href="../pages/sobre.html">Nosso Hotel</a>
-            <a href="../pages/acomodacao.html">Acomodações</a>
-            <a href="../pages/gastronomia.html">Gastronomia</a>
-            <a href="../pages/contato.html">Contato</a>
-            </nav>
-        </div>
-    </header>
+        <script src="../js/header.js"></script>
+      </header>
     <div class="estiloLogin imagemPraia">
         <p class="estiloFonte">Login</p>
         <form action="" method="post">
@@ -42,7 +21,7 @@
             <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
             <input class="estiloInput " type="password" name="senhaUsuario" id="password">
             <div class="centralizaBotao">
-                <button type="button" class="estiloBotao" id="btnLogin" onclick="testeLocal()">Confirmar</button>
+                <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button>
             </div>
         </form>
         <div class="centralizaSenha">
@@ -56,8 +35,8 @@
             </div>
         </div>
     </div>
-    <footer class="footerLogin">
-        <p class="footerP">&copy Tela de Login - Grupo 4</p>
+    <footer>
+        <script src="../js/footer.js"></script>
     </footer>
 </body>
 </html>
