@@ -1402,4 +1402,13 @@ header {
   background-color: #f8782e;
 }
 
+i {
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */
