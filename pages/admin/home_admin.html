@@ -7,8 +7,8 @@
     <link rel="shortcut icon" href="../../imagens/Logo1.png" />
 
     <link rel="stylesheet" href="../../css/style.css" />
-
-    <script src="../../js/user.js" defer ></script>
+    <script src="../../js/validateAuth.js" async defer ></script>
+  
 
     <link
       rel="stylesheet"
@@ -25,7 +25,7 @@
         <div class="header__usuario">
           <div class="header__titulos--usuario">
             <p>Olá <strong><span id="nmUser">usuário</span></strong></p>
-            <button>Sair</button>
+            <button onclick="logout()">Sair</button>
             <!-- <i class="fa fa-sign-in fa-5x" aria-hidden="true"></i> -->
           </div>
         </div>
@@ -109,5 +109,8 @@
         <h2>&copy;2022 - Todos os direitos reservados</h2>
       </div>
     </footer>
+    <!-- Espaço de arquivos js -->
+    <script src="../../js/user.js" defer ></script>
+    
   </body>
 </html>
