@@ -20,8 +20,6 @@ let header = `<div class="header">
     </nav>
 </div>`
 
-
-
 document.querySelector("header").insertAdjacentHTML("afterbegin", header);
 let btnLogout = document.getElementById("btnLogout");
 

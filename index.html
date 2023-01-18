@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./imagens/Logo1.png" />
-    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -15,9 +14,89 @@
     <title>Hotel T.Ex</title>
   </head>
 <body>
-  <script>
-    window.location.href="./pages/home.html"
 
-  </script>
+<div>
+    <img src="./imagens/Logo1.png"/>
+    <span></span>
+</div>
+
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    div {
+      margin-top: 100px;
+      width: 400px;
+      height: 700px;
+    }
+
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 200px;
+        margin: 0 auto;
+        animation: 4s rotate infinite;
+    }
+
+    span {
+      margin-top: 50px;
+        display: flex;
+        background-color: bisque;
+        height: 35px;
+        width: 0px;
+        border-radius: 6px;
+        animation: 3s statusbar linear;
+    }
+
+    @keyframes rotate {
+        to {transform: rotate(0deg);}
+        from {transform: rotate(-360deg);}
+    }
+
+    @keyframes statusbar {
+        10% {
+            width: 40px;
+        }
+        20% {
+            width: 80px;
+        }
+
+        30% {
+            width: 120px;
+        }
+
+        40% {
+            width: 120px;
+        }
+
+        50% {
+            width: 130px;
+        }
+
+        60% {
+            width: 150px;
+        }
+
+        100% {
+            width: 400px;
+        }
+    }
+</style>
+
+<script>
+
+    setTimeout(()=>{
+        window.location.href = "./pages/home.html"
+    }, 3000)
+</script>
 </body>
 </html>
