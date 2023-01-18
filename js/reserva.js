@@ -36,14 +36,14 @@ window.addEventListener('change', function(e) {
   recebeValorNomeQuarto(e);
   localStorage.quartoValor = quartoValor
 
-  localStorage.total = ((parseInt(localStorage.adultos) + parseInt(localStorage.criancas)) * parseInt(localStorage.quartoValor)).toFixed(2) * dias;
+  localStorage.total = ((parseFloat(localStorage.adultos) + parseFloat(localStorage.criancas)) * parseFloat(localStorage.quartoValor)).toFixed(2) * parseFloat(dias);
 
   insereDadosReserva();
 });
 
 function recebeValorNomeQuarto(e) {
   e.preventDefault()
- quartoValor = (document.querySelector('input[name="quarto"]:checked').value !== '') ? document.querySelector('input[name="quarto"]:checked').value : null
+  quartoValor = (document.querySelector('input[name="quarto"]:checked')) ? document.querySelector('input[name="quarto"]:checked').value : ''
    // quartoNome = e.target.name;
    //quartoValor = e.target.value;
 }
