@@ -104,7 +104,6 @@
       justify-content: center;
       margin: 3rem 0;
       display: flex;
-      padding: 2rem 1rem;
       border: none;
       background-color: $laranja;
       font-size: 1.6rem;
@@ -117,6 +116,7 @@
         font-weight: 700;
         text-decoration: none;
         text-justify: left;
+         padding: 2rem 1rem;
         color: $preto;
         transition: all 0.3s ease-in-out;
     }
