@@ -1,5 +1,9 @@
 const nmUser = document.getElementById('nmUser');
-
+const obterQuarto = {
+  [197.89]: 'apart02.jpg',
+  [298.93]: 'apart03.jpg',
+  [399.87]: 'apart01.jpg'
+}
 nmUser.innerText = localStorage.getItem('user');
 
 //reservas - resumo
@@ -37,7 +41,7 @@ window.addEventListener('change', function(e) {
   localStorage.quartoValor = quartoValor
 
   localStorage.total = ((parseInt(localStorage.adultos) + parseInt(localStorage.criancas)) * parseInt(localStorage.quartoValor)).toFixed(2) * dias;
-
+  localStorage.imagensQuarto = obterQuarto[quartoValor]
   insereDadosReserva();
 });
 
@@ -82,3 +86,21 @@ window.addEventListener('load', function () {
 //     console.log(e.target.name);
 //   })
 // })
+
+function modal() { 
+  const modalElement = document.querySelector('.modalSection')
+  if (modalElement.classList.contains('disable')) {
+    const imgQuartos = '../imagens/acomodacoes/' + localStorage.getItem('imagensQuarto')
+    document.getElementById('imagensQuarto').setAttribute('src', imgQuartos)
+    document.getElementById('quartosModal').innerHTML = 'R$ ' + localStorage.getItem('quartoValor')
+    document.getElementById('checkinModal').innerHTML = localStorage.getItem('checkin')
+    document.getElementById('checkoutModal').innerHTML = localStorage.getItem('checkout')
+    document.getElementById('adultoModal').innerHTML = localStorage.getItem('adultos')
+    document.getElementById('criancaModal').innerHTML = localStorage.getItem('criancas')
+    document.getElementById('diasModal').innerHTML = localStorage.getItem('dias')
+    document.getElementById('totalModal').innerHTML = 'R$ ' + localStorage.getItem('total')
+    modalElement.classList.remove('disable')
+  }else {
+    modalElement.classList.add('disable')
+  }
+}
