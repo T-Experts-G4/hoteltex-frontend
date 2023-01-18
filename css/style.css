@@ -777,33 +777,46 @@ table {
 .hotel__lado_resumo {
   flex-direction: column;
   border: 1px solid #000;
-  max-width: 100%;
+  width: 30%;
   max-height: 100%;
   background-color: #fff;
+  padding: 1rem;
 }
-.hotel__lado_resumo a {
-  display: flex;
-  padding: 10%;
-  text-decoration: underline;
-  font-weight: 700;
-  text-justify: left;
+.hotel__lado_resumo span {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  padding: 0.4rem;
+  text-align: center;
+  font-weight: bold;
 }
-.hotel__lado_resumo button {
+.hotel__lado_resumo .reserva__botoes .reserva__botao {
+  width: 100%;
   display: flex;
-  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  display: flex;
+  padding: 2rem 1rem;
   border: none;
-  padding: 13%;
-  margin-left: 10%;
   background-color: #fc5d01;
-  color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
   border-radius: 1rem;
 }
-.hotel__lado_resumo button a {
-  margin: 0;
-  padding: 0;
+.hotel__lado_resumo .reserva__botoes .reserva__botao a {
+  display: flex;
+  font-weight: 700;
+  text-decoration: none;
+  text-justify: left;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.hotel__lado_resumo .reserva__botoes .reserva__botao :hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
 }
 .hotel__lado_resumo h3 {
   font-size: 1.4rem;

@@ -9,26 +9,26 @@
     font-size: 2.8rem;
     margin-bottom: 2vh;
   }
-  &_campos{
+  &_campos {
     li {
-        display: inline-flex;
-        position: relative;
-        flex-direction: column;
-        margin: 0px 10px 0px 10px;
+      display: inline-flex;
+      position: relative;
+      flex-direction: column;
+      margin: 0px 10px 0px 10px;
 
-        label {
-            @include reservacampos;
-        }
-        select {
-            @include reservacampos;
-            border: 2px solid $preto;
-        }
-        input {
-            @include reservacampos;
-            border: 2px solid $preto;
-        }
+      label {
+        @include reservacampos;
+      }
+      select {
+        @include reservacampos;
+        border: 2px solid $preto;
+      }
+      input {
+        @include reservacampos;
+        border: 2px solid $preto;
+      }
     }
-}
+  }
 }
 
 .hotel__minha-reserva2 {
@@ -37,21 +37,21 @@
   }
 }
 
-.hotel__linha{ 
-    &_horizontal{
+.hotel__linha {
+  &_horizontal {
     width: 80%;
     height: 0.2rem;
     background: $laranja;
     margin: 0 auto;
     border: none;
-   }
-   &_vertical-reservas {
+  }
+  &_vertical-reservas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 10%;
   }
-   &_vertical-reservas span:hover {
+  &_vertical-reservas span:hover {
     width: 0.2rem;
     height: 100%;
     background-color: $azul;
@@ -60,118 +60,129 @@
   }
 }
 
+.hotel__container-quarto-resumo {
+  display: flex;
+  justify-content: space-between;
+}
 
-.hotel__container-quarto-resumo{
-    display: flex;
-    justify-content: space-between;
- }   
+.hotel__lado_quartos {
+  position: relative;
+  flex-direction: column;
+  margin-right: 3vh;
+  max-width: 70%;
+  hr {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+  }
+  &_titulo {
+    padding: 3px;
+  }
+}
 
-.hotel__lado_quartos{
-    position: relative;
-    flex-direction: column;
-    margin-right: 3vh;
-    max-width: 70%;
-    hr{
-        margin-top: 3vh;
-        margin-bottom: 1vh;
-     }
-     &_titulo{
-        padding: 3px;
-      }
- }
- 
- .hotel__lado_resumo{
-    flex-direction: column;
-    border: 1px solid $preto;  
-    max-width: 100%; 
-    max-height: 100%;
-    background-color: $branco;
+.hotel__lado_resumo {
+  flex-direction: column;
+  border: 1px solid $preto;
+  width: 30%;
+  max-height: 100%;
+  background-color: $branco;
+  padding: 1rem;
 
-    a{
-        display: flex;
-    padding: 10%;
-    text-decoration: underline;
-    font-weight: 700;
-    text-justify: left;
-    }
-
-    button{
-        display: flex;
-        padding: 1rem 1rem;
-        border: none;
-        padding: 13%;
-        margin-left: 10%;
-        background-color: $laranja;
-        color: $branco;
-        font-size: 1.6rem;
-        font-weight: 700;
-        cursor: pointer;
-        border-radius: 1rem;
-
-        a{
-            margin: 0;
-            padding: 0;
-          }
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    padding: 7rem 3rem 0rem;
-    }
-
-    &-info{
-        margin: 20% 10% 20% 10%;
-        border: 2px solid $preto;  
-
-        span {
-            display: flex;
+  & span {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
     padding: 0.4rem;
+    text-align: center;
     font-weight: bold;
-        }
+  }
+
+  .reserva__botoes {
+    .reserva__botao {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 3rem 0;
+      display: flex;
+      padding: 2rem 1rem;
+      border: none;
+      background-color: $laranja;
+      font-size: 1.6rem;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 1rem;
+
+      & a {
+        display: flex;
+        font-weight: 700;
+        text-decoration: none;
+        text-justify: left;
+        color: $preto;
+        transition: all 0.3s ease-in-out;
     }
- }
+    & :hover {
+        color: $branco;
+        text-decoration: underline;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
 
-   
-.hotel__card{
-    display: flex;
-    margin-bottom: 2%;
-     background-color: $branco;
-     border-radius: 2%;
-     box-shadow:5px 5px $cinza;
-     padding-bottom: 1rem;
+  h3 {
+    font-size: 1.4rem;
+    padding: 7rem 3rem 0rem;
+  }
 
-     &_image{
-        display: block;
-        padding: 1rem;
+  &-info {
+    margin: 20% 10% 20% 10%;
+    border: 2px solid $preto;
 
-        img{
-            max-width: 100%;
-            max-height: 100%;
-          }
-     }
+    span {
+      display: flex;
+      padding: 0.4rem;
+      font-weight: bold;
+    }
+  }
+}
 
-     &_detalhes{ 
-        span{
-        display: block;
-        flex-direction: column;
-        padding: 1rem;
+.hotel__card {
+  display: flex;
+  margin-bottom: 2%;
+  background-color: $branco;
+  border-radius: 2%;
+  box-shadow: 5px 5px $cinza;
+  padding-bottom: 1rem;
+
+  &_image {
+    display: block;
+    padding: 1rem;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &_detalhes {
+    span {
+      display: block;
+      flex-direction: column;
+      padding: 1rem;
     }
     input {
-        margin-left: 1rem;
+      margin-left: 1rem;
     }
+  }
 }
-}
-.hotel__titulo_card{
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-.hotel__quarto_valor{
-    font-weight: 600;
+.hotel__titulo_card {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
- ul {
-    list-style: none;
- }
+.hotel__quarto_valor {
+  font-weight: 600;
+}
 
-
+ul {
+  list-style: none;
+}
