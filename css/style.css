@@ -870,254 +870,6 @@ ul {
   list-style: none;
 }
 
-/*Card verde*/
-/*Card verde*/
-/*Card laranja*/
-/*Card laranja*/
-/*Card azul*/
-/*Card azul*/
-.services {
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: rgba(235, 231, 231, 0.9);
-}
-
-.services {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-.services .service__cabecalho {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0 2rem;
-  text-align: center;
-}
-.services .service__cabecalho .sevice__cabecalho--titulo {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem;
-}
-.services .service__cabecalho .service__cabecalho--paragrafo {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #8e8e8e;
-  margin-bottom: 2rem;
-}
-
-.service__itens {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  width: 0 auto;
-  padding: 2rem;
-}
-.service__itens .card {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: box-shadow 0.7s;
-  text-align: center;
-  padding: 1rem;
-  box-sizing: border-box;
-  background-color: #fff;
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 2rem;
-}
-.service__itens .card:hover {
-  box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
-}
-.service__itens .card:hover .service-imagem {
-  box-shadow: 0 0 0 0.3rem rgba(255, 59, 59, 0.68);
-}
-.service__itens .card:hover .service__imagem-icon i {
-  opacity: 0.5;
-}
-.service__itens .card:hover .service-imagem.s-green {
-  box-shadow: 0px 0px 0px 3px rgba(76, 175, 80, 0.46);
-}
-.service__itens .card:hover .service-imagem.s-orange {
-  box-shadow: 0px 0px 0px 3px rgba(255, 152, 0, 0.42);
-}
-.service__itens .card:hover .service-imagem.s-blue {
-  box-shadow: 0px 0px 0px 3px rgba(0, 133, 211, 0.59);
-}
-.service__itens .card:focus .service-imagem {
-  box-shadow: 0px 0px 0px 3px rgba(255, 59, 59, 0.68);
-}
-.service__itens .card:focus .service__imagem-icon i {
-  opacity: 1;
-}
-.service__itens .card:focus a.more-servinfo {
-  opacity: 1;
-}
-.service__itens .card:focus a.more-servinfo::after {
-  width: 35%;
-}
-.service__itens .card:focus .service-imagem.s-green {
-  box-shadow: 0px 0px 0px 3px rgba(76, 175, 80, 0.46);
-}
-.service__itens .card:focus .service-imagem.s-orange {
-  box-shadow: 0px 0px 0px 3px rgba(255, 152, 0, 0.42);
-}
-.service__itens .card:focus .service-imagem.s-blue {
-  box-shadow: 0px 0px 0px 3px rgba(0, 133, 211, 0.59);
-}
-
-.service-imagem {
-  width: 13rem;
-  height: 13rem;
-  margin: auto;
-  display: flex;
-  border-radius: 100%;
-  transition: box-shadow 0.4s;
-}
-
-.service__imagem-icon {
-  width: 95%;
-  height: 95%;
-  margin: auto;
-  text-align: center;
-  border-radius: 100%;
-  display: flex;
-}
-.service__imagem-icon i {
-  margin: 0 auto;
-  font-size: 3rem;
-  opacity: 1;
-  transition: opacity 0.4s;
-}
-
-h3.serv-name {
-  font-size: 17px;
-  font-family: "Roboto", sans-serif;
-  color: #555;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-hr.serv-hr {
-  margin: 0 auto;
-  width: 50px;
-  opacity: 0.5;
-  border: 1px solid #ff3b3b;
-}
-
-p.ssubinfo {
-  margin-top: 10px;
-  color: #8e8e8e;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-
-a.more-servinfo {
-  font-family: "Roboto", sans-serif;
-  color: #777;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: capitalize;
-  opacity: 0.6;
-  transition: opacity 0.4s;
-}
-a.more-servinfo:visited {
-  font-family: "Roboto", sans-serif;
-  color: #777;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-  text-transform: capitalize;
-  opacity: 0.6;
-  transition: opacity 0.4s;
-}
-a.more-servinfo:hover {
-  color: #333;
-}
-a.more-servinfo:focus {
-  color: #333;
-}
-a.more-servinfo::after {
-  content: "";
-  display: none;
-  margin: auto;
-  width: 0%;
-  transition: width 0.4s;
-  border-top: 1px solid;
-  margin-top: 3px;
-}
-
-.service__imagem-icon.s-green {
-  background-color: #4CAF50;
-}
-
-.serv-hr.s-green {
-  border-color: #4CAF50;
-}
-
-.service__imagem-icon.s-orange {
-  background-color: #FFC107;
-}
-
-.serv-hr.s-orange {
-  border-color: #FFC107;
-}
-
-.service__imagem-icon.s-blue {
-  background-color: #0085d3;
-}
-
-.serv-hr.s-blue {
-  border-color: #0085d3;
-}
-
-.col-sm-12.session-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-h1.session-tit {
-  margin: 0;
-  font-size: 26px;
-  font-weight: 900;
-  color: #313437;
-  font-family: "Roboto", sans-serif;
-  opacity: 0.8;
-}
-
-hr.ss-hr {
-  width: 80px;
-  border: 1px solid;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  opacity: 0.1;
-}
-
-p.ss-pp {
-  font-family: "Open sans", sans-serif;
-  font-weight: 500;
-  color: #969696;
-  font-size: 14px;
-  width: 400px;
-  margin: auto;
-  max-width: 100%;
-}
-
 /*Gastronomia*/
 .gastronomia_titulo {
   width: 100%;
@@ -1661,6 +1413,193 @@ header {
 
 .botao__form:hover {
   background-color: #f8782e;
+}
+
+/*Card verde*/
+/*Card verde*/
+/*Card laranja*/
+/*Card laranja*/
+/*Card azul*/
+/*Card azul*/
+.services {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: cal(100vw -20%);
+  padding: 1rem;
+  background-color: rgba(235, 231, 231, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services .service__cabecalho {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.services .service__cabecalho .sevice__cabecalho--titulo {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.services .service__cabecalho .service__cabecalho--paragrafo {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin-bottom: 2rem;
+}
+
+.service__itens {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 0 auto;
+  padding: 2rem;
+}
+.service__itens .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.7s;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+}
+.service__itens .cards .service__imagem {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.service__itens .cards .service__imagem .service__imagem-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #00c1ea;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.7s;
+}
+.service__itens .cards:hover {
+  box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.service__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.service__info--title {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.service__info--paragrafo {
+  margin-top: 10px;
+  color: #8e8e8e;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.serv-hr {
+  margin: 0 auto;
+  width: 50px;
+  opacity: 0.5;
+  border: 1px solid #ff3b3b;
+}
+
+.serv-hr.s-green {
+  border-color: #4CAF50;
+}
+
+.serv-hr.s-orange {
+  border-color: #FFC107;
+}
+
+.serv-hr.s-blue {
+  border-color: #0085d3;
+}
+
+.botaoAdicionar {
+  background-color: #00c1ea;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.botaoAdicionar:hover {
+  background-color: #fc5d01;
+}
+.botaoAdicionar::before {
+  content: "Adicionar";
+}
+
+.botaoAdicionarClicado {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.botaoAdicionarClicado::before {
+  content: "Adicionado";
+}
+
+.modalBotaoFechar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.modalBotaoFechar .botaoFechar {
+  width: 40%;
+  background-color: #fc5d01;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.modalBotaoFechar .botaoFechar:hover {
+  background-color: #00c1ea;
 }
 
 /*# sourceMappingURL=style.css.map */
