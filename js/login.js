@@ -1,6 +1,7 @@
 const user = document.getElementById("user");
 const password = document.getElementById("password");
 const btnConfirma = document.getElementById("btnConfirma");
+const erroAutentic = document.getElementById("erroAutentic");
 
 const funcionario = { user: "admin", password: "admin" };
 const cliente = { user: "client", password: "client" };
@@ -18,5 +19,6 @@ btnConfirma.addEventListener("click", (e) => {
 
     } else {
         console.log("Usuario e senha invalida");
+        erroAutentic.classList.remove("d-none")
     }
 });
