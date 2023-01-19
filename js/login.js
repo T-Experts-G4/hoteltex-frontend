@@ -13,6 +13,7 @@ btnConfirma.addEventListener("click", (e) => {
         localStorage.setItem('user', cliente.user);
         console.log("Logado");
     }else if (user.value === funcionario.user && password.value === funcionario.password){
+        localStorage.setItem('user', funcionario.user);
         window.location.href = "./admin/home_admin.html";
 
     } else {

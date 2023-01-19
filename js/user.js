@@ -1,5 +1,5 @@
 const nmUser = document.getElementById('nmUser');
 
-nmUser.innerText = localStorage.getItem('user');
+nmUser.innerText = `Olá ${localStorage.getItem('user')}`;
 
 
