@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/Logo1.png"/>
     <script src="../js/reserva.js" async defer></script>
-    <script src="../js/servicos.js" async defer></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +17,7 @@
   </header>
 
     <main>
-      <section class="modal" style="display: none;">
+      <section class="modal__servicos" style="display: none;">
         <div class="services">
 				<div class="service__cabecalho">
 					<h2 class="sevice__cabecalho--titulo">Nossos serviços</h2>
@@ -151,7 +150,7 @@
 							</div>
 						</div>
 
-						<div class="services-info">
+						<div class="service-info">
 							<h3 class="service__info--title">Traslado</h3>
 							<hr class="serv-hr" />
 							<p class="service__info--paragrafo">
@@ -163,7 +162,7 @@
 					</div>
 				</div>
 				<div class="modalBotaoFechar">
-					<button  type="button" class="botaoFechar" id="botaoFechar" >Fechar</button>
+					<button onclick="fechaModalServicos()" type="button" class="botaoFechar" id="botaoFechar" >Fechar</button>
 				</div>
   </div>
       </section>
@@ -306,10 +305,29 @@
                           <span>Pessoas:</span>
                           <span id="resumoPessoas"></span>
                       </div>
+                      <div class="hotel__lado_resumo-servicos">
+                        <span>Serviços adicionados</span>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Descrição</th>
+                              <th>Valor</th>
+                            </tr>
+                          </thead>
+                          <tbody id="tabela__selecionados">
+
+                            <tr>
+                              <td>Total</td>
+                              <td id="tabela__selecionados_total"></td>
+                            </tr>
+
+                          </tbody>
+                        </table>                      
+                      </div>
 
                       <div class="reserva__botoes">
                         <span>Adicione mais serviços</span>
-                      <button class="reserva__botao botao--servico" id="botaoServicos"><a href="#">+ SERVIÇOS</a></button>                   
+                      <button class="reserva__botao botao--servico" id="botaoServicos" onclick="abreModalServicos()"><a href="#">+ SERVIÇOS</a></button>                   
                       <button class="reserva__botao botao--continua" type="button" onclick="modal()">Continuar</button>
                     </div>                      
                       <div class="modalSection disable">
@@ -368,4 +386,5 @@
 </body>
 <script src="../js/user.js" defer></script>
 <script src="../js/reserva.js" async></script>
+<script src="../js/servicos.js"></script>
 </html>

@@ -1415,7 +1415,14 @@ header {
   background-color: #f8782e;
 }
 
-/*Card verde*/
+i {
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+} /*Card verde*/
 /*Card verde*/
 /*Card laranja*/
 /*Card laranja*/
@@ -1426,7 +1433,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: cal(100vw -20%);
+  width: cal(100vw);
   padding: 1rem;
   background-color: rgba(235, 231, 231, 0.9);
   display: flex;
@@ -1444,13 +1451,13 @@ header {
   padding: 0 2rem;
   text-align: center;
 }
-.services .service__cabecalho .sevice__cabecalho--titulo {
+.services .service__cabecalho--titulo {
   font-size: 3.2rem;
   font-weight: 700;
   color: #333;
   margin-bottom: 1rem;
 }
-.services .service__cabecalho .service__cabecalho--paragrafo {
+.services .service__cabecalho--paragrafo {
   font-size: 1.6rem;
   font-weight: 400;
   color: #8e8e8e;
@@ -1600,13 +1607,32 @@ header {
 }
 .modalBotaoFechar .botaoFechar:hover {
   background-color: #00c1ea;
-i {
-  padding-left: 1rem;
 }
 
-a {
-  text-decoration: none;
-  text-transform: uppercase;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin-bottom: 2rem;
+}
+table thead {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+table thead tr th {
+  padding: 1rem;
+  text-align: left;
+}
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+table tbody tr td {
+  padding: 1rem;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
