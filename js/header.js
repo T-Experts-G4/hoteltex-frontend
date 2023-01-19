@@ -21,10 +21,10 @@ let header = `<div class="header">
 <div class="header__nav">
     <nav class="navbar">
         <a href="/">Inicio</a>
-        <a href="/pages/sobre.html">Nosso Hotel</a>
-        <a href="/pages/acomodacao.html">Acomodações</a>
-        <a href="/pages/gastronomia.html">Gastronomia</a>
-        <a href="/pages/contato.html">Contato</a>
+        <a href="./pages/sobre.html">Nosso Hotel</a>
+        <a href="./pages/acomodacao.html">Acomodações</a>
+        <a href="./pages/gastronomia.html">Gastronomia</a>
+        <a href="./pages/contato.html">Contato</a>
     </nav>
 </div>`
 
