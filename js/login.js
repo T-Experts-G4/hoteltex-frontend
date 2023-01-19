@@ -9,7 +9,7 @@ btnConfirma.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (user.value === cliente.user && password.value === cliente.password) {
-        window.location.href = "../../index.html";
+        window.location.href = "./home.html";
         localStorage.setItem('user', cliente.user);
         console.log("Logado");
     }else if (user.value === funcionario.user && password.value === funcionario.password){

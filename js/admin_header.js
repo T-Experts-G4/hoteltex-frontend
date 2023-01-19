@@ -10,15 +10,12 @@ let header = `<div class="header">
     <a class="header__usuario--login botao__form" href="../home.html" id="btnLogout">LOGOUT<i class="fa fa-sign-out" aria-hidden="true"></i></a>
     </div>
 </div>
-<div class="header__nav">
+ <div class="header__nav">
     <nav class="navbar">
-        <a href="/">Inicio</a>
-        <a href="./pages/sobre.html">Nosso Hotel</a>
-        <a href="./pages/acomodacao.html">Acomodações</a>
-        <a href="./pages/gastronomia.html">Gastronomia</a>
-        <a href="./pages/contato.html">Contato</a>
+        <a class="header__usuario--login botao__form" href="../admin/home_admin.html">Inicio</a>
+
     </nav>
-</div>`
+</div>` 
 
 document.querySelector("header").insertAdjacentHTML("afterbegin", header);
 let btnLogout = document.getElementById("btnLogout");
