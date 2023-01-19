@@ -1,10 +1,8 @@
-const nmUser = document.getElementById('nmUser');
 const obterQuarto = {
   [197.89]: 'apart02.jpg',
   [298.93]: 'apart03.jpg',
   [399.87]: 'apart01.jpg'
 }
-nmUser.innerText = localStorage.getItem('user');
 
 //reservas - resumo
 let checkin = '';

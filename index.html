@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./imagens/Logo1.png" />
-    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -14,253 +13,90 @@
 
     <title>Hotel T.Ex</title>
   </head>
-  <body>
-    <header>
-      <div class="header">
-        <div class="header__logo">
-          <img src="./imagens/Logo1.png" alt="logo" />
-        </div>
-        <div class="header__titulo">
-          <h1>Hotel T.Ex Beach</h1>
-        </div>
-        <div class="header__usuario">
-          <button class="button header__usuario--cadastro"><a href="./pages/cadastro_hospede.html">Cadastre-se</a> </button>
-          <button class="button header__usuario--login"><a href="./pages/login.html">
-            LOGIN</a><img src="./imagens/icon/Vector-entrar.png" alt="" />
-          </button>
-        </div>
-      </div>
-      <div class="header__nav">
-        <nav class="navbar">
-          <a href="./index.html">Inicio</a>
-          <a href="./pages/sobre.html">Nosso Hotel</a>
-          <a href="./pages/acomodacao.html">Acomodações</a>
-          <a href="./pages/gastronomia.html">Gastronomia</a>
-          <a href="./pages/contato.html">Contato</a>
-        </nav>
-      </div>
-    </header>
+<body>
 
-    <main>
-      <section id="hotel" class="container hotel">
-        <h2 class="hotel__titulo titulo">Sobre o nosso hotel</h2>
-        <span class="container__linha_horizontal"></span>
+<div>
+    <img src="./imagens/Logo1.png"/>
+    <span></span>
+</div>
 
-        <div class="hotel_sobre">
-          <div class="hotel__sobre--img">
-            <img
-              src="./imagens/acomodacoes/fachada.jpg"
-              alt="Hoteltex"
-              title="Hotel Tex"
-            />
-            <div class="hotel__linha_vertical">
-              <span></span>
-            </div>
-          </div>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
 
-          <p class="hotel__sobre--texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure
-            est ipsum. Possimus nobis vitae quae, dolorem hic minus neque
-            aperiam officiis temporibus modi illum mollitia quis. Atque fugiat,
-            temporibus cum ea iste repellat officiis cumque quisquam impedit non
-            pariatur doloribus hic minima totam! Fugiat necessitatibus, quod
-            expedita fugit perferendis sit asperiores, nobis culpa recusandae
-            doloribus neque veritatis magni sunt eveniet nemo vitae rem et vel
-            adipisci, repudiandae quae. Repellat aperiam autem, deleniti magnam
-            ut consectetur in! Distinctio?
-          </p>
+    div {
+      margin-top: 100px;
+      width: 400px;
+      height: 700px;
+    }
 
-          <p class="hotel__sobre--texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            sapiente reprehenderit explicabo consequuntur ad? Amet quia fuga
-            reprehenderit perferendis ipsum obcaecati corrupti numquam
-            molestias, perspiciatis iure aut debitis expedita asperiores?
-          </p>
-          <p class="hotel__sobre--texto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem
-            deserunt ipsum quas cumque molestias rem, veniam enim tempore non
-            iure libero voluptas dicta est nisi nesciunt totam aliquid illum?
-          </p>
-          <p class="hotel__sobre--texto">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-            nostrum nulla optio veniam, alias molestiae, consequuntur cum
-            doloribus voluptatum dolorum sint suscipit amet! Blanditiis est iure
-            reprehenderit quam laboriosam a hic, mollitia dolores cum distinctio
-            possimus minima explicabo debitis non adipisci necessitatibus sed?
-            Doloribus temporibus iure quod debitis, assumenda perferendis!
-          </p>
+    img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 200px;
+        margin: 0 auto;
+        animation: 4s rotate infinite;
+    }
 
-          <div class="hotel__icon">
-            <img
-              class="hotel__icon_image"
-              src="./imagens/icon/hotel_class_FILL0_wght400_GRAD0_opsz48 1.png"
-              alt=""
-            />
-            <img
-              class="hotel__icon_image"
-              src="./imagens/icon/hotel_FILL0_wght400_GRAD0_opsz48 1.png"
-              alt=""
-            />
-            <img
-              class="hotel__icon_image"
-              src="./imagens/icon/room_service_FILL0_wght400_GRAD0_opsz48 1.png"
-              alt=""
-            />
-          </div>
-        </div>
+    span {
+      margin-top: 50px;
+        display: flex;
+        background-color: bisque;
+        height: 35px;
+        width: 0px;
+        border-radius: 6px;
+        animation: 3s statusbar linear;
+    }
 
-        <a class="botao_reserva" href="./pages/reservas.html" target="_blank">
-          <i class="fa fa-book"></i>Reserve aqui!
-        </a>
-      </section>
-      <!-- Nossas acomdações -->
-      <section class="container acomodacao">
-        <h2 class="acomodacao__titulo titulo">Nossas acomodações</h2>
-        <span class="container__linha_horizontal"></span>
-        <div class="acomodacao__carrossel">
-          <a href="./pages/acomodacao.html"
-            ><img
-              class="acomodacao__img"
-              src="./imagens/acomodacoes/apart01.jpg"
-              alt="Acomodações do quarto"
-          /></a>
-          <a href="./pages/acomodacao.html"
-            ><img
-              class="acomodacao__img"
-              src="./imagens/acomodacoes/apart02.jpg"
-              alt="Acomodações do quarto"
-          /></a>
-          <a href="./pages/acomodacao.html"
-            ><img
-              class="acomodacao__img"
-              src="./imagens/acomodacoes/lobby.jpg"
-              alt="Acomodações loby"
-          /></a>
-        </div>
-        <div class="acomodacao__banner">
-          <a href="./pages/acomodacao.html"
-            ><img
-              class="acomodacao__banner__img"
-              src="./imagens/acomodacoes/bannerPiscina.jpeg"
-              alt="Acomodações vista"
-          /></a>
-        </div>
-        <a
-          class="acomodacao__botao botao__principal"
-          href="./pages/acomodacao.html"
-          >Saiba mais sobre nossas acomodações</a
-        >
+    @keyframes rotate {
+        to {transform: rotate(0deg);}
+        from {transform: rotate(-360deg);}
+    }
 
-        <a
-          class="acomodacao__botao botao__mobile"
-          href="./pages/acomodacao.html"
-          >Saiba mais</a
-        >
-      </section>
-      <section id="gastronomia" class="container gastronomia">
-        <h2 class="gastronomia__titulo titulo">Gastronomia</h2>
-        <span class="container__linha_horizontal"></span>
+    @keyframes statusbar {
+        10% {
+            width: 40px;
+        }
+        20% {
+            width: 80px;
+        }
 
-        <div class="gastronomia_conteudo">
-          <div class="gastronomia_sobre">
-            <p class="hotel__sobre--texto">
-              Hotéis de luxo e conceituais, oferecem muito mais que conforto,
-              sofisticação e serviços exclusivos, apostam constantemente em
-              variedades de experiências para encantar o hóspede . A alta
-              gastronomia no Brasil é a mais marcante, aonde os sabores, aromas
-              e visual dos pratos, são um charme à parte. O país possui
-              espalhados por diversas regiões, hotéis comandados por chefs
-              premiados que assinam cardápios exclusivos e fazem seus
-              restaurantes serem uma experiência gourmet inesquecível.
-            </p>
-            &nbsp;
-            <p class="hotel__sobre--texto">
-              Com um conceito descontraído, mas elegante, a gastronomia prioriza
-              a qualidade dos produtos e a simplicidade das técnicas, com a
-              grelha e as brasas como protagonistas. Destacando a grelha de
-              frutos do mar, saladas e pratos a serem compartilhados, o Marine
-              Restô surpreende-se ao transformar todas as ocasiões.
-            </p>
-          </div>
-          <div class="gastronomia__linha__vertical"></div>
-          <img
-            class="gastronomia_image"
-            src="./imagens/gastronomia.jpg"
-            alt="Gastronomia Hotel"
-          />
-        </div>
-        <div class="gastronomia__icon">
-          <img
-            class="gastronomia__icon__image"
-            src="./imagens/icon/garfo-e-faca.png"
-            alt=""
-          />
-          <img
-            class="gastronomia__icon__image"
-            src="./imagens/icon/livro.png"
-            alt=""
-          />
-          <img
-            class="gastronomia__icon__image"
-            src="./imagens/icon/coquetel-na-taca-de-vinho.png"
-            alt=""
-          />
-          <img
-            class="gastronomia__icon__image"
-            src="./imagens/icon/servico-de-comida.png"
-            alt=""
-          />
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section class="footer">
-        <div class="footer__contato">
-          <h2>Fale Conosco</h2>
+        30% {
+            width: 120px;
+        }
 
-          <p>Telefone</p>
+        40% {
+            width: 120px;
+        }
 
-          <p>+55 48 99999-0000</p>
-        </div>
+        50% {
+            width: 130px;
+        }
 
-        <div class="footer__endereco">
-          <h2>Endereço</h2>
+        60% {
+            width: 150px;
+        }
 
-          <p>
-            Rua João de Tal, 000<br />
-            Cidade, Estado, Brasil<br />
-            CEP – 80000-000
-          </p>
-        </div>
+        100% {
+            width: 400px;
+        }
+    }
+</style>
 
-        <div class="footer__redes">
-          <h2>Conte-nos sobre sua experiência.</h2>
+<script>
 
-          <p>Siga-nos</p>
-
-          <div class="footer__redes--itens">
-            <span class="footer__icon">
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
-              </a>
-            </span>
-            <span class="footer__icon">
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-              </a>
-            </span>
-            <span class="footer__icon">
-              <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
-              </a>
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <div class="footer__copyright">
-        <h2>&copy;2022 - Todos os direitos reservados</h2>
-      </div>
-    </footer>
-  </body>
+    setTimeout(()=>{
+        window.location.href = "./pages/home.html"
+    }, 3000)
+</script>
+</body>
 </html>
