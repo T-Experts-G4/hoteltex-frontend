@@ -1,5 +1,5 @@
 let login = `
-<a class="header__usuario--cadastro botao__form" href="./pages/cadastro_hospede.html" id="btnCadastro">Cadastre-se</a>
+<a class="header__usuario--cadastro botao__form" href="./cadastro_hospede.html" id="btnCadastro">Cadastre-se</a>
 <a class="header__usuario--login botao__form" href="../pages/login.html" id="btnLogin">LOGIN<i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></a>
 `
 let logout = `
@@ -20,11 +20,11 @@ let header = `<div class="header">
 </div>
 <div class="header__nav">
     <nav class="navbar">
-        <a href="/">Inicio</a>
-        <a href="/pages/sobre.html">Nosso Hotel</a>
-        <a href="/pages/acomodacao.html">Acomodações</a>
-        <a href="/pages/gastronomia.html">Gastronomia</a>
-        <a href="/pages/contato.html">Contato</a>
+        <a href="./home.html">Inicio</a>
+        <a href="./sobre.html">Nosso Hotel</a>
+        <a href="./acomodacao.html">Acomodações</a>
+        <a href="./gastronomia.html">Gastronomia</a>
+        <a href="./contato.html">Contato</a>
     </nav>
 </div>`
 
