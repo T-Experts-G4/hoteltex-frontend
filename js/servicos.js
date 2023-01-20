@@ -2,14 +2,16 @@
 let modalServicos = document.querySelector('.modal__servicos');
 function abreModalServicos() {
   modalServicos.style.display = 'block';
-	   console.log('Clicou no botão Serviços');
+  console.log('Clicou no botão Serviços');
 }
 
 // Fechar modal
-let botaoFecharModal = document.querySelector("#botaoFechar");
+let botaoFecharModal = document.querySelector('#botaoFechar');
 function fechaModalServicos() {
-	modalServicos.style.display = "none";
+  modalServicos.style.display = 'none';
 }
+
+//==================================================================================================
 
 // Captura dados servicos
 let id = '';
@@ -17,71 +19,54 @@ let nome = '';
 let valor = '';
 let servicos = [];
 let botaoAdicionar = document.querySelectorAll('.botaoAdicionar');
-for(let i of botaoAdicionar){
-i.addEventListener("click", function (e) {
-  id = e.target.id;
-  nome = e.target.name;
-  valor = e.target.value;
-  servicos.push({id, nome, valor});
-	verificaServicoJaAdicionado(id, nome, valor);
-});
+for (let i of botaoAdicionar) {
+  i.addEventListener('click', function (e) {
+    id = e.target.id;
+    nome = e.target.name;
+    valor = e.target.value;
+    servicos.push({ id, nome, valor });
+    i.disabled = true;
+    i.style.backgroundColor = '#ccc';
+    alimentaLocalStorage(servicos);
+    // localStorage.setItem('id', JSON.stringify(id));
+    // localStorage.setItem('nome', JSON.stringify(nome));
+    // localStorage.setItem('valor', JSON.stringify(valor));
+  });
 }
 
 // Alimentando o localStorage
-
-function alimentaLocalStorage(id, name, value){
-	verificaServicoJaAdicionado(id, name, value);
-	calcularServicos();
+function alimentaLocalStorage(servicos) {
+  localStorage.setItem('servicos', JSON.stringify(servicos));
+  calcularServicos();
 }
 
 let servicosStorage = JSON.parse(localStorage.getItem('servicos'));
-
-function verificaServicoJaAdicionado(id, name, value) {
-	if(!servicos.includes(id)){
-		console.log(id)
-		console.log('Serviço já adicionado');
-		console.log(servicos)
-		localStorage.setItem('servicos', JSON.stringify(servicos));
-	} else {
-		// servicos.push({id, name, value});
-	}
-}
-
-function calcularServicos(){
-	let servicos = JSON.parse(localStorage.getItem('servicos'));	
+let totalServecos = 0;
+function calcularServicos() {
+  let servicosAdicionados = JSON.parse(localStorage.getItem('servicos'));
+  let valoresRecebidos = 0;
+  for (let i of servicosAdicionados) {
+    valoresRecebidos += parseInt(i.valor);
+  }
+  totalServecos = valoresRecebidos;
+  console.log(totalServecos);
+  console.log(servicosAdicionados);
+  // document.querySelector('#total__servicos').innerHTML = `R$ ${+total}`;
 }
 
 //Inserindo dados na tabela
 let tabela = document.querySelector('#tabela__selecionados');
 let tabelaTotal = document.querySelector('#tabela__selecionados_total');
-function inserirDadosTabela(){
-	let servicos = JSON.parse(localStorage.getItem('servicos'));
-	let total = 0;
-	console.log(servicos);
-	for(let i of servicos){
-		if(i.id == id){
-			tabela.innerHTML += `
+function inserirDadosTabela() {
+  let servicos = JSON.parse(localStorage.getItem('servicos'));
+  console.log(servicos);
+
+  tabela.innerHTML += `
 			<tr>
-			<td>${i.name}</td>
-			<td>${i.value}</td>
+			<td>${i.nome}</td>
+			<td>${i.valor}</td>
 			</tr>
 			`;
-			total += parseInt(i.value);
-			tabelaTotal.innerHTML = `R$ ${+total}`	
-			console.log(total)
-		} else {
-			console.log('Serviço já adicionado');
-		}
-	}
+  tabelaTotal.innerHTML = `R$ ${+totalServecos}`;
+  console.log(totalServecos);
 }
-
-
-
-
-
-
-
-
-
-
-
