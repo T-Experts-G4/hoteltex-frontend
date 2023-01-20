@@ -323,7 +323,7 @@
                       <div class="reserva__botoes">
                         <span>Adicione mais serviços</span>
                       <button class="reserva__botao botao--servico" id="botaoServicos" onclick="abreModalServicos()"><a href="#">+ SERVIÇOS</a></button>                   
-                      <button class="reserva__botao botao--continua" type="button" onclick="modal()">Continuar</button>
+                      <button class="reserva__botao botao--continua" type="button" onclick="modal(), adicionaitensNoHTML()">Continuar</button>
                     </div>                      
                       <div class="modalSection disable">
                         <h2>Confirmar a reserva ?</h2>
@@ -345,11 +345,14 @@
                                 <h4>Adultos:</h4> 
                                 <p id="adultoModal"></p>
                               </div>
-                              <div class="hotel__lado_resumo-servicos">
+                              <div class="hotel__lado_resumo-servicos primeiraColuna">
                         <span>Serviços adicionados</span>
                         <table id="tabela__selecionados_modal-resumo">
                           
-                        </table>                      
+                        </table>  
+                        <table id="tabela__selecionados_modal-resumo-total">
+
+                        </table>                    
                       </div>
                               <div class="segundaColuna">
                                 <h4>Crianças:</h4>

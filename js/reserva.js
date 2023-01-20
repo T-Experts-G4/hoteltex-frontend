@@ -94,23 +94,32 @@ function pegaItensLocalStorage() {
 function adicionaitensNoHTML() {
   const itens = pegaItensLocalStorage();
   let tabelaModalresumo = '';
+  let tabelaModalResumoTotal = '';
   let nome = '';
   let valor = 0;
+  let totalDosItens = 0;
   itens.forEach(function(item) {
     nome = item.nome;
     valor = +item.valor;
+    totalDosItens += valor;
+    (tabelaModalresumo = document.querySelector(
+      '#tabela__selecionados_modal-resumo',
+    )),
+      (tabelaModalResumoTotal = document.querySelector(
+        '#tabela__selecionados_modal-resumo-total',
+      ));
     tabelaModalresumo.innerHTML += `
     <tr>
-    <td>${nome}</td>
-    <td>R$ ${valor}</td>
+    <td><strong>${nome}</strong></td>
+    <td><strong>R$ ${valor},00</strong></td>
     </tr>    
+    `;
+    tabelaModalResumoTotal.innerHTML = ` 
+    <tr>
+    <td><strong>Total:</strong></td>
+    <td><strong>R$ ${totalDosItens},00</strong></td>
+    </tr> 
     `; 
-    setTimeout(function() {
-    tabelaModalresumo = document.querySelector(
-      '#tabela__selecionados_modal-resumo',
-    );
-    }, .1000)
-  
   })
 }
 
@@ -127,9 +136,6 @@ function modal() {
     document.getElementById('criancaModal').innerHTML = localStorage.getItem('criancas')
     document.getElementById('diasModal').innerHTML = localStorage.getItem('dias')
     document.getElementById('totalModal').innerHTML = 'R$ ' + localStorage.getItem('total')
-
-    adicionaitensNoHTML();
-
     modalElement.classList.remove('disable')
   }else {
     modalElement.classList.add('disable')

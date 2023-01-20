@@ -52,8 +52,6 @@ function calcularServicos() {
   }
 	totalServicos += valoresRecebidos;
 	inserirDadosTabela(nomeRecebido, valoresRecebidos);
-  console.log(totalServicos);
-  console.log(servicosAdicionados);
 }
 
 //Inserindo dados na tabela
