@@ -1412,3 +1412,18 @@ a {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*Em construção*/
+.emConstrução__titulo {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+.container_emConstruçao{
+  display: block;
+  text-align: center;
+}
+.emConstrucao_img {
+  width: 400px;
+}
+
