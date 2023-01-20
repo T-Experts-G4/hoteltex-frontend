@@ -7,29 +7,37 @@
     <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/telasDeLogin.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <script src="../js/login.js" defer></script>
 </head>
 <body>
     <header>
         <script src="../js/header.js"></script>
-      </header>
-    <div class="estiloLogin imagemPraia">
-        <p class="estiloFonte">Login</p>
-        <form action="" method="post">
-            <label class="estilo__fonte--input" for="nome_usuario">Email</label>
-            <input class="estiloInput" type="text" name="emailUsuario" id="user">
-            <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
-            <input class="estiloInput " type="password" name="senhaUsuario" id="password">
-            <div class="centralizaBotao">
-                <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button>
-            </div>
-        </form>
-        <div class="centralizaSenha">
-            <div class="estiloSenha">
-                <p>Esqueceu sua senha?</p>
+    </header>
+    <main>
+        <div class="estiloLogin imagemPraia">
+            <p class="estiloFonte">Login</p>
+            <form action="" method="post">
+                <label class="estilo__fonte--input" for="nome_usuario">Email</label>
+                <input class="estiloInput" type="text" name="emailUsuario" id="user">
+                <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
+                <input class="estiloInput " type="password" name="senhaUsuario" id="password">
+                <div class="centralizaBotao">
+                    <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button>
+                </div>
+            </form>
+            <div class="centralizaSenha">
+                <div class="estiloSenha">
+                    <p><a href="./emConstrucao.html">Esqueceu sua senha?</a></p>
+                </div>
             </div>
         </div>
-    </div>
+        <div style="width: 200px;" class="alert alert-danger mx-auto d-none" role="alert" id="erroAutentic">
+           <span class="mx-auto text-justify">Usuario e senha invalida</span>
+        </div>
+    </main>
     <footer>
         <script src="../js/footer.js"></script>
     </footer>
