@@ -1,0 +1,244 @@
+// Modal
+@use '../abstracts/variaveis' as *;
+@use '../abstracts/mixins' as *;
+
+$color_1: #fff;
+$color_2: #555;
+$color_3: #8e8e8e;
+$color_4: #777;
+$color_5: #333;
+$color_6: #313437;
+$color_7: #969696;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Open sans', sans-serif;
+$background-color_1: #f9fafb;
+$background-color_2: #fff;
+$background-color_3: #ff3b3b;
+$background-color_4: #4CAF50;
+$background-color_5: #FFC107;
+$background-color_6: #0085d3;
+$border-color_1: #4CAF50;
+$border-color_2: #FFC107;
+$border-color_3: #0085d3;
+
+/*Card verde*/
+/*Card verde*/
+/*Card laranja*/
+/*Card laranja*/
+/*Card azul*/
+/*Card azul*/
+.services {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: cal(100vw);
+	padding : 1rem;
+	background-color: rgba($color: #ebe7e7, $alpha: 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & .service__cabecalho{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+    &--titulo {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: $color_5;
+      margin-bottom: 1rem;
+    }
+    &--paragrafo {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color_3;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.service__itens{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 0 auto;
+  padding: 2rem;
+
+  & .cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.7s;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: $background-color_2;
+    box-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+
+    & .service__imagem {
+      width: 15rem;
+      height: 15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+       & .service__imagem-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: $azul;
+        box-shadow: 0 0 0 .1rem rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.7s;
+      }
+    }
+
+    &:hover {
+      box-shadow: .5rem .5rem .3rem rgba(0, 0, 0, 0.15);
+    }    
+  }
+}
+
+.service__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;  
+  
+  &--title {
+    font-size: 17px;
+    font-family: $font-family_1;
+    color: $color_2;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &--paragrafo {
+    margin-top: 10px;
+    color: $color_3;
+    font-family: $font-family_1;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}  
+
+.serv-hr {
+  margin: 0 auto;
+  width: 50px;
+  opacity: 0.5;
+  border: 1px solid #ff3b3b;
+} 
+
+.serv-hr.s-green {
+	border-color: $border-color_1;
+}
+
+.serv-hr.s-orange {
+	border-color: $border-color_2;
+}
+.serv-hr.s-blue {
+	border-color: $border-color_3;
+}
+
+.botaoAdicionar {
+  background-color: $azul;
+  color: $branco;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $laranja;
+  }  
+  &::before {
+    content: "Adicionar";    
+  }
+} 
+
+.botaoAdicionarClicado {
+  background-color: #555;
+  color: $branco;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  &::before {
+    content: "Adicionado";    
+  }
+}
+
+.modalBotaoFechar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+  .botaoFechar {
+    width: 40%;
+    background-color: $laranja;
+    color: $branco;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $azul;
+    }
+  }
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $color_3;
+  margin-bottom: 2rem;
+  & thead {
+    background-color: $background-color_2;
+    border-bottom: 1px solid #ddd;
+    & tr {
+      & th {
+        padding: 1rem;
+        text-align: left;
+      }
+    }
+  }
+  & tbody {
+    & tr {
+      border-bottom: 1px solid #ddd;
+      & td {
+        padding: 1rem;
+        text-align: left;
+      }
+    }
+  }
+}

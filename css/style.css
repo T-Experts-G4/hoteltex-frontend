@@ -777,33 +777,46 @@ table {
 .hotel__lado_resumo {
   flex-direction: column;
   border: 1px solid #000;
-  max-width: 100%;
+  width: 30%;
   max-height: 100%;
   background-color: #fff;
+  padding: 1rem;
 }
-.hotel__lado_resumo a {
-  display: flex;
-  padding: 10%;
-  text-decoration: underline;
-  font-weight: 700;
-  text-justify: left;
+.hotel__lado_resumo span {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  padding: 0.4rem;
+  text-align: center;
+  font-weight: bold;
 }
-.hotel__lado_resumo button {
+.hotel__lado_resumo .reserva__botoes .reserva__botao {
+  width: 100%;
   display: flex;
-  padding: 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  display: flex;
   border: none;
-  padding: 13%;
-  margin-left: 10%;
   background-color: #fc5d01;
-  color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
   border-radius: 1rem;
 }
-.hotel__lado_resumo button a {
-  margin: 0;
-  padding: 0;
+.hotel__lado_resumo .reserva__botoes .reserva__botao a {
+  display: flex;
+  font-weight: 700;
+  text-decoration: none;
+  text-justify: left;
+  padding: 2rem 1rem;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.hotel__lado_resumo .reserva__botoes .reserva__botao :hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
 }
 .hotel__lado_resumo h3 {
   font-size: 1.4rem;
@@ -1425,6 +1438,217 @@ i {
 a {
   text-decoration: none;
   text-transform: uppercase;
+} /*Card verde*/
+/*Card verde*/
+/*Card laranja*/
+/*Card laranja*/
+/*Card azul*/
+/*Card azul*/
+.services {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: cal(100vw);
+  padding: 1rem;
+  background-color: rgba(235, 231, 231, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services .service__cabecalho {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.services .service__cabecalho--titulo {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.services .service__cabecalho--paragrafo {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin-bottom: 2rem;
+}
+
+.service__itens {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 0 auto;
+  padding: 2rem;
+}
+.service__itens .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.7s;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+}
+.service__itens .cards .service__imagem {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.service__itens .cards .service__imagem .service__imagem-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #00c1ea;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.7s;
+}
+.service__itens .cards:hover {
+  box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.service__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.service__info--title {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.service__info--paragrafo {
+  margin-top: 10px;
+  color: #8e8e8e;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.serv-hr {
+  margin: 0 auto;
+  width: 50px;
+  opacity: 0.5;
+  border: 1px solid #ff3b3b;
+}
+
+.serv-hr.s-green {
+  border-color: #4CAF50;
+}
+
+.serv-hr.s-orange {
+  border-color: #FFC107;
+}
+
+.serv-hr.s-blue {
+  border-color: #0085d3;
+}
+
+.botaoAdicionar {
+  background-color: #00c1ea;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.botaoAdicionar:hover {
+  background-color: #fc5d01;
+}
+.botaoAdicionar::before {
+  content: "Adicionar";
+}
+
+.botaoAdicionarClicado {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.botaoAdicionarClicado::before {
+  content: "Adicionado";
+}
+
+.modalBotaoFechar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.modalBotaoFechar .botaoFechar {
+  width: 40%;
+  background-color: #fc5d01;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.modalBotaoFechar .botaoFechar:hover {
+  background-color: #00c1ea;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #8e8e8e;
+  margin-bottom: 2rem;
+}
+table thead {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+table thead tr th {
+  padding: 1rem;
+  text-align: left;
+}
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+table tbody tr td {
+  padding: 1rem;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */

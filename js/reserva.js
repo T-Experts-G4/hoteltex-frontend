@@ -77,6 +77,7 @@ window.addEventListener('load', function () {
   localStorage.removeItem('quartoValor');
   localStorage.removeItem('total');
   localStorage.removeItem('dias');
+  localStorage.removeItem('servicos');
 });
 
 // selecaoInput.forEach(function(item) {
@@ -85,6 +86,43 @@ window.addEventListener('load', function () {
 //     console.log(e.target.name);
 //   })
 // })
+function pegaItensLocalStorage() {
+  const itens = JSON.parse(localStorage.getItem('servicos'));
+  return itens;
+}
+
+function adicionaitensNoHTML() {
+  const itens = pegaItensLocalStorage();
+  let tabelaModalresumo = '';
+  let tabelaModalResumoTotal = '';
+  let nome = '';
+  let valor = 0;
+  let totalDosItens = 0;
+  itens.forEach(function(item) {
+    nome = item.nome;
+    valor = +item.valor;
+    totalDosItens += valor;
+    (tabelaModalresumo = document.querySelector(
+      '#tabela__selecionados_modal-resumo',
+    )),
+      (tabelaModalResumoTotal = document.querySelector(
+        '#tabela__selecionados_modal-resumo-total',
+      ));
+    tabelaModalresumo.innerHTML += `
+    <tr>
+    <td><strong>${nome}</strong></td>
+    <td><strong>R$ ${valor},00</strong></td>
+    </tr>    
+    `;
+    tabelaModalResumoTotal.innerHTML = ` 
+    <tr>
+    <td><strong>Total:</strong></td>
+    <td><strong>R$ ${totalDosItens},00</strong></td>
+    </tr> 
+    `; 
+  })
+}
+
 
 function modal() { 
   const modalElement = document.querySelector('.modalSection')
