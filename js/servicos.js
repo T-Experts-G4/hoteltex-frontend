@@ -40,33 +40,37 @@ function alimentaLocalStorage(servicos) {
   calcularServicos();
 }
 
-let servicosStorage = JSON.parse(localStorage.getItem('servicos'));
-let totalServecos = 0;
+
+let totalServicos = 0;
 function calcularServicos() {
   let servicosAdicionados = JSON.parse(localStorage.getItem('servicos'));
   let valoresRecebidos = 0;
+	let nomeRecebido = '';
   for (let i of servicosAdicionados) {
-    valoresRecebidos += parseInt(i.valor);
+    valoresRecebidos = parseInt(i.valor);
+		nomeRecebido = i.nome;
   }
-  totalServecos = valoresRecebidos;
-  console.log(totalServecos);
+	totalServicos += valoresRecebidos;
+	inserirDadosTabela(nomeRecebido, valoresRecebidos);
+  console.log(totalServicos);
   console.log(servicosAdicionados);
-  // document.querySelector('#total__servicos').innerHTML = `R$ ${+total}`;
 }
 
 //Inserindo dados na tabela
 let tabela = document.querySelector('#tabela__selecionados');
 let tabelaTotal = document.querySelector('#tabela__selecionados_total');
-function inserirDadosTabela() {
-  let servicos = JSON.parse(localStorage.getItem('servicos'));
-  console.log(servicos);
-
-  tabela.innerHTML += `
+function inserirDadosTabela(nome, valor) {
+   tabela.innerHTML += `
 			<tr>
-			<td>${i.nome}</td>
-			<td>${i.valor}</td>
+			<td>${nome}</td>
+			<td>R$ ${valor},00</td>
 			</tr>
 			`;
-  tabelaTotal.innerHTML = `R$ ${+totalServecos}`;
-  console.log(totalServecos);
+
+			tabelaTotal.innerHTML = `
+			<tr>
+			<td>Total</td>
+      <td>R$ ${totalServicos},00</td>	
+			</tr>
+			`;
 }

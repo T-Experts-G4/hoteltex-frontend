@@ -77,6 +77,7 @@ window.addEventListener('load', function () {
   localStorage.removeItem('quartoValor');
   localStorage.removeItem('total');
   localStorage.removeItem('dias');
+  localStorage.removeItem('servicos');
 });
 
 // selecaoInput.forEach(function(item) {
@@ -85,6 +86,34 @@ window.addEventListener('load', function () {
 //     console.log(e.target.name);
 //   })
 // })
+function pegaItensLocalStorage() {
+  const itens = JSON.parse(localStorage.getItem('servicos'));
+  return itens;
+}
+
+function adicionaitensNoHTML() {
+  const itens = pegaItensLocalStorage();
+  let tabelaModalresumo = '';
+  let nome = '';
+  let valor = 0;
+  itens.forEach(function(item) {
+    nome = item.nome;
+    valor = +item.valor;
+    tabelaModalresumo.innerHTML += `
+    <tr>
+    <td>${nome}</td>
+    <td>R$ ${valor}</td>
+    </tr>    
+    `; 
+    setTimeout(function() {
+    tabelaModalresumo = document.querySelector(
+      '#tabela__selecionados_modal-resumo',
+    );
+    }, .1000)
+  
+  })
+}
+
 
 function modal() { 
   const modalElement = document.querySelector('.modalSection')
@@ -98,6 +127,9 @@ function modal() {
     document.getElementById('criancaModal').innerHTML = localStorage.getItem('criancas')
     document.getElementById('diasModal').innerHTML = localStorage.getItem('dias')
     document.getElementById('totalModal').innerHTML = 'R$ ' + localStorage.getItem('total')
+
+    adicionaitensNoHTML();
+
     modalElement.classList.remove('disable')
   }else {
     modalElement.classList.add('disable')
