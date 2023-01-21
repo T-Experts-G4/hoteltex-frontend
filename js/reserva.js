@@ -121,10 +121,16 @@ function adicionaitensNoHTML() {
     </tr> 
     `; 
   })
+  console.log(totalDosItens)
 }
 
-
 function modal() { 
+  let totalServ = JSON.parse(localStorage.getItem('servicos'))
+  console.log(totalServ)
+  let totalQuartoServico = totalServ.reduce((sum, valorT) => {
+    return sum + parseFloat(valorT.valor);
+  }, 0);
+  console.log(totalQuartoServico);
   const modalElement = document.querySelector('.modalSection')
   if (modalElement.classList.contains('disable')) {
     const imgQuartos = '../imagens/acomodacoes/' + localStorage.getItem('imagensQuarto')
@@ -135,7 +141,8 @@ function modal() {
     document.getElementById('adultoModal').innerHTML = localStorage.getItem('adultos')
     document.getElementById('criancaModal').innerHTML = localStorage.getItem('criancas')
     document.getElementById('diasModal').innerHTML = localStorage.getItem('dias')
-    document.getElementById('totalModal').innerHTML = 'R$ ' + localStorage.getItem('total')
+    document.getElementById('totalModal').innerHTML = `R$  ${parseFloat(localStorage.getItem('total')) + parseFloat(totalQuartoServico)}`
+    
     modalElement.classList.remove('disable')
   }else {
     modalElement.classList.add('disable')
