@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
+    <script>
+    	let usuario = localStorage.getItem('user');
+    	if (usuario == null) {
+    	  window.location = "./login.html";
+   	   console.log('Usuário não está logado');
+    	} else {
+    	  console.log('Usuário está logado');
+    	}
+    </script>
 </head>
 <body>
   <header>
