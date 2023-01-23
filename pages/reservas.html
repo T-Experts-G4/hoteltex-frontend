@@ -381,6 +381,26 @@
             </div>
           </article>
         </section>
+        <section class="modalLogin" style="display: none;">
+          <div class="estiloLogin imagemPraia">
+            <p class="estiloFonte">Login</p>
+            <form action="" method="post">
+                <label class="estilo__fonte--input" for="nome_usuario">Email</label>
+                <input class="estiloInput" type="text" name="emailUsuario" id="user">
+                <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
+                <input class="estiloInput " type="password" name="senhaUsuario" id="password">
+                <div class="centralizaBotao">
+                    <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button>
+                </div>
+            </form>
+            <div class="centralizaSenha">
+                <div class="estiloSenha">
+                    <p><a href="./emConstrucao.html">Esqueceu sua senha?</a></p>
+                </div>
+            </div>
+        </div>
+        </section>
+        
         
       </main>
   
@@ -391,4 +411,5 @@
   <script src="../js/user.js" defer></script>
   <script src="../js/reserva.js" async></script>
   <script src="../js/servicos.js"></script>
+  <script src="../js/userLocalStorage.js"></script>
 </html>
