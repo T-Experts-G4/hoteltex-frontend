@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
+    <script>
+    	let usuario = localStorage.getItem('user');
+    	if (usuario == null) {
+    	  window.location = "./login.html";
+   	   console.log('Usuário não está logado');
+    	} else {
+    	  console.log('Usuário está logado');
+    	}
+    </script>
 </head>
 <body>
   <header>
@@ -381,6 +390,26 @@
             </div>
           </article>
         </section>
+        <section class="modalLogin" style="display: none;">
+          <div class="estiloLogin imagemPraia">
+            <p class="estiloFonte">Login</p>
+            <form action="" method="post">
+                <label class="estilo__fonte--input" for="nome_usuario">Email</label>
+                <input class="estiloInput" type="text" name="emailUsuario" id="user">
+                <label class="estilo__fonte--input" for="nome_usuario">Senha</label>
+                <input class="estiloInput " type="password" name="senhaUsuario" id="password">
+                <div class="centralizaBotao">
+                    <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button>
+                </div>
+            </form>
+            <div class="centralizaSenha">
+                <div class="estiloSenha">
+                    <p><a href="./emConstrucao.html">Esqueceu sua senha?</a></p>
+                </div>
+            </div>
+        </div>
+        </section>
+        
         
       </main>
   
