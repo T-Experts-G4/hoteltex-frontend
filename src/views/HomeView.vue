@@ -53,17 +53,17 @@
           <div class="hotel__icon">
             <img
               class="hotel__icon_image"
-              src="../assets/imagens/icon/hotel_class_FILL0_wght400_GRAD0_opsz48 1.png"
+              src="@/assets/imagens/icon/hotel_class_FILL0_wght400_GRAD0_opsz48.png"
               alt=""
             />
             <img
               class="hotel__icon_image"
-              src="../assets/imagens/icon/hotel_FILL0_wght400_GRAD0_opsz48 1.png"
+              src="../assets/imagens/icon/hotel_FILL0_wght400_GRAD0_opsz48.png"
               alt=""
             />
             <img
               class="hotel__icon_image"
-              src="../assets/imagens/icon/room_service_FILL0_wght400_GRAD0_opsz48 1.png"
+              src="../assets/imagens/icon/room_service_FILL0_wght400_GRAD0_opsz48.png"
               alt=""
             />
           </div>
