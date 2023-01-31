@@ -5,6 +5,7 @@
     <router-link to="/acomodacoes">ACOMODAÇÕES</router-link>
     <router-link to="/gastronomia">GASTRONOMIA</router-link>
     <router-link to="/contato">CONTATO</router-link>
+
   </nav>
 </template>
 

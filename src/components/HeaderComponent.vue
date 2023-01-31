@@ -8,10 +8,10 @@
             </div>
             <div class="header__usuario">
             ${validaLogin()}
-            <a class="header__usuario--cadastro botao__form" href="./cadastro_hospede.html" id="btnCadastro">Cadastre-se</a>
-              <a class="header__usuario--login botao__form" href="./LoginPage.vue" id="btnLogin">LOGIN<i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></a>
+            <router-link  class="header__usuario--cadastro botao__form" to="/cadastro_hospede.html" id="btnCadastro">Cadastre-se</router-link>
+              <router-link  class="header__usuario--login botao__form" to="/LoginView" id="btnLogin">LOGIN<i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></router-link>
               <span id='nmUser'></span>
-              <a class="header__usuario--login botao__form" href="./home.html" id="btnLogout">LOGOUT<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+              <router-link  class="header__usuario--login botao__form" to="/home.html" id="btnLogout">LOGOUT<i class="fa fa-sign-out" aria-hidden="true"></i></router-link>
             </div>
   </div>
 
