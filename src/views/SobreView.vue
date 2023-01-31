@@ -1,9 +1,11 @@
 <template>
 <HeaderComponent />
 <NavbarComponent />
-  <div class="about">
-    <h1>NOSSO HOTEL</h1>
-  </div>
+<h1>Monte a página sobre escrevendo o html</h1>
+<!-- escreva o código aqui abaixo -->
+<router-link class="botao_reserva" target="_blank" to="/reservas">
+  <i class="fa fa-book"></i>Reserve aqui!
+</router-link>
 <FooterComponent />
 </template>
 

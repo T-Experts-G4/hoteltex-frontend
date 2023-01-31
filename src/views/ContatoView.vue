@@ -3,6 +3,7 @@
 <NavbarComponent />
   <div class="about">
     <h1>CONTATO</h1>
+    <span>trabalhar na tela de contato</span>
   </div>
 <FooterComponent />
 </template>
