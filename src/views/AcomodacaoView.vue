@@ -63,7 +63,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 
 export default {
-  name: 'GastronomiaView',
+  name: 'AcomodacaoView',
   components: {
     NavbarComponent, FooterComponent, HeaderComponent
   }
