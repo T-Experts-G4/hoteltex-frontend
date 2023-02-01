@@ -2,7 +2,7 @@
 <HeaderComponent />
 <NavbarComponent />
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Página de Cadastro do usuário</h1>
   </div>
 <FooterComponent />
 </template>
