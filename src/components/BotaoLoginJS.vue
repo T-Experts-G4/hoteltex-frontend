@@ -20,12 +20,11 @@ export default {
       } else if (user.value === funcionario.user && password.value === funcionario.password) {
         localStorage.setItem('user', funcionario.user)
         window.location.href = './admin/home_admin.html'
-
       } else {
         console.log('Usuario e senha invalida')
         erroAutentic.classList.remove('d-none')
-        }
+      }
     })
-}
+  }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <HeaderJS />
+    <BotaoLoginJS />
     <HeaderComponent />
     <NavbarComponent />
     <main>
@@ -12,7 +12,7 @@
                     <input class="estiloInput " type="password" name="senhaUsuario" id="password">
                     <div class="centralizaBotao">
                         <!-- <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button> -->
-                        <router-link to="/" id="btnConfirma" class="estiloBotao">INICIO</router-link>
+                        <router-link to="/" id="btnConfirma" class="estiloBotao">Confirmar</router-link>
                     </div>
                 </form>
                 <div class="centralizaSenha">
