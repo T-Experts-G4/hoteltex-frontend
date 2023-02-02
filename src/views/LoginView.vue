@@ -12,7 +12,7 @@
                     <input class="estiloInput " type="password" name="senhaUsuario" id="password">
                     <div class="centralizaBotao">
                         <!-- <button type="button" class="estiloBotao" id="btnConfirma">Confirmar</button> -->
-                        <router-link to="/" id="btnConfirma" class="estiloBotao">Confirmar</router-link>
+                        <router-link to="/" id="btnConfirma" class="estiloBotao" @click="atualizarPG">Confirmar</router-link>
                     </div>
                 </form>
                 <div class="centralizaSenha">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div style="width: 200px;" class="alert alert-danger mx-auto d-none" role="alert" id="erroAutentic">
-            <span class="mx-auto text-justify">Usuario e senha invalida</span>
+            <!-- <span class="mx-auto text-justify">Usuario e senha invalida</span> -->
             </div>
         </main>
 <FooterComponent />
@@ -37,6 +37,11 @@ import BotaoLoginJS from '@/components/BotaoLoginJS.vue'
 
 export default {
   name: 'LoginView',
-  components: { NavbarComponent, HeaderComponent, FooterComponent, BotaoLoginJS }
+  components: { NavbarComponent, HeaderComponent, FooterComponent, BotaoLoginJS },
+  methods: {
+    atualizarPG () {
+      location.reload()
+    }
+  }
 }
 </script>
