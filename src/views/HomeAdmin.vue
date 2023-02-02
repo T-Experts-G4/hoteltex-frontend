@@ -10,7 +10,7 @@
         <p id="info_reservas"></p>
       </div>
       <div class="card__detalhes">
-        <a href="../admin/reservas_admin.html">Ver detalhes</a>
+        <router-link to="/ReservasAdmin">Ver detalhes</router-link>
       </div>
     </div>
     <div class="card">

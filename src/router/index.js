@@ -51,6 +51,11 @@ const routes = [
     path: '/HomeAdmin',
     name: 'HomeAdmin',
     component: () => import('../views/HomeAdmin.vue')
+  },
+  {
+    path: '/ReservasAdmin',
+    name: 'ReservasAdmin',
+    component: () => import('../views/ReservasAdmin.vue')
   }
 ]
 
