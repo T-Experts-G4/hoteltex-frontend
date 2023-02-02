@@ -10,8 +10,8 @@
             {{validaLogin()}}
             <router-link v-if="!showUser" class="header__usuario--cadastro botao__form" to="/cadastro" id="btnCadastro">Cadastre-se</router-link>
               <router-link v-if="!showUser" class="header__usuario--login botao__form" to="/LoginView" id="btnLogin">LOGIN<i class="fa fa-sign-in fa-lg" aria-hidden="true"></i></router-link>
-              <span id='nmUser'> {{ showUser }} </span>
-              <router-link v-if="showUser" class="header__usuario--login botao__form" to="/home.html" id="btnLogout">LOGOUT<i class="fa fa-sign-out" aria-hidden="true"></i></router-link>
+              <span id='nmUser' v-if="showUser"> Olá, {{ showUser }} </span>
+              <router-link v-if="showUser" @click="logout" class="header__usuario--login botao__form" to="/" id="btnLogout">LOGOUT<i class="fa fa-sign-out" aria-hidden="true"></i></router-link>
             </div>
   </div>
 
@@ -29,7 +29,16 @@ export default {
     validaLogin () {
       this.showUser = localStorage.getItem('user')
       console.log(this.showUser)
+    },
+    logout () {
+      localStorage.removeItem('user')
+      location.reload()
     }
   }
 }
 </script>
+<style scoped>
+  .header{
+    background-color: #ffe181
+  }
+</style>
