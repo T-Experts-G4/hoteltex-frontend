@@ -46,6 +46,21 @@ const routes = [
     path: '/Cadastro',
     name: 'Cadastro',
     component: () => import('../views/CadastroHospedeView.vue')
+  },
+  {
+    path: '/HomeAdmin',
+    name: 'HomeAdmin',
+    component: () => import('../views/HomeAdmin.vue')
+  },
+  {
+    path: '/ReservasAdmin',
+    name: 'ReservasAdmin',
+    component: () => import('../views/ReservasAdmin.vue')
+  },
+  {
+    path: '/EmconstrucaoAdmin',
+    name: 'EmconstrucaoAdmin',
+    component: () => import('../views/EmconstrucaoAdmin.vue')
   }
 ]
 
