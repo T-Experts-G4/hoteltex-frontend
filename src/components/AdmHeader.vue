@@ -6,9 +6,9 @@
     <div class="header__titulo">
       <h1>Hotel T.Ex Beach</h1>
     </div>
-    <div class="header__usuario">
+    <div class="header__usuario" v-on="validaLogin()">
       <span id="nmUser">Olá, {{ showUser }}</span>
-      <router-link v-if="!showUser"
+      <router-link v-if="showUser"
         class="header__usuario--login botao__form"
         id="btnLogout"
         @click="logout"
@@ -26,23 +26,23 @@
       >
       <router-link
         class="header__usuario--login botao__form"
-        to="/ReservasAdmin"
+        to="/EmconstrucaoAdmin"
         >Reservas</router-link>
         <router-link
         class="header__usuario--login botao__form"
-        to="/OcupacaoAdmin"
+        to="/EmconstrucaoAdmin"
         >Ocupação</router-link>
         <router-link
         class="header__usuario--login botao__form"
-        to="/FinanceiroAdmin"
+        to="/EmconstrucaoAdmin"
         >Financeiro</router-link>
         <router-link
         class="header__usuario--login botao__form"
-        to="/OcorrenciasAdmin"
+        to="/EmconstrucaoAdmin"
         >Ocorrências</router-link>
         <router-link
         class="header__usuario--login botao__form"
-        to="/SuporteAdmin"
+        to="/EmconstrucaoAdmin"
         >Suporte</router-link>
     </nav>
   </div>
