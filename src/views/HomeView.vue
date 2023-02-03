@@ -1,0 +1,194 @@
+<template>
+<HeaderComponent />
+<NavbarComponent />
+<main>
+      <section id="hotel" class="container hotel">
+        <h2 class="hotel__titulo titulo">Sobre o nosso hotel</h2>
+        <span class="container__linha_horizontal"></span>
+
+        <div class="hotel_sobre">
+          <div class="hotel__sobre--img">
+            <img
+              src="../assets/imagens/acomodacoes/fachada.jpg"
+              alt="Hoteltex"
+              title="Hotel Tex"
+            />
+            <div class="hotel__linha_vertical">
+              <span></span>
+            </div>
+          </div>
+
+          <p class="hotel__sobre--texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure
+            est ipsum. Possimus nobis vitae quae, dolorem hic minus neque
+            aperiam officiis temporibus modi illum mollitia quis. Atque fugiat,
+            temporibus cum ea iste repellat officiis cumque quisquam impedit non
+            pariatur doloribus hic minima totam! Fugiat necessitatibus, quod
+            expedita fugit perferendis sit asperiores, nobis culpa recusandae
+            doloribus neque veritatis magni sunt eveniet nemo vitae rem et vel
+            adipisci, repudiandae quae. Repellat aperiam autem, deleniti magnam
+            ut consectetur in! Distinctio?
+          </p>
+
+          <p class="hotel__sobre--texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            sapiente reprehenderit explicabo consequuntur ad? Amet quia fuga
+            reprehenderit perferendis ipsum obcaecati corrupti numquam
+            molestias, perspiciatis iure aut debitis expedita asperiores?
+          </p>
+          <p class="hotel__sobre--texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem
+            deserunt ipsum quas cumque molestias rem, veniam enim tempore non
+            iure libero voluptas dicta est nisi nesciunt totam aliquid illum?
+          </p>
+          <p class="hotel__sobre--texto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+            nostrum nulla optio veniam, alias molestiae, consequuntur cum
+            doloribus voluptatum dolorum sint suscipit amet! Blanditiis est iure
+            reprehenderit quam laboriosam a hic, mollitia dolores cum distinctio
+            possimus minima explicabo debitis non adipisci necessitatibus sed?
+            Doloribus temporibus iure quod debitis, assumenda perferendis!
+          </p>
+
+          <div class="hotel__icon">
+            <img
+              class="hotel__icon_image"
+              src="@/assets/imagens/icon/hotel_class_FILL0_wght400_GRAD0_opsz48.png"
+              alt=""
+            />
+            <img
+              class="hotel__icon_image"
+              src="../assets/imagens/icon/hotel_FILL0_wght400_GRAD0_opsz48.png"
+              alt=""
+            />
+            <img
+              class="hotel__icon_image"
+              src="../assets/imagens/icon/room_service_FILL0_wght400_GRAD0_opsz48.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <a class="botao_reserva" href="../assets/pages/reservas.html" target="_blank">
+          <i class="fa fa-book"></i>Reserve aqui!
+        </a>
+      </section>
+      <!-- Nossas acomdações -->
+      <section class="container acomodacao">
+        <h2 class="acomodacao__titulo titulo">Nossas acomodações</h2>
+        <span class="container__linha_horizontal"></span>
+        <div class="acomodacao__carrossel">
+          <a href="../assets/pages/acomodacao.html"
+            ><img
+              class="acomodacao__img"
+              src="../assets/imagens/acomodacoes/apart01.jpg"
+              alt="Acomodações do quarto"
+          /></a>
+          <a href="../assets/pages/acomodacao.html"
+            ><img
+              class="acomodacao__img"
+              src="../assets/imagens/acomodacoes/apart02.jpg"
+              alt="Acomodações do quarto"
+          /></a>
+          <a href="../assets/pages/acomodacao.html"
+            ><img
+              class="acomodacao__img"
+              src="../assets/imagens/acomodacoes/lobby.jpg"
+              alt="Acomodações loby"
+          /></a>
+        </div>
+        <div class="acomodacao__banner">
+          <a href="../assets/pages/acomodacao.html"
+            ><img
+              class="acomodacao__banner__img"
+              src="../assets/imagens/acomodacoes/bannerPiscina.jpeg"
+              alt="Acomodações vista"
+          /></a>
+        </div>
+        <a
+          class="acomodacao__botao botao__principal"
+          href="../assets/pages/acomodacao.html"
+          >Saiba mais sobre nossas acomodações</a
+        >
+
+        <a
+          class="acomodacao__botao botao__mobile"
+          href="../assets/pages/acomodacao.html"
+          >Saiba mais</a
+        >
+      </section>
+      <section id="gastronomia" class="container gastronomia">
+        <h2 class="gastronomia__titulo titulo">Gastronomia</h2>
+        <span class="container__linha_horizontal"></span>
+
+        <div class="gastronomia_conteudo">
+          <div class="gastronomia_sobre">
+            <p class="hotel__sobre--texto">
+              Hotéis de luxo e conceituais, oferecem muito mais que conforto,
+              sofisticação e serviços exclusivos, apostam constantemente em
+              variedades de experiências para encantar o hóspede . A alta
+              gastronomia no Brasil é a mais marcante, aonde os sabores, aromas
+              e visual dos pratos, são um charme à parte. O país possui
+              espalhados por diversas regiões, hotéis comandados por chefs
+              premiados que assinam cardápios exclusivos e fazem seus
+              restaurantes serem uma experiência gourmet inesquecível.
+            </p>
+            &nbsp;
+            <p class="hotel__sobre--texto">
+              Com um conceito descontraído, mas elegante, a gastronomia prioriza
+              a qualidade dos produtos e a simplicidade das técnicas, com a
+              grelha e as brasas como protagonistas. Destacando a grelha de
+              frutos do mar, saladas e pratos a serem compartilhados, o Marine
+              Restô surpreende-se ao transformar todas as ocasiões.
+            </p>
+          </div>
+          <div class="gastronomia__linha__vertical"></div>
+          <img
+            class="gastronomia_image"
+            src="../assets/imagens/gastronomia.jpg"
+            alt="Gastronomia Hotel"
+          />
+        </div>
+        <div class="gastronomia__icon">
+          <img
+            class="gastronomia__icon__image"
+            src="../assets/imagens/icon/garfo-e-faca.png"
+            alt=""
+          />
+          <img
+            class="gastronomia__icon__image"
+            src="../assets/imagens/icon/livro.png"
+            alt=""
+          />
+          <img
+            class="gastronomia__icon__image"
+            src="../assets/imagens/icon/coquetel-na-taca-de-vinho.png"
+            alt=""
+          />
+          <img
+            class="gastronomia__icon__image"
+            src="../assets/imagens/icon/servico-de-comida.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+<router-link class="botao_reserva" target="_blank" to="/reservas">
+  <i class="fa fa-book"></i>Reserve aqui!
+</router-link>
+<FooterComponent />
+</template>
+
+<script>
+// @ is an alias to /src
+import NavbarComponent from '@/components/NavbarComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+import HeaderComponent from '@/components/HeaderComponent.vue'
+
+export default {
+  name: 'HomeView',
+  components: {
+    NavbarComponent, FooterComponent, HeaderComponent
+  }
+}
+</script>
