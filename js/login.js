@@ -9,16 +9,33 @@ const cliente = { user: "client", password: "client" };
 btnConfirma.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (user.value === cliente.user && password.value === cliente.password) {
-        window.location.href = "./home.html";
-        localStorage.setItem('user', cliente.user);
-        console.log("Logado");
-    }else if (user.value === funcionario.user && password.value === funcionario.password){
-        localStorage.setItem('user', funcionario.user);
-        window.location.href = "./admin/home_admin.html";
+    fetch("http://localhost:8080/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            email: user.value,
+            senha: password.value,
+        }),
 
-    } else {
-        console.log("Usuario e senha invalida");
-        erroAutentic.classList.remove("d-none")
-    }
+    })
+    .then(response => response.json())
+    .then((data) => {
+    
+            if (data.usuarioRole === "USUARIO") {
+            window.location.href = "./home.html";
+            localStorage.setItem('user', data.email);
+            console.log("Logado");
+            }else if (data.usuarioRole === "ADMIN"){
+                localStorage.setItem('user', data.email);
+                window.location.href = "./admin/home_admin.html";
+
+            } else {
+                console.log("Usuario e senha invalida");
+                erroAutentic.classList.remove("d-none")
+            }
+
+        }
+    );
 });
