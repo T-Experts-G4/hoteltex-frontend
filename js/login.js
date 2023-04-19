@@ -22,19 +22,20 @@ btnConfirma.addEventListener("click", (e) => {
     })
     .then(response => response.json())
     .then((data) => {
-    
+        localStorage.setItem('user', data.email);
+        localStorage.setItem('userId', data.id);
+
             if (data.usuarioRole === "USUARIO") {
-            window.location.href = "./home.html";
-            localStorage.setItem('user', data.email);
-            console.log("Logado");
+                window.location.href = "./home.html";
+                console.log("Logado");
             }else if (data.usuarioRole === "ADMIN"){
-                localStorage.setItem('user', data.email);
                 window.location.href = "./admin/home_admin.html";
 
             } else {
                 console.log("Usuario e senha invalida");
                 erroAutentic.classList.remove("d-none")
             }
+
 
         }
     );

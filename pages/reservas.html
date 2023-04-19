@@ -169,38 +169,6 @@
                     <label for="">Check-Out:</label>
                     <input type="date" name="check-out" id="checkout" />
                   </li>
-                  <li>
-                    <label for="">Adultos:</label>
-                    <select class="numero_adultos" id="adultos">
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </li>
-                  <li>
-                    <label for="">Crianças:</label>
-                    <select class="numero_criancas" id="criancas">
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </li>
                 </ul>
 
                 <!--Quartos do hotel-->
@@ -211,79 +179,6 @@
                         <label class="hotel__lado_quarto_titulo" for="quarto">Escolha o seu quarto abaixo</label>
                         <hr class="hotel__linha_horizontal" />
                         <div class="hotel__grid" name="quarto">
-                          <label class="hotel__card">
-                            <div class="hotel__card_image">
-                              <img src="../imagens/acomodacoes/apart02.jpg" alt="">
-                            </div>
-                            <div>
-                              <span class="hotel__card_detalhes">
-                                <span class="hotel__titulo_card">
-                                  Executive
-                                </span>
-                                <span class="texto_card">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae enim praesentium.
-                                  Molestias illum perspiciatis neque reiciendis! Tempore quod ipsa autem placeat minima
-                                  consectetur exercitationem praesentium, facilis repudiandae modi quam et quibusdam
-                                  tempora quaerat voluptatum deserunt atque?
-                                </span>
-                                <span class="hotel__quarto_valor">
-                                  R$ 197,89
-                                </span>
-                                <input type="radio" name="quarto" value="197.89" />Selecionar o Apartamento Executive
-                              </span>
-                            </div>
-                            <div class="hotel__linha_vertical-reservas">
-                              <span></span>
-                            </div>
-                          </label>
-                          <hr class="hotel__linha_horizontal" />
-                          <label class="hotel__card">
-                            <div class="hotel__card_image">
-                              <img src="../imagens/acomodacoes/apart03.jpg" alt="">
-                            </div>
-                            <div>
-                              <span class="hotel__card_detalhes">
-                                <span class="hotel__titulo_card">
-                                  Classic
-                                </span>
-                                <span class="texto_card">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae enim praesentium.
-                                  Molestias illum perspiciatis neque reiciendis! Tempore quod ipsa autem placeat minima
-                                  consectetur exercitationem praesentium, facilis repudiandae modi quam et quibusdam
-                                  tempora quaerat voluptatum deserunt atque?
-                                </span>
-                                <span class="hotel__quarto_valor">
-                                  R$ 298,93
-                                </span>
-                                <input type="radio" name="quarto" value="298.93" />Selecionar o Apartamento Classic
-                            </div>
-                            </span>
-                          </label>
-                          <hr class="hotel__linha_horizontal" />
-                          </label>
-                          <label class="hotel__card">
-                            <div class="hotel__card_image">
-                              <img src="../imagens/acomodacoes/apart01.jpg" alt="">
-                            </div>
-                            <div>
-                              <span class="hotel__card_detalhes">
-                                <span class="hotel__titulo_card">
-                                  Premium
-                                </span>
-                                <span class="texto_card">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae enim praesentium.
-                                  Molestias illum perspiciatis neque reiciendis! Tempore quod ipsa autem placeat minima
-                                  consectetur exercitationem praesentium, facilis repudiandae modi quam et quibusdam
-                                  tempora quaerat voluptatum deserunt atque?
-                                </span>
-                                <span class="hotel__quarto_valor">
-                                  R$ 399,87
-                                </span>
-                                <input type="radio" name="quarto" value="399.87" />Selecionar o Apartamento Premium
-                            </div>
-                            </span>
-                          </label>
-                          </label>
                         </div>
                       </li>
                     </ul>
@@ -297,9 +192,7 @@
                       <span id="resumoCheckin"></span>
                       <span>CheckOut:</span>
                       <span id="resumoCheckout"></span>
-                      <span>Pessoas:</span>
-                      <span id="resumoPessoas"></span>
-                    </div>
+                     </div>
                     <div class="hotel__lado_resumo-servicos">
                       <span>Serviços adicionados</span>
                       <table>
@@ -340,8 +233,6 @@
                               <p id="checkinModal"></p>
                               <h4>Check-Out:</h4>
                               <p id="checkoutModal"></p>
-                              <h4>Adultos:</h4>
-                              <p id="adultoModal"></p>
                             </div>
                             <div class="hotel__lado_resumo-servicos primeiraColuna">
                               <span>Serviços adicionados</span>
@@ -353,8 +244,6 @@
                               </table>
                             </div>
                             <div class="segundaColuna">
-                              <h4>Crianças:</h4>
-                              <p id="criancaModal"></p>
                               <h4>Total de dias:</h4>
                               <p id="diasModal"></p>
                               <h4>Valor total:</h4>
@@ -409,5 +298,6 @@
   <script src="../js/user.js" defer></script>
   <script src="../js/reserva.js" async></script>
   <script src="../js/servicos.js"></script>
+  <script src="../js/reservas.js"></script>
 </html>
 
