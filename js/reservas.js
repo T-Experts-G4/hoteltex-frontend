@@ -1,5 +1,5 @@
 const hotelGrid = document.querySelector('.hotel__grid');
-fetch('http://localhost:8080/quartos/hotel/1/listaQuartosDisponiveis', {
+fetch('http://localhost:8080/hotel/1/listaQuartosDisponiveis', {
     method: "GET",
     headers: {
         "Content-Type": "application/json",

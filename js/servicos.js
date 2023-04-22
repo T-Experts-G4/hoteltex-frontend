@@ -1,12 +1,46 @@
 // Abrir modal
-let modalServicos = document.querySelector('.modal__servicos');
+const modalServicos = document.querySelector('.modal__servicos');
+const listaServicos = document.querySelector('#listaServicos');
+
 function abreModalServicos() {
   modalServicos.style.display = 'block';
-  console.log('Clicou no botão Serviços');
+  fetch('http://localhost:8080/servicos',{
+  method: "GET",
+  headers: {
+      "Content-Type": "application/json",
+  }
+})
+  .then(function (resposta) {
+    return resposta.json();
+  }
+    ).then(function (servicos) {
+      servicos.forEach(function (servico) {
+        listaServicos.innerHTML += `
+        <div class="cards service">
+        <div class="service__imagem">
+          <div class="service__imagem-icon">
+            <img src="../imagens/icon/reservas/${servico.nome}.png" alt="${servico.nome}" srcset="" />
+          </div>
+        </div>
+
+        <div class="service__info">
+          <h3 class="service__info--title">${servico.nome}</h3>
+          <hr class="serv-hr s-green" />
+          <p class="service__info--paragrafo">
+            Almoço para uma experiência mais completa e confortavél
+          </p>
+          <p class="service__info--paragrafo"><strong>R$ ${servico.preco}</strong></p>
+          <button type="button" class="botaoAdicionar" id="1" name="Almoço" value="${servico.preco}"></button>
+        </div>
+      </div>`
+
+      })
+    })
 }
 
+
 // Fechar modal
-let botaoFecharModal = document.querySelector('#botaoFechar');
+const botaoFecharModal = document.querySelector('#botaoFechar');
 function fechaModalServicos() {
   modalServicos.style.display = 'none';
 }
@@ -28,13 +62,10 @@ for (let i of botaoAdicionar) {
     i.disabled = true;
     i.style.backgroundColor = '#ccc';
     alimentaLocalStorage(servicos);
-    // localStorage.setItem('id', JSON.stringify(id));
-    // localStorage.setItem('nome', JSON.stringify(nome));
-    // localStorage.setItem('valor', JSON.stringify(valor));
-  });
-}
 
-// Alimentando o localStorage
+  });
+
+  // Alimentando o localStorage
 function alimentaLocalStorage(servicos) {
   localStorage.setItem('servicos', JSON.stringify(servicos));
   calcularServicos();
@@ -72,3 +103,5 @@ function inserirDadosTabela(nome, valor) {
 			</tr>
 			`;
 }
+}
+
