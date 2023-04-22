@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hotel T.Ex</title>
     <script>
-    	let usuario = localStorage.getItem('user');
-    	if (usuario == null) {
-    	  window.location = "./login.html";
-   	   console.log('Usuário não está logado');
-    	} else {
-    	  console.log('Usuário está logado');
-    	}
+      window.addEventListener("load", function () {
+        localStorage.removeItem("servicos");
+        localStorage.removeItem("listaServicos");
+        localStorage.removeItem("valorDiaria");
+        localStorage.removeItem("resumoReserva");
+        localStorage.removeItem("totalReserva");
+
+      });
     </script>
+
+    <script defer type="module" src="./reservas/resumoQuartos.js"></script>
 </head>
 
 <body>
@@ -27,6 +30,7 @@
   </header>
 
   <main>
+    <!-- Modal de lista de servições -->
     <section class="modal__servicos" style="display: none;">
       <div class="services">
         <div class="service__cabecalho">
@@ -38,30 +42,34 @@
         </div>
         
         <!-- Modal de Serviços -->
-        <div class="container service__itens" id="listaServicos">
-        </div>
+        <div 
+          class="container service__itens" 
+          id="listaServicos"
+        ></div>
 
         <div class="modalBotaoFechar">
-          <button onclick="fechaModalServicos()" type="button" class="botaoFechar" id="botaoFechar">Fechar</button>
+          <button type="button" class="botaoFechar" id="botaoFechar">Fechar</button>
         </div>
       </div>
     </section>
+
     <section>
       <article>
         <div class="hotel__minha-reserva">
           <div class="hotel__minha-reserva2">
             <h2>Minha Reserva</h2>
-            <!--primeira parte-->
+
+            <!-- inicio do form -->
             <form action="./reservas_confirmada.html" method="get" target="_blank">
               <fieldset>
                 <ul class="hotel__minha-reserva_campos" id="hotel-form">
                   <li>
                     <label for="">Check-In:</label>
-                    <input type="date" name="check-in" id="checkin" />
+                    <input class="check-in" value="2012-3-23" type="date" name="check-in" id="checkin" />
                   </li>
                   <li>
                     <label for="">Check-Out:</label>
-                    <input type="date" name="check-out" id="checkout" />
+                    <input class="check-out" type="date" name="check-out" id="checkout" />
                   </li>
                 </ul>
 
@@ -77,16 +85,33 @@
                       </li>
                     </ul>
                   </div>
+
+                  <!-- resumo da reserva -->
                   <div class="hotel__lado_resumo">
                     <h3>RESUMO DA RESERVA</h3>
+
                     <div class="hotel__lado_resumo-info">
                       <span>Apartamento:</span>
-                      <span id="resumoApartamento"></span>
+                      <span class="resumoApartamento"></span>
+
                       <span>CheckIn:</span>
                       <span id="resumoCheckin"></span>
+
                       <span>CheckOut:</span>
                       <span id="resumoCheckout"></span>
                      </div>
+                     <div class="hotel__lado_resumo-servicos">
+                      <span>Diarias de Quarto</span>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Valor Total</th>
+                            <th id="diarias"></th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+
                     <div class="hotel__lado_resumo-servicos">
                       <span>Serviços adicionados</span>
                       <table>
@@ -103,29 +128,51 @@
                       </table>
                     </div>
 
+                    <div class="hotel__lado_resumo-servicos">
+                      <span>Total da Reserva</span>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Total geral</th>
+                            <th id="totalGeral"></th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+
                     <div class="reserva__botoes">
                       <span>Adicione mais serviços</span>
                       <button type="button"
                         class="reserva__botao botao--servico" 
                         id="botaoServicos"
-                        onclick="abreModalServicos()">
+                        >
                         + SERVIÇOS
                       </button>
-                      <button class="reserva__botao botao--continua" type="button"
-                        onclick="modal(), adicionaitensNoHTML()">Continuar</button>
+
+                      <button 
+                        class="reserva__botao botao--continua" 
+                        type="button"
+                        id="botaoContinua"
+                      >Continuar</button>
                     </div>
+
+                    <!-- Modal de confirmação -->
                     <div class="modalSection disable">
                       <h2>Confirmar a reserva ?</h2>
+
                       <div class="ajustaModal">
                         <div class="botaoFechaModal">
                           <div class="ajustaFechaModal">
-                            <button type="button" onclick="modal()">X</button>
+                            <button 
+                              type="button" 
+                              id="fechaModalConfirmar"
+                            >X</button>
                           </div>
                         </div>
                         <div class="alinhaSaidas">
                           <div class="ajustaInfoSaida">
                             <div class="primeiraColuna">
-                              <h4>Preço Apartamento:</h4>
+                              <h4>Preço do Quarto:</h4>
                               <p id="quartosModal"></p>
                               <h4>Check-In:</h4>
                               <p id="checkinModal"></p>
@@ -154,14 +201,23 @@
                           </div>
                         </div>
                         <div class="botaoModal">
-                          <button type="submit">Confirmar</button>
+                          <button 
+                            type="button"
+                            class="confirmarReserva"
+                          >Confirmar</button>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <!-- resumo da reserva -->
 
                   </fieldset>
                 </form>
+
+                <!-- fim do form -->
+
+
+              
               </div>
             </div>
           </article>
@@ -193,9 +249,13 @@
       <script src="../js/footer.js"></script>
     </footer>
   </body>
+  <script async src="../js/reservas.js"></script>
+
   <script src="../js/user.js" defer></script>
   <!-- <script src="../js/reserva.js" async></script> -->
-  <script src="../js/servicos.js"></script>
-  <script src="../js/reservas.js"></script>
+  <script type="module" src="../js/servicos.js"></script>
+  <script type="module" src="./reservas/resumoTotalReserva.js"></script>
+  <script type="module" src="./reservas/confirmarReserva.js"></script>
+  
 </html>
 
