@@ -27,24 +27,26 @@
         <section id="hotel" class="form__container">
             <h1>Cadastro Conta Hospede</h1>
             <p>Preencha seus dados para criar uma nova conta</p>
-            <!-- Início do formulário -->
             <form class="form__width">
-                <!-- Campo de Nome -->
-                <input  type="text" name="nome" id="nome" placeholder="Nome Completo"
-                    required>
-                <!-- Campo de email -->
-                <input type="email" name="email" id="email" placeholder="E-mail"
-                    required>
-                <!-- Campo de Telefone -->
-                <input  type="tel" name="phone" id="phone" placeholder="(xx)9xxxx-xxxx"
-                    pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" required>
-                <!-- Campo de Senha -->
-                <input type="password" name="Senha" id="senha"
-                    placeholder="Escolha uma Senha segura" required>
-                <input type="password" name="confirma-senha" id="confirma-senha"
-                    placeholder="Confirmar Senha" required>
-                <!-- Botão para enviar o formulário -->
-                <button class="botao__form" type="submit" onsubmit="">Criar Conta</button>
+                <input  type="text" name="nome" id="nome" placeholder="Nome Completo" required />
+                <input type="text" name="cpf" id="cpf" placeholder="CPF" required/>
+                <input  type="tel" name="telefone" id="telefone" placeholder="(xx)9xxxx-xxxx" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" required />
+                <fieldset name="endereco">
+                    <legend>Endereço:</legend>
+                    <input type="text" name="cep" id="cep" placeholder="00000-000" required />
+                    <input type="text" name="logradouro" id="logradouro" placeholder="Rua/Avenida ..." required />
+                    <input type="text" name="complemento" id="complemento" placeholder="complemento">
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro" required />
+                    <input type="text" name="localidade" id="localidade" placeholder="Cidade" required />
+                    <input type="text" name="uf" id="uf" placeholder="UF" required />
+                </fieldset>
+                <fieldset name="usuario">
+                    <legend>Usuário:</legend>
+                    <input type="text" id="email" name="email" id="email" placeholder="E-mail" required />
+                    <input type="password" id="senha" name="Senha" id="senha" placeholder="Escolha uma Senha segura" required />
+                    <input type="password" id="senhaConfirma" name="confirma-senha" id="confirma-senha" placeholder="Confirmar Senha" required />
+                </fieldset>
+                <button class="botao__form" id="criarConta" type="button">Criar Conta</button>
             </form>
         </section>
     </main>
@@ -52,7 +54,10 @@
     <!-- inicio footer -->
     <footer>
       <script src="../js/footer.js"></script>
+      
     </footer>
+
+    <script src="./cadastro_hospede/cadastro_hospede.js"></script>
 </body>
 
 </html>
